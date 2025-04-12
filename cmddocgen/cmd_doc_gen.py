@@ -15,7 +15,7 @@ from typing import Dict, List, Any, Tuple
 from datetime import datetime
 
 # Import new LLM module
-from llm import LLMParser
+from cmddocgen.llm import LLMParser
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(name)s - %(levelname)s - %(message)s")

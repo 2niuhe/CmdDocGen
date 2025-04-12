@@ -8,16 +8,14 @@ import sys
 import os
 import subprocess
 
+# Import the cmd_doc_gen module from the cmddocgen package
+from cmddocgen.cmd_doc_gen import main as cmd_doc_gen_main
+
 
 def main():
     """Entry point for the cmddocgen command"""
-    # Get the path to cmd_doc_gen.py
-    cmd_doc_gen_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "..", "cmd_doc_gen.py")
-    )
-
-    # Execute the script directly with the same arguments
-    sys.exit(subprocess.call([sys.executable, cmd_doc_gen_path] + sys.argv[1:]))
+    # Execute the main function directly
+    cmd_doc_gen_main()
 
 
 if __name__ == "__main__":

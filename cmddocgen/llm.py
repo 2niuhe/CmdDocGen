@@ -499,7 +499,7 @@ def test_parser(command: str = "ls", help_option: str = "--help"):
 
 
 if __name__ == "__main__":
-    # If running this file directly, execute testí
+    # If running this file directly, execute test
     if len(sys.argv) > 1:
         command = sys.argv[1]
         help_option = sys.argv[2] if len(sys.argv) > 2 else "--help"
