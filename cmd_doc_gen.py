@@ -21,7 +21,7 @@ from llm import LLMParser
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    format='%(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger("CmdDocGen.Extractor")
 
@@ -413,7 +413,7 @@ class HelpExtractor:
     
     def _print_command_tree_dict(self, command_info: Dict[str, Any], level: int = 0):
         """Print command tree structure"""
-        cmd_name = command_info['name']
+        cmd_name = command_info['command']
         prefix = "  " * level
         
         # Print current command
@@ -463,7 +463,7 @@ def main():
         description="Universal command line help information extraction tool"
     )
     parser.add_argument(
-        "--command", "-c", required=True,
+        "command",
         help="Command to extract help information from"
     )
     parser.add_argument(

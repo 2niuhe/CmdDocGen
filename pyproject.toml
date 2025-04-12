@@ -1,0 +1,38 @@
+[project]
+name = "cmddocgen"
+version = "0.1.0"
+description = "CmdDocGen - Universal command line help information extraction and man page generation tool powered by LLM for intelligent subcommand analysis"
+authors = [
+    {name = "Carlton", email = "carlton2tang@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities"
+]
+
+[project.urls]
+Homepage = "https://github.com/2niuhe/CmdDocGen"
+Documentation = "https://github.com/2niuhe/CmdDocGen#readme"
+Issues = "https://github.com/2niuhe/CmdDocGen/issues"
+
+[project.scripts]
+cmddocgen = "cmddocgen.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+openai = "^1.0.0"
+python-dotenv = "^0.20.0"
+google-gemini = "^0.3.0"
+
+[build-system]
+requires = ["setuptools>=65.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
