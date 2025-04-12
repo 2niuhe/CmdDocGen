@@ -1,0 +1,3 @@
+openai>=1.0.0
+python-dotenv>=0.20.0
+google-gemini>=0.3.0
