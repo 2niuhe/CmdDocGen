@@ -8,19 +8,14 @@ setup(
     author_email="carlton2tang@gmail.com",
     url="https://github.com/2niuhe/CmdDocGen",
     packages=find_packages(),
-    install_requires=[
-        "openai>=1.0.0",
-        "python-dotenv>=0.20.0",
-        "google-gemini>=0.3.0",
-        "setuptools>=65.0.0"
-    ],
+    install_requires=["openai>=1.0.0", "python-dotenv>=0.20.0", "setuptools>=65.0.0"],
     python_requires=">=3.8",
     entry_points={
-        'console_scripts': [
-            'cmddocgen=cmddocgen.cli:main',
+        "console_scripts": [
+            "cmddocgen=cmddocgen.cli:main",
         ],
     },
-    scripts=['cmddocgen/cli.py'],
+    scripts=["cmddocgen/cli.py"],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
@@ -29,6 +24,6 @@ setup(
         "Programming Language :: Python :: 3",
         "Topic :: Software Development :: Documentation",
         "Topic :: System :: Systems Administration",
-        "Topic :: Utilities"
+        "Topic :: Utilities",
     ],
 )

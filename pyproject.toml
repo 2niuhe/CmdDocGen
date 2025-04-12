@@ -31,7 +31,6 @@ cmddocgen = "cmddocgen.cli:main"
 python = "^3.8"
 openai = "^1.0.0"
 python-dotenv = "^0.20.0"
-google-gemini = "^0.3.0"
 
 [build-system]
 requires = ["setuptools>=65.0.0", "wheel"]
