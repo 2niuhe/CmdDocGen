@@ -63,6 +63,7 @@ class HelpExtractor:
         max_depth: int = 2,
         max_subcommands_per_level: int = 150,
         help_format: str = "default",
+        output_format: str = "all",
     ) -> None:
         """Initialize help extractor"""
         self.command = command
@@ -70,6 +71,7 @@ class HelpExtractor:
         self.max_depth = max_depth
         self.max_subcommands_per_level = max_subcommands_per_level
         self.help_format = help_format
+        self.output_format = output_format
 
         # Create output directory
         os.makedirs(output_dir, exist_ok=True)
@@ -112,13 +114,12 @@ class HelpExtractor:
         root_command = command.split()[0]
 
         # Find corresponding format
-        format_name = self.command_format_mapping.get(root_command, self.help_format)
-        format_func = self.help_command_formats[format_name]
+        format_func = self.help_command_formats[self.help_format]
 
         # Generate help command
         help_command = format_func(command)
         logger.info(
-            f"Using '{format_name}' format to get help info for command '{command}': {' '.join(help_command)}"
+            f"Using '{self.help_format}' format to get help info for command '{command}': {' '.join(help_command)}"
         )
 
         return help_command
@@ -177,31 +178,43 @@ class HelpExtractor:
             # Save raw help text for each command
             self._save_raw_help_text(full_command, help_text, help_command)
 
-            # Use LLM to parse help text
-            logger.info(
-                f"Starting to parse help text for command '{full_command}' using LLM"
-            )
-            parsed_help, raw_response = self.parser.parse_help_text(
-                full_command, help_text
-            )
+            # Skip LLM processing if we're in raw format and not at the root level
+            if self.output_format == "raw" and depth >= self.max_depth:
+                # Create a minimal parsed_help structure with empty subcommands
+                current_node.parsed_help = {
+                    "description": "",
+                    "subcommands": [],
+                    "options": [],
+                    "examples": [],
+                }
+                logger.info(f"Skipping LLM parsing for raw format at depth {depth}: '{full_command}'")
+            else:
+                # Use LLM to parse help text
+                logger.info(
+                    f"Starting to parse help text for command '{full_command}' using LLM"
+                )
+                parsed_help, raw_response = self.parser.parse_help_text(
+                    full_command, help_text
+                )
 
-            # Save parsed help information
-            current_node.parsed_help = parsed_help
+                # Save parsed help information
+                current_node.parsed_help = parsed_help
 
-            # Generate and save man page for each command
-            self._save_man_page(
-                full_command,
-                {
-                    "command": full_command,
-                    "parsed_help": parsed_help,
-                    "raw_help": help_text,
-                },
-            )
+                # Generate and save man page for each command
+                if self.output_format != "raw":
+                    self._save_man_page(
+                        full_command,
+                        {
+                            "command": full_command,
+                            "parsed_help": parsed_help,
+                            "raw_help": help_text,
+                        },
+                    )
 
             # If depth is not reached, process subcommands
             if depth < self.max_depth:
-                # Get subcommand list
-                subcommands = parsed_help.get("subcommands", [])
+                # Get subcommand list (empty if raw format and not root)
+                subcommands = current_node.parsed_help.get("subcommands", [])
                 logger.info(
                     f"Command '{full_command}' has {len(subcommands)} subcommands"
                 )
@@ -259,12 +272,11 @@ class HelpExtractor:
         self._print_command_tree(root_node)
 
         logger.info(
-            f"Help information extraction for command '{command}' completed, processed {len(processed_commands)} commands"
+            f"Help information extraction for command '{command}' completed"
         )
 
         # Convert command tree to dictionary structure
-        result = self._command_tree_to_dict(root_node)
-        return result
+        return self._command_tree_to_dict(root_node)
 
     def _command_tree_to_dict(self, node: CommandNode) -> Dict[str, Any]:
         """Convert command tree to dictionary structure"""
@@ -452,6 +464,18 @@ class HelpExtractor:
             f"Saving output files for command '{command}', safe filename: {safe_name}"
         )
 
+        # Save raw help text
+        raw_path = os.path.join(self.output_dir, f"{safe_name}.txt")
+        with open(raw_path, "w", encoding="utf-8") as f:
+            f.write(command_info["raw_help"])
+        logger.info(f"Saved raw help text: {raw_path}")
+
+        # For raw format, we only save the raw text
+        if self.output_format == "raw":
+            print("Saved output files:")
+            print(f"  - Raw Text: {raw_path}")
+            return
+
         # Save JSON structure
         json_path = os.path.join(self.output_dir, f"{safe_name}.json")
         with open(json_path, "w", encoding="utf-8") as f:
@@ -464,12 +488,6 @@ class HelpExtractor:
         with open(man_path, "w", encoding="utf-8") as f:
             f.write(man_page)
         logger.info(f"Saved man page file: {man_path}")
-
-        # Save raw help text
-        raw_path = os.path.join(self.output_dir, f"{safe_name}.txt")
-        with open(raw_path, "w", encoding="utf-8") as f:
-            f.write(command_info["raw_help"])
-        logger.info(f"Saved raw help text: {raw_path}")
 
         # Print subcommand statistics
         subcommands = command_info["parsed_help"].get("subcommands", [])
@@ -534,7 +552,7 @@ def main() -> None:
     parser.add_argument(
         "--format",
         "-f",
-        choices=["man", "json", "all"],
+        choices=["man", "json", "raw", "all"],
         default="all",
         help="Output format",
     )
@@ -578,6 +596,7 @@ def main() -> None:
         max_depth=args.max_depth,
         max_subcommands_per_level=args.max_subcommands,
         help_format=args.help_format,
+        output_format=args.format,
     )
 
     # Record start time
