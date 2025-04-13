@@ -1,8 +1,8 @@
 # CmdDocGen
 
 <div align="center">
-
-![CmdDocGen Logo](https://raw.githubusercontent.com/2niuhe/CmdDocGen/main/assets/logo.png)
+    <img src="https://raw.githubusercontent.com/2niuhe/CmdDocGen/main/assets/logo.png" width="200" alt="CmdDocGen Logo">
+</div>
 
 **Universal Command Line Help Information Extraction and Man Page Generation Tool**
 
@@ -10,6 +10,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyPI version](https://badge.fury.io/py/cmddocgen.svg)](https://badge.fury.io/py/cmddocgen)
 
 </div>
 
@@ -19,12 +20,15 @@ CmdDocGen is a universal command line help information extraction tool that can 
 
 ## Key Features
 
-- Universal Support: Works with any command line tool's help documentation
-- Standard Format: Automatically generates man page format documentation
-- LLM-Powered Analysis: Uses LLM to intelligently parse complex help text
-- Recursive Processing: Supports recursive extraction of subcommands
-- Multiple LLM Providers: Compatible with various LLM providers
-- Performance Optimization: Caching mechanism for improved performance
+- **Universal Support**: Works with any command line tool's help documentation
+- **Standard Format**: Automatically generates man page format documentation
+- **LLM-Powered Analysis**: Uses LLM to intelligently parse complex help text
+- **Recursive Processing**: Supports recursive extraction of subcommands
+- **Multiple Output Formats**: Generate man pages, JSON, or raw text outputs
+- **Performance Optimization**: 
+  - Caching mechanism for improved performance
+  - "Raw" format option to skip LLM processing for deeper subcommands
+- **Multiple LLM Providers**: Compatible with various LLM providers
 
 ## Installation
 
@@ -92,8 +96,27 @@ LLM_MODEL=deepseek-chat
 ### Basic Usage
 
 ```bash
-cmddocgen --command "your-command" [--output-dir OUTPUT_DIR]
+cmddocgen COMMAND [OPTIONS]
 ```
+
+### Command-line Options
+
+| Option | Description |
+|--------|-------------|
+| `COMMAND` | Command to extract help information from |
+| `--output-dir`, `-o` | Output directory (default: "man_pages") |
+| `--format`, `-f` | Output format: "man", "json", "raw", or "all" (default: "all") |
+| `--max-depth`, `-d` | Maximum recursion depth (default: 1) |
+| `--max-subcommands`, `-m` | Maximum subcommands per level (default: 150) |
+| `--help-format` | Help command format: "default" (--help) or "cliff" (help subcommand) |
+| `--verbose`, `-v` | Show detailed log information |
+
+### Output Formats
+
+- **all**: Generate all output formats (man page, JSON, and raw text)
+- **man**: Generate only man page format
+- **json**: Generate only JSON format
+- **raw**: Generate only raw text format (skips LLM processing for subcommands at max depth)
 
 ### Examples
 
@@ -107,7 +130,24 @@ cmddocgen docker --max-depth 2
 # Specify output directory
 cmddocgen docker --output-dir "./docs"
 
+# Use raw format for faster processing (only processes root command with LLM)
+cmddocgen openstack --format raw --max-depth 1
+
+# Use cliff help format for OpenStack commands
+cmddocgen glance --help-format cliff --max-depth 2
 ```
+
+## Performance Optimization
+
+### Raw Format
+
+The `--format raw` option provides a significant performance boost when you only need the raw help text. When using this format:
+
+1. Only commands up to the specified `max-depth` are processed with LLM
+2. Deeper subcommands are skipped for LLM processing
+3. Only raw text files are saved (no JSON or man pages)
+
+This is particularly useful for large command sets where you want to explore the command structure without the overhead of full LLM processing.
 
 ## Development
 
@@ -138,4 +178,4 @@ MIT License
 - Make sure to properly configure the LLM-related environment variables
 - Generated documentation will be saved in the specified output directory
 - Cache files are stored in the `cache/` directory
-- For large command sets with many subcommands, consider limiting the recursion depth
+- For large command sets with many subcommands, consider limiting the recursion depth or using the `--format raw` option
