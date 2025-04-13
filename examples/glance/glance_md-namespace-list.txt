@@ -1,0 +1,15 @@
+# Command: glance help md-namespace-list
+
+usage: glance md-namespace-list [--resource-types <RESOURCE_TYPES>]
+                                [--visibility <VISIBILITY>]
+                                [--page-size <SIZE>]
+
+List metadata definitions namespaces.
+
+Options:
+  --resource-types <RESOURCE_TYPES>
+                        Resource type to filter namespaces.
+  --visibility <VISIBILITY>
+                        Visibility parameter to filter namespaces.
+  --page-size <SIZE>    Number of namespaces to request in each paginated
+                        request.

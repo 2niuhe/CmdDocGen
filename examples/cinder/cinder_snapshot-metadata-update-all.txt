@@ -1,0 +1,10 @@
+# Command: cinder help snapshot-metadata-update-all
+
+usage: cinder snapshot-metadata-update-all <snapshot> <key=value>
+                                           [<key=value> ...]
+
+Updates snapshot metadata.
+
+Positional Arguments:
+  <snapshot>   ID of snapshot for which to update metadata.
+  <key=value>  Metadata key and value pair to update.

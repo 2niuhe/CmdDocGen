@@ -1,0 +1,15 @@
+# Command: cinder help group-snapshot-create
+
+usage: cinder group-snapshot-create [--name <name>]
+                                    [--description <description>]
+                                    <group>
+
+Creates a group snapshot.
+
+Positional Arguments:
+  <group>               Name or ID of a group.
+
+Options:
+  --name <name>         Group snapshot name. Default=None.
+  --description <description>
+                        Group snapshot description. Default=None.

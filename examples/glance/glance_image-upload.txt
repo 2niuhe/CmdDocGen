@@ -1,0 +1,20 @@
+# Command: glance help image-upload
+
+usage: glance image-upload [--file <FILE>] [--size <IMAGE_SIZE>] [--progress]
+                           [--store <STORE>]
+                           <IMAGE_ID>
+
+Upload data for a specific image.
+
+Positional arguments:
+  <IMAGE_ID>           ID of image to upload data to.
+
+Options:
+  --file <FILE>        Local file that contains disk image to be uploaded.
+                       Alternatively, images can be passed to the client via
+                       stdin.
+  --size <IMAGE_SIZE>  Size in bytes of image to be uploaded. Default is to
+                       get size from provided data object but this is
+                       supported in case where size cannot be inferred.
+  --progress           Show upload progress bar.
+  --store <STORE>      Backend store to upload image to.

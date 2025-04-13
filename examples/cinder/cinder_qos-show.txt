@@ -1,0 +1,8 @@
+# Command: cinder help qos-show
+
+usage: cinder qos-show <qos_specs>
+
+Shows qos specs details.
+
+Positional Arguments:
+  <qos_specs>  ID of QoS specifications to show.

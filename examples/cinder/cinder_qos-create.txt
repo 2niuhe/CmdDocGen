@@ -1,0 +1,9 @@
+# Command: cinder help qos-create
+
+usage: cinder qos-create <name> <key=value> [<key=value> ...]
+
+Creates a qos specs.
+
+Positional Arguments:
+  <name>       Name of new QoS specifications.
+  <key=value>  QoS specifications.

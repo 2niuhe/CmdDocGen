@@ -1,0 +1,8 @@
+# Command: cinder help metadata-show
+
+usage: cinder metadata-show <volume>
+
+Shows volume metadata.
+
+Positional Arguments:
+  <volume>  ID of volume.

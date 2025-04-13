@@ -1,0 +1,8 @@
+# Command: cinder help group-snapshot-delete
+
+usage: cinder group-snapshot-delete <group_snapshot> [<group_snapshot> ...]
+
+Removes one or more group snapshots.
+
+Positional Arguments:
+  <group_snapshot>  Name or ID of one or more group snapshots to be deleted.

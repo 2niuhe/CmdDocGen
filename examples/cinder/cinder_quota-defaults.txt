@@ -1,0 +1,8 @@
+# Command: cinder help quota-defaults
+
+usage: cinder quota-defaults <tenant_id>
+
+Lists default quotas for a tenant.
+
+Positional Arguments:
+  <tenant_id>  ID of tenant for which to list quota defaults.

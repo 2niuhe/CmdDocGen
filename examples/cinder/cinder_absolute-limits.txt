@@ -1,0 +1,8 @@
+# Command: cinder help absolute-limits
+
+usage: cinder absolute-limits [<tenant_id>]
+
+Lists absolute limits for a user.
+
+Positional Arguments:
+  <tenant_id>  Display information for a single tenant (Admin only).

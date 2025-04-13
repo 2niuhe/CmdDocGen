@@ -1,0 +1,8 @@
+# Command: cinder help type-delete
+
+usage: cinder type-delete <vol_type> [<vol_type> ...]
+
+Deletes volume type or types.
+
+Positional Arguments:
+  <vol_type>  Name or ID of volume type or types to delete.

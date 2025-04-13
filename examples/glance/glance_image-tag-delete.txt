@@ -1,0 +1,9 @@
+# Command: glance help image-tag-delete
+
+usage: glance image-tag-delete <IMAGE_ID> <TAG_VALUE>
+
+Delete the tag associated with the given image.
+
+Positional arguments:
+  <IMAGE_ID>   ID of the image from which to delete tag.
+  <TAG_VALUE>  Value of the tag.

@@ -1,0 +1,13 @@
+# Command: cinder help type-access-remove
+
+usage: cinder type-access-remove --volume-type <volume_type> --project-id
+                                 <project_id>
+
+Removes volume type access for the given project.
+
+Options:
+  --volume-type <volume_type>
+                        Volume type name or ID to remove access for the given
+                        project.
+  --project-id <project_id>
+                        Project ID to remove volume type access for.

@@ -1,0 +1,14 @@
+# Command: glance help md-object-update
+
+usage: glance md-object-update [--name <NAME>] [--schema <SCHEMA>]
+                               <NAMESPACE> <OBJECT>
+
+Update metadata definitions object inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>        Name of namespace the object belongs.
+  <OBJECT>           Name of an object.
+
+Options:
+  --name <NAME>      New name of an object.
+  --schema <SCHEMA>  Valid JSON schema of an object.

@@ -1,0 +1,31 @@
+# Command: cinder help upload-to-image
+
+usage: cinder upload-to-image [--force [<True|False>]]
+                              [--container-format <container-format>]
+                              [--disk-format <disk-format>]
+                              [--visibility <public|private|community|shared>]
+                              [--protected <True|False>]
+                              <volume> <image-name>
+
+Uploads volume to Image Service as an image.
+
+Positional Arguments:
+  <volume>              Name or ID of volume to snapshot.
+  <image-name>          The new image name.
+
+Options:
+  --force [<True|False>]
+                        Enables or disables upload of a volume that is
+                        attached to an instance. Default=False. This option
+                        may not be supported by your cloud.
+  --container-format <container-format>
+                        Container format type. Default is bare.
+  --disk-format <disk-format>
+                        Disk format type. Default is raw.
+  --visibility <public|private|community|shared>
+                        Set image visibility to public, private, community or
+                        shared. Default=private. (Supported by API version 3.1
+                        and later)
+  --protected <True|False>
+                        Prevents image from being deleted. Default=False.
+                        (Supported by API version 3.1 and later)

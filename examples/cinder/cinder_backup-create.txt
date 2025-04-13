@@ -1,0 +1,35 @@
+# Command: cinder help backup-create
+
+usage: cinder backup-create [--container <container>] [--name <name>]
+                            [--description <description>] [--incremental]
+                            [--force] [--snapshot-id <snapshot-id>]
+                            [--metadata [<key=value> ...]]
+                            [--availability-zone AVAILABILITY_ZONE]
+                            <volume>
+
+Creates a volume backup.
+
+Positional Arguments:
+  <volume>              Name or ID of volume to backup.
+
+Options:
+  --container <container>
+                        Backup container name. Default=None.
+  --name <name>         Backup name. Default=None.
+  --description <description>
+                        Backup description. Default=None.
+  --incremental         Incremental backup. Default=False.
+  --force               Allows or disallows backup of a volume when the volume
+                        is attached to an instance. If set to True, backs up
+                        the volume whether its status is "available" or "in-
+                        use". The backup of an "in-use" volume means your data
+                        is crash consistent. Default=False.
+  --snapshot-id <snapshot-id>
+                        ID of snapshot to backup. Default=None.
+  --metadata [<key=value> ...]
+                        Metadata key and value pairs. Default=None. (Supported
+                        by API version 3.43 and later)
+  --availability-zone AVAILABILITY_ZONE
+                        AZ where the backup should be stored, by default it
+                        will be the same as the source. (Supported by API
+                        version 3.51 and later)

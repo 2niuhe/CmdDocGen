@@ -1,0 +1,360 @@
+usage: cinder [--version] [-d] [--service-type <service-type>]
+              [--service-name <service-name>]
+              [--volume-service-name <volume-service-name>]
+              [--os-endpoint-type <os-endpoint-type>]
+              [--os-volume-api-version <volume-api-ver>]
+              [--os-endpoint <os-endpoint>] [--retries <retries>] [--insecure]
+              [--os-cacert <ca-certificate>] [--os-cert <certificate>]
+              [--os-key <key>] [--timeout <seconds>] [--collect-timing]
+              [--os-auth-type <name>] [--os-auth-url OS_AUTH_URL]
+              [--os-system-scope OS_SYSTEM_SCOPE]
+              [--os-domain-id OS_DOMAIN_ID] [--os-domain-name OS_DOMAIN_NAME]
+              [--os-project-id OS_PROJECT_ID]
+              [--os-project-name OS_PROJECT_NAME]
+              [--os-project-domain-id OS_PROJECT_DOMAIN_ID]
+              [--os-project-domain-name OS_PROJECT_DOMAIN_NAME]
+              [--os-trust-id OS_TRUST_ID]
+              [--os-default-domain-id OS_DEFAULT_DOMAIN_ID]
+              [--os-default-domain-name OS_DEFAULT_DOMAIN_NAME]
+              [--os-user-id OS_USER_ID] [--os-username OS_USERNAME]
+              [--os-user-domain-id OS_USER_DOMAIN_ID]
+              [--os-user-domain-name OS_USER_DOMAIN_NAME]
+              [--os-password OS_PASSWORD] [--os-auth-strategy <auth-strategy>]
+              [--os-url <url>]
+              <subcommand> ...
+
+Command-line interface to the OpenStack Cinder API.
+
+Positional Arguments:
+  <subcommand>
+    absolute-limits     Lists absolute limits for a user.
+    api-version         Display the server API version information. (Supported
+                        by API versions 3.0 - 3.latest)
+    attachment-complete
+                        Complete an attachment for a cinder volume. (Supported
+                        by API versions 3.44 - 3.latest)
+    attachment-create   Create an attachment for a cinder volume. (Supported
+                        by API versions 3.27 - 3.latest)
+    attachment-delete   Delete an attachment for a cinder volume. (Supported
+                        by API versions 3.27 - 3.latest)
+    attachment-list     Lists all attachments. (Supported by API versions 3.27
+                        - 3.latest)
+    attachment-show     Show detailed information for attachment. (Supported
+                        by API versions 3.27 - 3.latest)
+    attachment-update   Update an attachment for a cinder volume. (Supported
+                        by API versions 3.27 - 3.latest)
+    availability-zone-list
+                        Lists all availability zones.
+    backup-create       Creates a volume backup.
+    backup-delete       Removes one or more backups.
+    backup-export       Export backup metadata record.
+    backup-import       Import backup metadata record.
+    backup-list         Lists all backups.
+    backup-reset-state  Explicitly updates the backup state.
+    backup-restore      Restores a backup.
+    backup-show         Shows backup details.
+    backup-update       Updates a backup. (Supported by API versions 3.9 -
+                        3.latest)
+    cgsnapshot-create   Creates a cgsnapshot.
+    cgsnapshot-delete   Removes one or more cgsnapshots.
+    cgsnapshot-list     Lists all cgsnapshots.
+    cgsnapshot-show     Shows cgsnapshot details.
+    cluster-disable     Disables clustered services. (Supported by API
+                        versions 3.7 - 3.latest)
+    cluster-enable      Enables clustered services. (Supported by API versions
+                        3.7 - 3.latest)
+    cluster-list        Lists clustered services with optional filtering.
+                        (Supported by API versions 3.7 - 3.latest)
+    cluster-show        Show detailed information on a clustered service.
+                        (Supported by API versions 3.7 - 3.latest)
+    consisgroup-create  Creates a consistency group.
+    consisgroup-create-from-src
+                        Creates a consistency group from a cgsnapshot or a
+                        source CG.
+    consisgroup-delete  Removes one or more consistency groups.
+    consisgroup-list    Lists all consistency groups.
+    consisgroup-show    Shows details of a consistency group.
+    consisgroup-update  Updates a consistency group.
+    create              Creates a volume.
+    default-type-list   Lists all default volume types. (Supported by API
+                        versions 3.62 - 3.latest)
+    default-type-set    Sets a default volume type for a project. (Supported
+                        by API versions 3.62 - 3.latest)
+    default-type-unset  Unset default volume types. (Supported by API versions
+                        3.62 - 3.latest)
+    delete              Removes one or more volumes.
+    encryption-type-create
+                        Creates encryption type for a volume type. Admin only.
+    encryption-type-delete
+                        Deletes encryption type for a volume type. Admin only.
+    encryption-type-list
+                        Shows encryption type details for volume types. Admin
+                        only.
+    encryption-type-show
+                        Shows encryption type details for a volume type. Admin
+                        only.
+    encryption-type-update
+                        Update encryption type information for a volume type
+                        (Admin Only).
+    extend              Attempts to extend size of an existing volume.
+    extra-specs-list    Lists current volume types and extra specs.
+    failover-host       Failover a replicating cinder-volume host.
+    force-delete        Attempts force-delete of volume, regardless of state.
+    freeze-host         Freeze and disable the specified cinder-volume host.
+    get-capabilities    Show backend volume stats and properties. Admin only.
+    get-pools           Show pool information for backends. Admin only.
+    group-create        Creates a group. (Supported by API versions 3.13 -
+                        3.latest)
+    group-create-from-src
+                        Creates a group from a group snapshot or a source
+                        group. (Supported by API versions 3.14 - 3.latest)
+    group-delete        Removes one or more groups. (Supported by API versions
+                        3.13 - 3.latest)
+    group-disable-replication
+                        Disables replication for group. (Supported by API
+                        versions 3.38 - 3.latest)
+    group-enable-replication
+                        Enables replication for group. (Supported by API
+                        versions 3.38 - 3.latest)
+    group-failover-replication
+                        Fails over replication for group. (Supported by API
+                        versions 3.38 - 3.latest)
+    group-list          Lists all groups. (Supported by API versions 3.13 -
+                        3.latest)
+    group-list-replication-targets
+                        Lists replication targets for group. (Supported by API
+                        versions 3.38 - 3.latest)
+    group-show          Shows details of a group. (Supported by API versions
+                        3.13 - 3.latest)
+    group-snapshot-create
+                        Creates a group snapshot. (Supported by API versions
+                        3.14 - 3.latest)
+    group-snapshot-delete
+                        Removes one or more group snapshots. (Supported by API
+                        versions 3.14 - 3.latest)
+    group-snapshot-list
+                        Lists all group snapshots. (Supported by API versions
+                        3.14 - 3.latest)
+    group-snapshot-show
+                        Shows group snapshot details. (Supported by API
+                        versions 3.14 - 3.latest)
+    group-specs-list    Lists current group types and specs. (Supported by API
+                        versions 3.11 - 3.latest)
+    group-type-create   Creates a group type. (Supported by API versions 3.11
+                        - 3.latest)
+    group-type-default  List the default group type. (Supported by API
+                        versions 3.11 - 3.latest)
+    group-type-delete   Deletes group type or types. (Supported by API
+                        versions 3.11 - 3.latest)
+    group-type-key      Sets or unsets group_spec for a group type. (Supported
+                        by API versions 3.11 - 3.latest)
+    group-type-list     Lists available 'group types'. (Admin only will see
+                        private types) (Supported by API versions 3.11 -
+                        3.latest)
+    group-type-show     Show group type details. (Supported by API versions
+                        3.11 - 3.latest)
+    group-type-update   Updates group type name, description, and/or
+                        is_public. (Supported by API versions 3.11 - 3.latest)
+    group-update        Updates a group. (Supported by API versions 3.13 -
+                        3.latest)
+    image-metadata      Sets or deletes volume image metadata.
+    image-metadata-show
+                        Shows volume image metadata.
+    list                Lists all volumes.
+    list-filters        List enabled filters. (Supported by API versions 3.33
+                        - 3.latest)
+    manage              Manage an existing volume.
+    manageable-list     Lists all manageable volumes. (Supported by API
+                        versions 3.8 - 3.latest)
+    message-delete      Removes one or more messages. (Supported by API
+                        versions 3.3 - 3.latest)
+    message-list        Lists all messages. (Supported by API versions 3.3 -
+                        3.latest)
+    message-show        Shows message details. (Supported by API versions 3.3
+                        - 3.latest)
+    metadata            Sets or deletes volume metadata.
+    metadata-show       Shows volume metadata.
+    metadata-update-all
+                        Updates volume metadata.
+    migrate             Migrates volume to a new host.
+    qos-associate       Associates qos specs with specified volume type.
+    qos-create          Creates a qos specs.
+    qos-delete          Deletes a specified qos specs.
+    qos-disassociate    Disassociates qos specs from specified volume type.
+    qos-disassociate-all
+                        Disassociates qos specs from all its associations.
+    qos-get-association
+                        Lists all associations for specified qos specs.
+    qos-key             Sets or unsets specifications for a qos spec.
+    qos-list            Lists qos specs.
+    qos-show            Shows qos specs details.
+    quota-class-show    Lists quotas for a quota class.
+    quota-class-update  Updates quotas for a quota class.
+    quota-defaults      Lists default quotas for a tenant.
+    quota-delete        Delete the quotas for a tenant.
+    quota-show          Lists quotas for a tenant.
+    quota-update        Updates quotas for a tenant.
+    quota-usage         Lists quota usage for a tenant.
+    rate-limits         Lists rate limits for a user.
+    readonly-mode-update
+                        Updates volume read-only access-mode flag.
+    reimage             Rebuilds a volume, overwriting all content with the
+                        specified image (Supported by API versions 3.68 -
+                        3.latest)
+    rename              Renames a volume.
+    reset-state         Explicitly updates the entity state in the Cinder
+                        database.
+    retype              Changes the volume type for a volume.
+    revert-to-snapshot  Revert a volume to the specified snapshot. (Supported
+                        by API versions 3.40 - 3.latest)
+    service-disable     Disables the service.
+    service-enable      Enables the service.
+    service-get-log     Gets the service log level. (Supported by API versions
+                        3.32 - 3.latest)
+    service-list        Lists all services. Filter by host and service binary.
+                        (Supported by API versions 3.0 - 3.latest)
+    service-set-log     Sets the service log level. (Supported by API versions
+                        3.32 - 3.latest)
+    set-bootable        Update bootable status of a volume.
+    show                Shows volume details.
+    snapshot-create     Creates a snapshot. (Supported by API versions 3.0 -
+                        3.latest)
+    snapshot-delete     Removes one or more snapshots.
+    snapshot-list       Lists all snapshots.
+    snapshot-manage     Manage an existing snapshot.
+    snapshot-manageable-list
+                        Lists all manageable snapshots. (Supported by API
+                        versions 3.8 - 3.latest)
+    snapshot-metadata   Sets or deletes snapshot metadata.
+    snapshot-metadata-show
+                        Shows snapshot metadata.
+    snapshot-metadata-update-all
+                        Updates snapshot metadata.
+    snapshot-rename     Renames a snapshot.
+    snapshot-reset-state
+                        Explicitly updates the snapshot state.
+    snapshot-show       Shows snapshot details.
+    snapshot-unmanage   Stop managing a snapshot.
+    summary             Get volumes summary. (Supported by API versions 3.12 -
+                        3.latest)
+    thaw-host           Thaw and enable the specified cinder-volume host.
+    transfer-accept     Accepts a volume transfer.
+    transfer-create     Creates a volume transfer.
+    transfer-delete     Undoes a transfer.
+    transfer-list       Lists all transfers.
+    transfer-show       Shows transfer details.
+    type-access-add     Adds volume type access for the given project.
+    type-access-list    Print access information about the given volume type.
+    type-access-remove  Removes volume type access for the given project.
+    type-create         Creates a volume type.
+    type-default        List the default volume type.
+    type-delete         Deletes volume type or types.
+    type-key            Sets or unsets extra_spec for a volume type.
+    type-list           Lists available 'volume types'.
+    type-show           Show volume type details.
+    type-update         Updates volume type name, description, and/or
+                        is_public.
+    unmanage            Stop managing a volume.
+    upload-to-image     Uploads volume to Image Service as an image.
+    version-list        List all API versions. (Supported by API versions 3.0
+                        - 3.latest)
+    work-cleanup        Request cleanup of services with optional filtering.
+                        (Supported by API versions 3.24 - 3.latest)
+    bash-completion     Prints arguments for bash_completion.
+    help                Shows help about this program or one of its
+                        subcommands.
+    list-extensions     Lists all available os-api extensions.
+
+Options:
+  --version             show program's version number and exit
+  -d, --debug           Shows debugging output.
+  --service-type <service-type>
+                        Service type. For most actions, default is volume.
+  --service-name <service-name>
+                        Service name. Default=env[CINDER_SERVICE_NAME].
+  --volume-service-name <volume-service-name>
+                        Volume service name.
+                        Default=env[CINDER_VOLUME_SERVICE_NAME].
+  --os-endpoint-type <os-endpoint-type>
+                        Endpoint type, which is publicURL or internalURL.
+                        Default=env[OS_ENDPOINT_TYPE] or nova
+                        env[CINDER_ENDPOINT_TYPE] or publicURL.
+  --os-volume-api-version <volume-api-ver>
+                        Block Storage API version. Accepts X, X.Y (where X is
+                        major and Y is minor part). NOTE: this client accepts
+                        only '3' for the major version.
+                        Default=env[OS_VOLUME_API_VERSION].
+  --os-endpoint <os-endpoint>
+                        Use this API endpoint instead of the Service Catalog.
+                        Defaults to env[CINDER_ENDPOINT].
+  --retries <retries>   Number of retries.
+  --os-auth-type <name>, --os-auth-plugin <name>
+                        Authentication type to use
+  --os-auth-strategy <auth-strategy>
+                        Authentication strategy (Env: OS_AUTH_STRATEGY,
+                        default keystone). For now, any other value will
+                        disable the authentication.
+  --os-url <url>        Defaults to env[OS_URL].
+
+Api Connection Options:
+  Options controlling the HTTP API Connections
+
+  --insecure            Explicitly allow client to perform "insecure" TLS
+                        (https) requests. The server's certificate will not be
+                        verified against any certificate authorities. This
+                        option should be used with caution.
+  --os-cacert <ca-certificate>
+                        Specify a CA bundle file to use in verifying a TLS
+                        (https) server certificate. Defaults to
+                        env[OS_CACERT].
+  --os-cert <certificate>
+                        The location for the keystore (PEM formatted)
+                        containing the public key of this client. Defaults to
+                        env[OS_CERT].
+  --os-key <key>        The location for the keystore (PEM formatted)
+                        containing the private key of this client. Defaults to
+                        env[OS_KEY].
+  --timeout <seconds>   Set request timeout (in seconds).
+  --collect-timing      Collect per-API call timing information.
+
+Authentication Options:
+  Options specific to the password plugin.
+
+  --os-auth-url OS_AUTH_URL
+                        Authentication URL
+  --os-system-scope OS_SYSTEM_SCOPE
+                        Scope for system operations
+  --os-domain-id OS_DOMAIN_ID
+                        Domain ID to scope to
+  --os-domain-name OS_DOMAIN_NAME
+                        Domain name to scope to
+  --os-project-id OS_PROJECT_ID, --os-tenant-id OS_PROJECT_ID
+                        Project ID to scope to
+  --os-project-name OS_PROJECT_NAME, --os-tenant-name OS_PROJECT_NAME
+                        Project name to scope to
+  --os-project-domain-id OS_PROJECT_DOMAIN_ID
+                        Domain ID containing project
+  --os-project-domain-name OS_PROJECT_DOMAIN_NAME
+                        Domain name containing project
+  --os-trust-id OS_TRUST_ID
+                        ID of the trust to use as a trustee use
+  --os-default-domain-id OS_DEFAULT_DOMAIN_ID
+                        Optional domain ID to use with v3 and v2 parameters.
+                        It will be used for both the user and project domain
+                        in v3 and ignored in v2 authentication.
+  --os-default-domain-name OS_DEFAULT_DOMAIN_NAME
+                        Optional domain name to use with v3 API and v2
+                        parameters. It will be used for both the user and
+                        project domain in v3 and ignored in v2 authentication.
+  --os-user-id OS_USER_ID
+                        User id
+  --os-username OS_USERNAME, --os-user-name OS_USERNAME
+                        Username
+  --os-user-domain-id OS_USER_DOMAIN_ID
+                        User's domain id
+  --os-user-domain-name OS_USER_DOMAIN_NAME
+                        User's domain name
+  --os-password OS_PASSWORD
+                        User's password
+
+Run "cinder help SUBCOMMAND" for help on a subcommand.

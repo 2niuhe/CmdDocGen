@@ -1,0 +1,8 @@
+# Command: cinder help group-disable-replication
+
+usage: cinder group-disable-replication <group>
+
+Disables replication for group.
+
+Positional Arguments:
+  <group>  Name or ID of the group.

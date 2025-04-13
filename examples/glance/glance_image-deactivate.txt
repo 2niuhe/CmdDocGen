@@ -1,0 +1,8 @@
+# Command: glance help image-deactivate
+
+usage: glance image-deactivate <IMAGE_ID>
+
+Deactivate specified image.
+
+Positional arguments:
+  <IMAGE_ID>  ID of image to deactivate.

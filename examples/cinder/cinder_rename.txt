@@ -1,0 +1,13 @@
+# Command: cinder help rename
+
+usage: cinder rename [--description <description>] <volume> [<name>]
+
+Renames a volume.
+
+Positional Arguments:
+  <volume>              Name or ID of volume to rename.
+  <name>                New name for volume.
+
+Options:
+  --description <description>
+                        Volume description. Default=None.

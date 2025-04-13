@@ -1,0 +1,8 @@
+# Command: cinder help quota-show
+
+usage: cinder quota-show <tenant_id>
+
+Lists quotas for a tenant.
+
+Positional Arguments:
+  <tenant_id>  ID of tenant for which to list quotas.

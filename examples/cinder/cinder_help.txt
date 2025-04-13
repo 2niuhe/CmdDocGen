@@ -1,0 +1,8 @@
+# Command: cinder help help
+
+usage: cinder help [<subcommand>]
+
+Shows help about this program or one of its subcommands.
+
+Positional Arguments:
+  <subcommand>  Shows help for <subcommand>.

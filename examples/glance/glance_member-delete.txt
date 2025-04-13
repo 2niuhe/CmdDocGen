@@ -1,0 +1,11 @@
+# Command: glance help member-delete
+
+usage: glance member-delete <IMAGE_ID> <MEMBER_ID>
+
+Delete image member.
+
+Positional arguments:
+  <IMAGE_ID>   Image from which to remove member.
+  <MEMBER_ID>  Tenant to remove as member.
+
+Run `glance --os-image-api-version 1 help member-delete` for v1 help

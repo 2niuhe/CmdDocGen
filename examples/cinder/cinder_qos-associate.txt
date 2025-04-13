@@ -1,0 +1,10 @@
+# Command: cinder help qos-associate
+
+usage: cinder qos-associate <qos_specs> <volume_type_id>
+
+Associates qos specs with specified volume type.
+
+Positional Arguments:
+  <qos_specs>       ID of QoS specifications.
+  <volume_type_id>  ID of volume type with which to associate QoS
+                    specifications.

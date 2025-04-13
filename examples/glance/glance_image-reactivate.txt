@@ -1,0 +1,8 @@
+# Command: glance help image-reactivate
+
+usage: glance image-reactivate <IMAGE_ID>
+
+Reactivate specified image.
+
+Positional arguments:
+  <IMAGE_ID>  ID of image to reactivate.

@@ -1,0 +1,16 @@
+# Command: glance help image-show
+
+usage: glance image-show [--human-readable] [--max-column-width <integer>]
+                         <IMAGE_ID>
+
+Describe a specific image.
+
+Positional arguments:
+  <IMAGE_ID>            ID of image to describe.
+
+Options:
+  --human-readable      Print image size in a human-friendly format.
+  --max-column-width <integer>
+                        The max column width of the printed table.
+
+Run `glance --os-image-api-version 1 help image-show` for v1 help

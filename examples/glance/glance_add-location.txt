@@ -1,0 +1,17 @@
+# Command: glance help add-location
+
+usage: glance add-location --url <URL> [--validation-data <STRING>] <IMAGE_ID>
+
+Add location to an image which is in `queued` state only.
+
+Positional arguments:
+  <IMAGE_ID>            ID of image whose location is to be added.
+
+Options:
+  --validation-data <STRING>
+                        Validation data containing os_hash_algo and
+                        os_hash_value only associated to the image. Must be a
+                        valid JSON object (default: {})
+
+Required arguments:
+  --url <URL>           URL of location to add.

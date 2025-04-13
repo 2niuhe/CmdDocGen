@@ -1,0 +1,22 @@
+# Command: cinder help group-update
+
+usage: cinder group-update [--name <name>] [--description <description>]
+                           [--add-volumes <uuid1,uuid2,......>]
+                           [--remove-volumes <uuid3,uuid4,......>]
+                           <group>
+
+Updates a group.
+
+Positional Arguments:
+  <group>               Name or ID of a group.
+
+Options:
+  --name <name>         New name for group. Default=None.
+  --description <description>
+                        New description for group. Default=None.
+  --add-volumes <uuid1,uuid2,......>
+                        UUID of one or more volumes to be added to the group,
+                        separated by commas. Default=None.
+  --remove-volumes <uuid3,uuid4,......>
+                        UUID of one or more volumes to be removed from the
+                        group, separated by commas. Default=None.

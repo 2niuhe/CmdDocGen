@@ -1,0 +1,8 @@
+# Command: cinder help default-type-unset
+
+usage: cinder default-type-unset <project_id> [<project_id> ...]
+
+Unset default volume types.
+
+Positional Arguments:
+  <project_id>  ID of project for which to unset default type.

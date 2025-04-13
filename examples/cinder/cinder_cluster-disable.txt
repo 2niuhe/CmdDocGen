@@ -1,0 +1,12 @@
+# Command: cinder help cluster-disable
+
+usage: cinder cluster-disable [--reason <reason>] [<binary>] <cluster-name>
+
+Disables clustered services.
+
+Positional Arguments:
+  <binary>           Binary to filter by. Default: cinder-volume.
+  <cluster-name>     Name of the clustered services to update.
+
+Options:
+  --reason <reason>  Reason for disabling clustered service.

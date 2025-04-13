@@ -1,0 +1,8 @@
+# Command: cinder help message-delete
+
+usage: cinder message-delete <message> [<message> ...]
+
+Removes one or more messages.
+
+Positional Arguments:
+  <message>  ID of one or more message to be deleted.

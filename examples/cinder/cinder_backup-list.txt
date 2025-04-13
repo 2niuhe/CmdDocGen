@@ -1,0 +1,46 @@
+# Command: cinder help backup-list
+
+usage: cinder backup-list [--all-tenants [<all_tenants>]] [--name <name>]
+                          [--status <status>] [--volume-id <volume-id>]
+                          [--marker <marker>] [--limit <limit>]
+                          [--sort <key>[:<direction>]]
+                          [--filters [<key=value> ...]]
+                          [--with-count [<True|False>]]
+
+Lists all backups.
+
+Options:
+  --all-tenants [<all_tenants>]
+                        Shows details for all tenants. Admin only.
+  --name <name>         Filters results by a name. Default=None. This option
+                        is deprecated and will be removed in newer release.
+                        Please use '--filters' option which is introduced
+                        since 3.33 instead.
+  --status <status>     Filters results by a status. Default=None. This option
+                        is deprecated and will be removed in newer release.
+                        Please use '--filters' option which is introduced
+                        since 3.33 instead.
+  --volume-id <volume-id>
+                        Filters results by a volume ID. Default=None. This
+                        option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead.
+  --marker <marker>     Begin returning backups that appear later in the
+                        backup list than that represented by this id.
+                        Default=None.
+  --limit <limit>       Maximum number of backups to return. Default=None.
+  --sort <key>[:<direction>]
+                        Comma-separated list of sort keys and directions in
+                        the form of <key>[:<asc|desc>]. Valid keys: id,
+                        status, size, availability_zone, name, bootable,
+                        created_at, reference. Default=None.
+  --filters [<key=value> ...]
+                        Filter key and value pairs. Please use 'cinder list-
+                        filters' to check enabled filters from server. Use
+                        'key~=value' for inexact filtering if the key
+                        supports. Default=None. (Supported by API version 3.33
+                        and later)
+  --with-count [<True|False>]
+                        Show total number of backup entities. This is useful
+                        when pagination is applied in the request. (Supported
+                        by API version 3.45 and later)

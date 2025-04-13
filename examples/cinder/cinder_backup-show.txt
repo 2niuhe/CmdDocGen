@@ -1,0 +1,8 @@
+# Command: cinder help backup-show
+
+usage: cinder backup-show <backup>
+
+Shows backup details.
+
+Positional Arguments:
+  <backup>  Name or ID of backup.

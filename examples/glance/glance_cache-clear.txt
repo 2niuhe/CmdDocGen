@@ -1,0 +1,9 @@
+# Command: glance help cache-clear
+
+usage: glance cache-clear [--target {both,cache,queue}]
+
+Clear all images from cache, queue or both
+
+Options:
+  --target {both,cache,queue}
+                        Specify which target you want to clear

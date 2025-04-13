@@ -1,0 +1,5 @@
+# Command: cinder help group-type-default
+
+usage: cinder group-type-default
+
+List the default group type.

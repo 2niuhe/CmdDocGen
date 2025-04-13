@@ -1,0 +1,39 @@
+# Command: cinder help attachment-list
+
+usage: cinder attachment-list [--all-tenants [<0|1>]]
+                              [--volume-id <volume-id>] [--status <status>]
+                              [--marker <marker>] [--limit <limit>]
+                              [--sort <key>[:<direction>]]
+                              [--tenant [<tenant>]]
+                              [--filters [<key=value> ...]]
+
+Lists all attachments.
+
+Options:
+  --all-tenants [<0|1>]
+                        Shows details for all tenants. Admin only.
+  --volume-id <volume-id>
+                        Filters results by a volume ID. Default=None. This
+                        option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead.
+  --status <status>     Filters results by a status. Default=None. This option
+                        is deprecated and will be removed in newer release.
+                        Please use '--filters' option which is introduced
+                        since 3.33 instead.
+  --marker <marker>     Begin returning attachments that appear later in
+                        attachment list than that represented by this id.
+                        Default=None.
+  --limit <limit>       Maximum number of attachments to return. Default=None.
+  --sort <key>[:<direction>]
+                        Comma-separated list of sort keys and directions in
+                        the form of <key>[:<asc|desc>]. Valid keys: id,
+                        status, size, availability_zone, name, bootable,
+                        created_at, reference. Default=None.
+  --tenant [<tenant>]   Display information from single tenant (Admin only).
+  --filters [<key=value> ...]
+                        Filter key and value pairs. Please use 'cinder list-
+                        filters' to check enabled filters from server. Use
+                        'key~=value' for inexact filtering if the key
+                        supports. Default=None. (Supported by API version 3.33
+                        and later)

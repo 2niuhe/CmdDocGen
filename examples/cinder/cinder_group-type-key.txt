@@ -1,0 +1,11 @@
+# Command: cinder help group-type-key
+
+usage: cinder group-type-key <gtype> <action> <key=value> [<key=value> ...]
+
+Sets or unsets group_spec for a group type.
+
+Positional Arguments:
+  <gtype>      Name or ID of group type.
+  <action>     The action. Valid values are "set" or "unset."
+  <key=value>  The group specs key and value pair to set or unset. For unset,
+               specify only the key.

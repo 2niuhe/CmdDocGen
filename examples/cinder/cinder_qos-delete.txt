@@ -1,0 +1,13 @@
+# Command: cinder help qos-delete
+
+usage: cinder qos-delete [--force [<True|False>]] <qos_specs>
+
+Deletes a specified qos specs.
+
+Positional Arguments:
+  <qos_specs>           ID of QoS specifications to delete.
+
+Options:
+  --force [<True|False>]
+                        Enables or disables deletion of in-use QoS
+                        specifications. Default=False.

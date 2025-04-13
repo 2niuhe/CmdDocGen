@@ -1,0 +1,16 @@
+# Command: glance help md-property-update
+
+usage: glance md-property-update [--name <NAME>] [--title <TITLE>]
+                                 [--schema <SCHEMA>]
+                                 <NAMESPACE> <PROPERTY>
+
+Update metadata definitions property inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>        Name of namespace the property belongs.
+  <PROPERTY>         Name of a property.
+
+Options:
+  --name <NAME>      New name of a property.
+  --title <TITLE>    Property name displayed to the user.
+  --schema <SCHEMA>  Valid JSON schema of a property.

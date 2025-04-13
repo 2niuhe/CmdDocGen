@@ -1,0 +1,12 @@
+# Command: glance help md-tag-update
+
+usage: glance md-tag-update --name <NAME> <NAMESPACE> <TAG>
+
+Rename a metadata definitions tag inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>    Name of the namespace to which the tag belongs.
+  <TAG>          Name of the old tag.
+
+Required arguments:
+  --name <NAME>  New name of the new tag.

@@ -1,0 +1,12 @@
+# Command: cinder help backup-reset-state
+
+usage: cinder backup-reset-state [--state <state>] <backup> [<backup> ...]
+
+Explicitly updates the backup state.
+
+Positional Arguments:
+  <backup>         Name or ID of the backup to modify.
+
+Options:
+  --state <state>  The state to assign to the backup. Valid values are
+                   "available", "error". Default=available.

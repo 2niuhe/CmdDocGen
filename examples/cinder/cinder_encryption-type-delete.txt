@@ -1,0 +1,8 @@
+# Command: cinder help encryption-type-delete
+
+usage: cinder encryption-type-delete <volume_type>
+
+Deletes encryption type for a volume type. Admin only.
+
+Positional Arguments:
+  <volume_type>  Name or ID of volume type.

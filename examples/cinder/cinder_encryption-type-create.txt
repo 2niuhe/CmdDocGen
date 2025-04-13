@@ -1,0 +1,24 @@
+# Command: cinder help encryption-type-create
+
+usage: cinder encryption-type-create [--cipher <cipher>]
+                                     [--key-size <key_size>]
+                                     [--control-location <control_location>]
+                                     <volume_type> <provider>
+
+Creates encryption type for a volume type. Admin only.
+
+Positional Arguments:
+  <volume_type>         Name or ID of volume type.
+  <provider>            The encryption provider format. For example, "luks" or
+                        "plain".
+
+Options:
+  --cipher <cipher>     The encryption algorithm or mode. For example, aes-
+                        xts-plain64. Default=None.
+  --key-size <key_size>
+                        Size of encryption key, in bits. For example, 128 or
+                        256. Default=None.
+  --control-location <control_location>
+                        Notional service where encryption is performed. Valid
+                        values are "front-end" or "back-end". For example,
+                        front-end=Nova. Default is "front-end".

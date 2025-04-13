@@ -1,0 +1,18 @@
+# Command: glance help md-namespace-show
+
+usage: glance md-namespace-show [--resource-type <RESOURCE_TYPE>]
+                                [--max-column-width <integer>]
+                                <NAMESPACE>
+
+Describe a specific metadata definitions namespace. Lists also the namespace
+properties, objects and resource type associations.
+
+Positional arguments:
+  <NAMESPACE>           Name of namespace to describe.
+
+Options:
+  --resource-type <RESOURCE_TYPE>
+                        Applies prefix of given resource type associated to a
+                        namespace to all properties of a namespace.
+  --max-column-width <integer>
+                        The max column width of the printed table.

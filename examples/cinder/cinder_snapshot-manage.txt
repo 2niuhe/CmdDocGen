@@ -1,0 +1,23 @@
+# Command: cinder help snapshot-manage
+
+usage: cinder snapshot-manage [--id-type <id-type>] [--name <name>]
+                              [--description <description>]
+                              [--metadata [<key=value> ...]]
+                              <volume> <identifier>
+
+Manage an existing snapshot.
+
+Positional Arguments:
+  <volume>              Cinder volume that already exists in the volume
+                        backend.
+  <identifier>          Name or other identifier for existing snapshot. This
+                        is backend specific.
+
+Options:
+  --id-type <id-type>   Type of backend device identifier provided, typically
+                        source-name or source-id (Default=source-name).
+  --name <name>         Snapshot name (Default=None).
+  --description <description>
+                        Snapshot description (Default=None).
+  --metadata [<key=value> ...]
+                        Metadata key=value pairs (Default=None).

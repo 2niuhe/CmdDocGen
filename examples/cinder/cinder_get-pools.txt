@@ -1,0 +1,13 @@
+# Command: cinder help get-pools
+
+usage: cinder get-pools [--detail] [--filters [<key=value> ...]]
+
+Show pool information for backends. Admin only.
+
+Options:
+  --detail              Show detailed information about pools.
+  --filters [<key=value> ...]
+                        Filter key and value pairs. Please use 'cinder list-
+                        filters' to check enabled filters from server,
+                        Default=None. (Supported by API version 3.33 and
+                        later)

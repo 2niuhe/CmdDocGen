@@ -1,0 +1,8 @@
+# Command: cinder help qos-get-association
+
+usage: cinder qos-get-association <qos_specs>
+
+Lists all associations for specified qos specs.
+
+Positional Arguments:
+  <qos_specs>  ID of QoS specifications.

@@ -1,0 +1,9 @@
+# Command: cinder help summary
+
+usage: cinder summary [--all-tenants [<0|1>]]
+
+Get volumes summary.
+
+Options:
+  --all-tenants [<0|1>]
+                        Shows details for all tenants. Admin only.

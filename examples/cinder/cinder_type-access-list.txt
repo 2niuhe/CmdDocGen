@@ -1,0 +1,9 @@
+# Command: cinder help type-access-list
+
+usage: cinder type-access-list --volume-type <volume_type>
+
+Print access information about the given volume type.
+
+Options:
+  --volume-type <volume_type>
+                        Filter results by volume type name or ID.

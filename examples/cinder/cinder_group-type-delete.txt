@@ -1,0 +1,8 @@
+# Command: cinder help group-type-delete
+
+usage: cinder group-type-delete <group_type> [<group_type> ...]
+
+Deletes group type or types.
+
+Positional Arguments:
+  <group_type>  Name or ID of group type or types to delete.

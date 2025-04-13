@@ -1,0 +1,10 @@
+# Command: glance help task-create
+
+usage: glance task-create [--type <TYPE>] [--input <STRING>]
+
+Create a new task.
+
+Options:
+  --type <TYPE>     Type of Task. Please refer to Glance schema or
+                    documentation to see which tasks are supported.
+  --input <STRING>  Parameters of the task to be launched

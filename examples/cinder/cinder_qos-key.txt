@@ -1,0 +1,11 @@
+# Command: cinder help qos-key
+
+usage: cinder qos-key <qos_specs> <action> key=value [key=value ...]
+
+Sets or unsets specifications for a qos spec.
+
+Positional Arguments:
+  <qos_specs>  ID of QoS specifications.
+  <action>     The action. Valid values are "set" or "unset."
+  key=value    Metadata key and value pair to set or unset. For unset, specify
+               only the key.

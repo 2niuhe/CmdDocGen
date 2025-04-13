@@ -1,0 +1,8 @@
+# Command: cinder help message-show
+
+usage: cinder message-show <message>
+
+Shows message details.
+
+Positional Arguments:
+  <message>  ID of message.

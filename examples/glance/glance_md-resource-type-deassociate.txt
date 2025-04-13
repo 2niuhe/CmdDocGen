@@ -1,0 +1,9 @@
+# Command: glance help md-resource-type-deassociate
+
+usage: glance md-resource-type-deassociate <NAMESPACE> <RESOURCE_TYPE>
+
+Deassociate resource type with a metadata definitions namespace.
+
+Positional arguments:
+  <NAMESPACE>      Name of namespace.
+  <RESOURCE_TYPE>  Name of resource type.

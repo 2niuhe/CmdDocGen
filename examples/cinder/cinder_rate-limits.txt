@@ -1,0 +1,8 @@
+# Command: cinder help rate-limits
+
+usage: cinder rate-limits [<tenant_id>]
+
+Lists rate limits for a user.
+
+Positional Arguments:
+  <tenant_id>  Display information for a single tenant (Admin only).

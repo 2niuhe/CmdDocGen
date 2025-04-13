@@ -1,0 +1,11 @@
+# Command: glance help member-create
+
+usage: glance member-create <IMAGE_ID> <MEMBER_ID>
+
+Create member for a given image.
+
+Positional arguments:
+  <IMAGE_ID>   Image with which to create member.
+  <MEMBER_ID>  Tenant to add as member.
+
+Run `glance --os-image-api-version 1 help member-create` for v1 help

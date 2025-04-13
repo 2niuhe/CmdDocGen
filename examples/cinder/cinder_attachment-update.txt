@@ -1,0 +1,28 @@
+# Command: cinder help attachment-update
+
+usage: cinder attachment-update [--initiator <initiator>] [--ip <ip>]
+                                [--host <host>] [--platform <platform>]
+                                [--ostype <ostype>] [--multipath <multipath>]
+                                [--mountpoint <mountpoint>]
+                                <attachment>
+
+Update an attachment for a cinder volume. This call is designed to be more of
+an attachment completion than anything else. It expects the value of a
+connector object to notify the driver that the volume is going to be connected
+and where it's being connected to.
+
+Positional Arguments:
+  <attachment>          ID of attachment.
+
+Options:
+  --initiator <initiator>
+                        iqn of the initiator attaching to. Default=None.
+  --ip <ip>             ip of the system attaching to. Default=None.
+  --host <host>         Name of the host attaching to. Default=None.
+  --platform <platform>
+                        Platform type. Default=x86_64.
+  --ostype <ostype>     OS type. Default=linux2.
+  --multipath <multipath>
+                        Use multipath. Default=False.
+  --mountpoint <mountpoint>
+                        Mountpoint volume will be attached at. Default=None.

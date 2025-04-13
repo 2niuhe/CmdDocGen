@@ -1,0 +1,15 @@
+# Command: cinder help group-delete
+
+usage: cinder group-delete [--delete-volumes] <group> [<group> ...]
+
+Removes one or more groups.
+
+Positional Arguments:
+  <group>           Name or ID of one or more groups to be deleted.
+
+Options:
+  --delete-volumes  Allows or disallows groups to be deleted if they are not
+                    empty. If the group is empty, it can be deleted without
+                    the delete-volumes flag. If the group is not empty, the
+                    delete-volumes flag is required for it to be deleted. If
+                    True, all volumes in the group will also be deleted.

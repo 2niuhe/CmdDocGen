@@ -1,0 +1,8 @@
+# Command: glance help md-namespace-resource-type-list
+
+usage: glance md-namespace-resource-type-list <NAMESPACE>
+
+List resource types associated to specific namespace.
+
+Positional arguments:
+  <NAMESPACE>  Name of namespace.

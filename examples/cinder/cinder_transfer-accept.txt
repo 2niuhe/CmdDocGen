@@ -1,0 +1,9 @@
+# Command: cinder help transfer-accept
+
+usage: cinder transfer-accept <transfer> <auth_key>
+
+Accepts a volume transfer.
+
+Positional Arguments:
+  <transfer>  ID of transfer to accept.
+  <auth_key>  Authentication key of transfer to accept.

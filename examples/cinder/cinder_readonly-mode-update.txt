@@ -1,0 +1,11 @@
+# Command: cinder help readonly-mode-update
+
+usage: cinder readonly-mode-update <volume> <True|true|False|false>
+
+Updates volume read-only access-mode flag.
+
+Positional Arguments:
+  <volume>              ID of volume to update.
+  <True|true|False|false>
+                        Enables or disables update of volume to read-only
+                        access mode.

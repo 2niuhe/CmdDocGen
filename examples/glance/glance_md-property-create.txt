@@ -1,0 +1,16 @@
+# Command: glance help md-property-create
+
+usage: glance md-property-create --name <NAME> --title <TITLE> --schema
+                                 <SCHEMA> --type <TYPE>
+                                 <NAMESPACE>
+
+Create a new metadata definitions property inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>        Name of namespace the property will belong.
+
+Required arguments:
+  --name <NAME>      Internal name of a property.
+  --title <TITLE>    Property name displayed to the user.
+  --schema <SCHEMA>  Valid JSON schema of a property.
+  --type <TYPE>      Type of the property

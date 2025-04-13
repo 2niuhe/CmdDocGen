@@ -1,0 +1,8 @@
+# Command: cinder help group-enable-replication
+
+usage: cinder group-enable-replication <group>
+
+Enables replication for group.
+
+Positional Arguments:
+  <group>  Name or ID of the group.

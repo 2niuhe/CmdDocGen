@@ -1,0 +1,14 @@
+# Command: cinder help retype
+
+usage: cinder retype [--migration-policy <never|on-demand>]
+                     <volume> <volume-type>
+
+Changes the volume type for a volume.
+
+Positional Arguments:
+  <volume>              Name or ID of volume for which to modify type.
+  <volume-type>         New volume type.
+
+Options:
+  --migration-policy <never|on-demand>
+                        Migration policy during retype of volume.

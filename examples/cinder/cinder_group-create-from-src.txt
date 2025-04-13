@@ -1,0 +1,17 @@
+# Command: cinder help group-create-from-src
+
+usage: cinder group-create-from-src [--group-snapshot <group-snapshot>]
+                                    [--source-group <source-group>]
+                                    [--name <name>]
+                                    [--description <description>]
+
+Creates a group from a group snapshot or a source group.
+
+Options:
+  --group-snapshot <group-snapshot>
+                        Name or ID of a group snapshot. Default=None.
+  --source-group <source-group>
+                        Name or ID of a source group. Default=None.
+  --name <name>         Name of a group. Default=None.
+  --description <description>
+                        Description of a group. Default=None.

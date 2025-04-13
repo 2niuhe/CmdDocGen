@@ -1,0 +1,5 @@
+# Command: cinder help group-specs-list
+
+usage: cinder group-specs-list
+
+Lists current group types and specs.

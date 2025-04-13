@@ -1,0 +1,77 @@
+# Command: cinder help list
+
+usage: cinder list [--group_id <group_id>] [--all-tenants [<0|1>]]
+                   [--name <name>] [--status <status>]
+                   [--bootable [<True|true|False|false>]]
+                   [--migration_status <migration_status>]
+                   [--metadata [<key=value> ...]]
+                   [--image_metadata [<key=value> ...]] [--marker <marker>]
+                   [--limit <limit>] [--fields <fields>]
+                   [--sort <key>[:<direction>]] [--tenant [<tenant>]]
+                   [--filters [<key=value> ...]] [--with-count [<True|False>]]
+
+Lists all volumes.
+
+Options:
+  --group_id <group_id>
+                        Filters results by a group_id. Default=None.This
+                        option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead. (Supported by API
+                        version 3.10 and later)
+  --all-tenants [<0|1>]
+                        Shows details for all tenants. Admin only.
+  --name <name>         Filters results by a name. Default=None. This option
+                        is deprecated and will be removed in newer release.
+                        Please use '--filters' option which is introduced
+                        since 3.33 instead.
+  --status <status>     Filters results by a status. Default=None. This option
+                        is deprecated and will be removed in newer release.
+                        Please use '--filters' option which is introduced
+                        since 3.33 instead.
+  --bootable [<True|true|False|false>]
+                        Filters results by bootable status. Default=None. This
+                        option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead.
+  --migration_status <migration_status>
+                        Filters results by a migration status. Default=None.
+                        Admin only. This option is deprecated and will be
+                        removed in newer release. Please use '--filters'
+                        option which is introduced since 3.33 instead.
+  --metadata [<key=value> ...]
+                        Filters results by a metadata key and value pair.
+                        Default=None. This option is deprecated and will be
+                        removed in newer release. Please use '--filters'
+                        option which is introduced since 3.33 instead.
+  --image_metadata [<key=value> ...]
+                        Filters results by a image metadata key and value
+                        pair. Require volume api version >=3.4.
+                        Default=None.This option is deprecated and will be
+                        removed in newer release. Please use '--filters'
+                        option which is introduced since 3.33 instead.
+                        (Supported by API version 3.4 and later)
+  --marker <marker>     Begin returning volumes that appear later in the
+                        volume list than that represented by this volume id.
+                        Default=None.
+  --limit <limit>       Maximum number of volumes to return. Default=None.
+  --fields <fields>     Comma-separated list of fields to display. Use the
+                        show command to see which fields are available.
+                        Unavailable/non-existent fields will be ignored.
+                        Default=None.
+  --sort <key>[:<direction>]
+                        Comma-separated list of sort keys and directions in
+                        the form of <key>[:<asc|desc>]. Valid keys: id,
+                        status, size, availability_zone, name, bootable,
+                        created_at, reference. Default=None.
+  --tenant [<tenant>]   Display information from single tenant (Admin only).
+  --filters [<key=value> ...]
+                        Filter key and value pairs. Please use 'cinder list-
+                        filters' to check enabled filters from server. Use
+                        'key~=value' for inexact filtering if the key
+                        supports. Default=None. (Supported by API version 3.33
+                        and later)
+  --with-count [<True|False>]
+                        Show total number of volume entities. This is useful
+                        when pagination is applied in the request. (Supported
+                        by API version 3.45 and later)

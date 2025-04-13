@@ -1,0 +1,9 @@
+# Command: cinder help service-enable
+
+usage: cinder service-enable <hostname> <binary>
+
+Enables the service.
+
+Positional Arguments:
+  <hostname>  Host name.
+  <binary>    Service binary.

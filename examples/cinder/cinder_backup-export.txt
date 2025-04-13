@@ -1,0 +1,8 @@
+# Command: cinder help backup-export
+
+usage: cinder backup-export <backup>
+
+Export backup metadata record.
+
+Positional Arguments:
+  <backup>  ID of the backup to export.

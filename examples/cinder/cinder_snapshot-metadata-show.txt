@@ -1,0 +1,8 @@
+# Command: cinder help snapshot-metadata-show
+
+usage: cinder snapshot-metadata-show <snapshot>
+
+Shows snapshot metadata.
+
+Positional Arguments:
+  <snapshot>  ID of snapshot.

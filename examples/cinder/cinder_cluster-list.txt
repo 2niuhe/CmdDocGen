@@ -1,0 +1,25 @@
+# Command: cinder help cluster-list
+
+usage: cinder cluster-list [--name <name>] [--binary <binary>]
+                           [--is-up <True|true|False|false>]
+                           [--disabled <True|true|False|false>]
+                           [--num-hosts <num-hosts>]
+                           [--num-down-hosts <num-down-hosts>] [--detailed]
+
+Lists clustered services with optional filtering.
+
+Options:
+  --name <name>         Filter by cluster name, without backend will list all
+                        clustered services from the same cluster.
+                        Default=None.
+  --binary <binary>     Cluster binary. Default=None.
+  --is-up <True|true|False|false>
+                        Filter by up/down status. Default=None.
+  --disabled <True|true|False|false>
+                        Filter by disabled status. Default=None.
+  --num-hosts <num-hosts>
+                        Filter by number of hosts in the cluster.
+  --num-down-hosts <num-down-hosts>
+                        Filter by number of hosts that are down.
+  --detailed            Get detailed clustered service information
+                        (Default=False).

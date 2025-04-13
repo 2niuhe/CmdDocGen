@@ -1,0 +1,16 @@
+# Command: cinder help reimage
+
+usage: cinder reimage [--reimage-reserved <True|False>] <volume> <image-id>
+
+Rebuilds a volume, overwriting all content with the specified image
+
+Positional Arguments:
+  <volume>              Name or ID of volume to reimage
+  <image-id>            The image id of the image that will be used to reimage
+                        the volume.
+
+Options:
+  --reimage-reserved <True|False>
+                        Enables or disables reimage for a volume that is in
+                        reserved state otherwise only volumes in "available"
+                        or "error" status may be re-imaged. Default=False.

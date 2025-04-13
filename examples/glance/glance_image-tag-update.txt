@@ -1,0 +1,9 @@
+# Command: glance help image-tag-update
+
+usage: glance image-tag-update <IMAGE_ID> <TAG_VALUE>
+
+Update an image with the given tag.
+
+Positional arguments:
+  <IMAGE_ID>   Image to be updated with the given tag.
+  <TAG_VALUE>  Value of the tag.

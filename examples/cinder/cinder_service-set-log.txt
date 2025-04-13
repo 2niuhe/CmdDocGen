@@ -1,0 +1,17 @@
+# Command: cinder help service-set-log
+
+usage: cinder service-set-log
+                              [--binary {,*,cinder-api,cinder-volume,cinder-scheduler,cinder-backup}]
+                              [--server SERVER] [--prefix PREFIX]
+                              <log-level>
+
+Sets the service log level.
+
+Positional Arguments:
+  <log-level>           Desired log level.
+
+Options:
+  --binary {,*,cinder-api,cinder-volume,cinder-scheduler,cinder-backup}
+                        Binary to change.
+  --server SERVER       Host or cluster value for service.
+  --prefix PREFIX       Prefix for the log. ie: "cinder.volume.drivers.".

@@ -1,0 +1,8 @@
+# Command: cinder help freeze-host
+
+usage: cinder freeze-host <hostname>
+
+Freeze and disable the specified cinder-volume host.
+
+Positional Arguments:
+  <hostname>  Host name.

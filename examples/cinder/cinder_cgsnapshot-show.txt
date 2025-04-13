@@ -1,0 +1,8 @@
+# Command: cinder help cgsnapshot-show
+
+usage: cinder cgsnapshot-show <cgsnapshot>
+
+Shows cgsnapshot details.
+
+Positional Arguments:
+  <cgsnapshot>  Name or ID of cgsnapshot.

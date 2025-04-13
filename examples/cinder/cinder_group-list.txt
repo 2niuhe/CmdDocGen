@@ -1,0 +1,15 @@
+# Command: cinder help group-list
+
+usage: cinder group-list [--all-tenants [<0|1>]] [--filters [<key=value> ...]]
+
+Lists all groups.
+
+Options:
+  --all-tenants [<0|1>]
+                        Shows details for all tenants. Admin only.
+  --filters [<key=value> ...]
+                        Filter key and value pairs. Please use 'cinder list-
+                        filters' to check enabled filters from server. Use
+                        'key~=value' for inexact filtering if the key
+                        supports. Default=None. (Supported by API version 3.33
+                        and later)

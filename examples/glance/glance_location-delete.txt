@@ -1,0 +1,11 @@
+# Command: glance help location-delete
+
+usage: glance location-delete --url <URL> <IMAGE_ID>
+
+Remove locations (and related metadata) from an image.
+
+Positional arguments:
+  <IMAGE_ID>   ID of image whose locations are to be removed.
+
+Required arguments:
+  --url <URL>  URL of location to remove. May be used multiple times.

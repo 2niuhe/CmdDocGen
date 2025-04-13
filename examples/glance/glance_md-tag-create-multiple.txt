@@ -1,0 +1,19 @@
+# Command: glance help md-tag-create-multiple
+
+usage: glance md-tag-create-multiple --names <NAMES> [--delim <DELIM>]
+                                     [--append]
+                                     <NAMESPACE>
+
+Create new metadata definitions tags inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>      Name of the namespace the tags will belong to.
+
+Options:
+  --delim <DELIM>  The delimiter used to separate the names (if none is
+                   provided then the default is a comma).
+  --append         Append the new tags to the existing ones instead
+                   ofoverwriting them
+
+Required arguments:
+  --names <NAMES>  A comma separated list of tag names.

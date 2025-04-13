@@ -1,0 +1,52 @@
+# Command: cinder help message-list
+
+usage: cinder message-list [--marker <marker>] [--limit <limit>]
+                           [--sort <key>[:<direction>]]
+                           [--resource_uuid <resource_uuid>]
+                           [--resource_type <type>] [--event_id <id>]
+                           [--request_id <request_id>] [--level <level>]
+                           [--filters [<key=value> ...]]
+
+Lists all messages.
+
+Options:
+  --marker <marker>     Begin returning message that appear later in the
+                        message list than that represented by this id.
+                        Default=None. (Supported by API version 3.5 and later)
+  --limit <limit>       Maximum number of messages to return. Default=None.
+                        (Supported by API version 3.5 and later)
+  --sort <key>[:<direction>]
+                        Comma-separated list of sort keys and directions in
+                        the form of <key>[:<asc|desc>]. Valid keys: id,
+                        status, size, availability_zone, name, bootable,
+                        created_at, reference. Default=None. (Supported by API
+                        version 3.5 and later)
+  --resource_uuid <resource_uuid>
+                        Filters results by a resource uuid. Default=None. This
+                        option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead.
+  --resource_type <type>
+                        Filters results by a resource type. Default=None. This
+                        option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead.
+  --event_id <id>       Filters results by event id. Default=None. This option
+                        is deprecated and will be removed in newer release.
+                        Please use '--filters' option which is introduced
+                        since 3.33 instead.
+  --request_id <request_id>
+                        Filters results by request id. Default=None. This
+                        option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead.
+  --level <level>       Filters results by the message level. Default=None.
+                        This option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead.
+  --filters [<key=value> ...]
+                        Filter key and value pairs. Please use 'cinder list-
+                        filters' to check enabled filters from server. Use
+                        'key~=value' for inexact filtering if the key
+                        supports. Default=None. (Supported by API version 3.33
+                        and later)

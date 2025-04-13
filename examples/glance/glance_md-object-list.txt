@@ -1,0 +1,8 @@
+# Command: glance help md-object-list
+
+usage: glance md-object-list <NAMESPACE>
+
+List metadata definitions objects inside a specific namespace.
+
+Positional arguments:
+  <NAMESPACE>  Name of namespace.

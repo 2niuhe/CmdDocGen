@@ -1,0 +1,8 @@
+# Command: cinder help group-type-show
+
+usage: cinder group-type-show <group_type>
+
+Show group type details.
+
+Positional Arguments:
+  <group_type>  Name or ID of the group type.

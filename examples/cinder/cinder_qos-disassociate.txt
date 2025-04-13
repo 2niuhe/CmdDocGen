@@ -1,0 +1,10 @@
+# Command: cinder help qos-disassociate
+
+usage: cinder qos-disassociate <qos_specs> <volume_type_id>
+
+Disassociates qos specs from specified volume type.
+
+Positional Arguments:
+  <qos_specs>       ID of QoS specifications.
+  <volume_type_id>  ID of volume type with which to associate QoS
+                    specifications.

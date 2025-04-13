@@ -1,0 +1,11 @@
+# Command: glance help member-list
+
+usage: glance member-list --image-id <IMAGE_ID>
+
+Describe sharing permissions by image.
+
+Required arguments:
+  --image-id <IMAGE_ID>
+                        Image to display members of.
+
+Run `glance --os-image-api-version 1 help member-list` for v1 help

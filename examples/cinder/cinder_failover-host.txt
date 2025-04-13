@@ -1,0 +1,12 @@
+# Command: cinder help failover-host
+
+usage: cinder failover-host [--backend_id <backend-id>] <hostname>
+
+Failover a replicating cinder-volume host.
+
+Positional Arguments:
+  <hostname>            Host name.
+
+Options:
+  --backend_id <backend-id>
+                        ID of backend to failover to (Default=None)

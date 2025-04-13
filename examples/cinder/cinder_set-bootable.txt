@@ -1,0 +1,10 @@
+# Command: cinder help set-bootable
+
+usage: cinder set-bootable <volume> <True|true|False|false>
+
+Update bootable status of a volume.
+
+Positional Arguments:
+  <volume>              ID of the volume to update.
+  <True|true|False|false>
+                        Flag to indicate whether volume is bootable.

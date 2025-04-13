@@ -1,0 +1,12 @@
+# Command: cinder help service-disable
+
+usage: cinder service-disable [--reason <reason>] <hostname> <binary>
+
+Disables the service.
+
+Positional Arguments:
+  <hostname>         Host name.
+  <binary>           Service binary.
+
+Options:
+  --reason <reason>  Reason for disabling service.

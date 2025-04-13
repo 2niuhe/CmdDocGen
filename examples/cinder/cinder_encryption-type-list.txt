@@ -1,0 +1,5 @@
+# Command: cinder help encryption-type-list
+
+usage: cinder encryption-type-list
+
+Shows encryption type details for volume types. Admin only.

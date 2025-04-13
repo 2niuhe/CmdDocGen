@@ -1,0 +1,11 @@
+# Command: glance help stores-delete
+
+usage: glance stores-delete --store <STORE_ID> <IMAGE_ID>
+
+Delete image from specific store.
+
+Positional arguments:
+  <IMAGE_ID>          ID of image to update.
+
+Required arguments:
+  --store <STORE_ID>  Store to delete image from.

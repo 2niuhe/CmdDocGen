@@ -1,0 +1,12 @@
+# Command: cinder help snapshot-delete
+
+usage: cinder snapshot-delete [--force] <snapshot> [<snapshot> ...]
+
+Removes one or more snapshots.
+
+Positional Arguments:
+  <snapshot>  Name or ID of the snapshot(s) to delete.
+
+Options:
+  --force     Allows deleting snapshot of a volume when its status is other
+              than "available" or "error". Default=False.

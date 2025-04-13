@@ -1,0 +1,8 @@
+# Command: glance help stores-info
+
+usage: glance stores-info [--detail]
+
+Print available backends from Glance.
+
+Options:
+  --detail  Shows details of stores. Admin only.

@@ -1,0 +1,9 @@
+# Command: cinder help metadata-update-all
+
+usage: cinder metadata-update-all <volume> <key=value> [<key=value> ...]
+
+Updates volume metadata.
+
+Positional Arguments:
+  <volume>     ID of volume for which to update metadata.
+  <key=value>  Metadata key and value pair or pairs to update.

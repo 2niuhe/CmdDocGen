@@ -1,0 +1,8 @@
+# Command: cinder help quota-class-show
+
+usage: cinder quota-class-show <class>
+
+Lists quotas for a quota class.
+
+Positional Arguments:
+  <class>  Name of quota class for which to list quotas.

@@ -1,0 +1,8 @@
+# Command: cinder help snapshot-unmanage
+
+usage: cinder snapshot-unmanage <snapshot>
+
+Stop managing a snapshot.
+
+Positional Arguments:
+  <snapshot>  Name or ID of the snapshot to unmanage.

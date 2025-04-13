@@ -1,0 +1,9 @@
+# Command: cinder help cluster-show
+
+usage: cinder cluster-show [<binary>] <cluster-name>
+
+Show detailed information on a clustered service.
+
+Positional Arguments:
+  <binary>        Binary to filter by. Default: cinder-volume.
+  <cluster-name>  Name of the clustered service to show.

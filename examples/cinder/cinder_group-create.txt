@@ -1,0 +1,18 @@
+# Command: cinder help group-create
+
+usage: cinder group-create [--name <name>] [--description <description>]
+                           [--availability-zone <availability-zone>]
+                           <group-type> <volume-types>
+
+Creates a group.
+
+Positional Arguments:
+  <group-type>          Group type.
+  <volume-types>        Comma-separated list of volume types.
+
+Options:
+  --name <name>         Name of a group.
+  --description <description>
+                        Description of a group. Default=None.
+  --availability-zone <availability-zone>
+                        Availability zone for group. Default=None.

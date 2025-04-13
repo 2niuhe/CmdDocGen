@@ -1,0 +1,8 @@
+# Command: cinder help attachment-show
+
+usage: cinder attachment-show <attachment>
+
+Show detailed information for attachment.
+
+Positional Arguments:
+  <attachment>  ID of attachment.

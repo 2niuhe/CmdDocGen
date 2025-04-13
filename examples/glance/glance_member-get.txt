@@ -1,0 +1,9 @@
+# Command: glance help member-get
+
+usage: glance member-get <IMAGE_ID> <MEMBER_ID>
+
+Show details of an image member
+
+Positional arguments:
+  <IMAGE_ID>   Image from which to display member.
+  <MEMBER_ID>  Project to display.

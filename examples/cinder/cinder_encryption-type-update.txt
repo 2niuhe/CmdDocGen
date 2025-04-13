@@ -1,0 +1,26 @@
+# Command: cinder help encryption-type-update
+
+usage: cinder encryption-type-update [--provider <provider>]
+                                     [--cipher [<cipher>]]
+                                     [--key-size [<key-size>]]
+                                     [--control-location <control-location>]
+                                     <volume-type>
+
+Update encryption type information for a volume type (Admin Only).
+
+Positional Arguments:
+  <volume-type>         Name or ID of the volume type
+
+Options:
+  --provider <provider>
+                        Encryption provider format (e.g. 'luks' or 'plain').
+  --cipher [<cipher>]   Encryption algorithm/mode to use (e.g., aes-xts-
+                        plain64). Provide parameter without value to set to
+                        provider default.
+  --key-size [<key-size>]
+                        Size of the encryption key, in bits (e.g., 128, 256).
+                        Provide parameter without value to set to provider
+                        default.
+  --control-location <control-location>
+                        Notional service where encryption is performed (e.g.,
+                        front-end=Nova). Values: 'front-end', 'back-end'

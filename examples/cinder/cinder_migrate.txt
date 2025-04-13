@@ -1,0 +1,29 @@
+# Command: cinder help migrate
+
+usage: cinder migrate [--force-host-copy [<True|False>]]
+                      [--lock-volume [<True|False>]] [--cluster CLUSTER]
+                      <volume> [<host>]
+
+Migrates volume to a new host.
+
+Positional Arguments:
+  <volume>              ID of volume to migrate.
+  <host>                Destination host. Takes the form: host@backend-
+                        name#pool
+
+Options:
+  --force-host-copy [<True|False>]
+                        Enables or disables generic host-based force-
+                        migration, which bypasses driver optimizations.
+                        Default=False.
+  --lock-volume [<True|False>]
+                        Enables or disables the termination of volume
+                        migration caused by other commands. This option
+                        applies to the available volume. True means it locks
+                        the volume state and does not allow the migration to
+                        be aborted. The volume status will be in maintenance
+                        during the migration. False means it allows the volume
+                        migration to be aborted. The volume status is still in
+                        the original status. Default=False.
+  --cluster CLUSTER     Destination cluster. Takes the form: cluster@backend-
+                        name#pool (Supported by API version 3.16 and later)

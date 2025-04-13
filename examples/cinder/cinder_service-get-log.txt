@@ -1,0 +1,13 @@
+# Command: cinder help service-get-log
+
+usage: cinder service-get-log
+                              [--binary {,*,cinder-api,cinder-volume,cinder-scheduler,cinder-backup}]
+                              [--server SERVER] [--prefix PREFIX]
+
+Gets the service log level.
+
+Options:
+  --binary {,*,cinder-api,cinder-volume,cinder-scheduler,cinder-backup}
+                        Binary to query.
+  --server SERVER       Host or cluster value for service.
+  --prefix PREFIX       Prefix for the log. ie: "sqlalchemy.".

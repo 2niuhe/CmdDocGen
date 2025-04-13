@@ -1,0 +1,16 @@
+# Command: cinder help consisgroup-delete
+
+usage: cinder consisgroup-delete [--force]
+                                 <consistencygroup> [<consistencygroup> ...]
+
+Removes one or more consistency groups.
+
+Positional Arguments:
+  <consistencygroup>  Name or ID of one or more consistency groups to be
+                      deleted.
+
+Options:
+  --force             Allows or disallows consistency groups to be deleted. If
+                      the consistency group is empty, it can be deleted
+                      without the force flag. If the consistency group is not
+                      empty, the force flag is required for it to be deleted.

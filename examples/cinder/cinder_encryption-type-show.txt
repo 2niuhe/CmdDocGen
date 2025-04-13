@@ -1,0 +1,8 @@
+# Command: cinder help encryption-type-show
+
+usage: cinder encryption-type-show <volume_type>
+
+Shows encryption type details for a volume type. Admin only.
+
+Positional Arguments:
+  <volume_type>  Name or ID of volume type.

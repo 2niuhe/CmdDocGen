@@ -1,0 +1,9 @@
+# Command: cinder help cluster-enable
+
+usage: cinder cluster-enable [<binary>] <cluster-name>
+
+Enables clustered services.
+
+Positional Arguments:
+  <binary>        Binary to filter by. Default: cinder-volume.
+  <cluster-name>  Name of the clustered services to update.

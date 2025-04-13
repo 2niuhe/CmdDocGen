@@ -1,0 +1,17 @@
+# Command: cinder help type-update
+
+usage: cinder type-update [--name <name>] [--description <description>]
+                          [--is-public <is-public>]
+                          <id>
+
+Updates volume type name, description, and/or is_public.
+
+Positional Arguments:
+  <id>                  ID of the volume type.
+
+Options:
+  --name <name>         Name of the volume type.
+  --description <description>
+                        Description of the volume type.
+  --is-public <is-public>
+                        Make type accessible to the public or not.

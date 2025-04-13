@@ -1,0 +1,55 @@
+# Command: cinder help snapshot-list
+
+usage: cinder snapshot-list [--all-tenants [<0|1>]] [--name <name>]
+                            [--status <status>] [--volume-id <volume-id>]
+                            [--marker <marker>] [--limit <limit>]
+                            [--sort <key>[:<direction>]] [--tenant [<tenant>]]
+                            [--metadata [<key=value> ...]]
+                            [--filters [<key=value> ...]]
+                            [--with-count [<True|False>]]
+
+Lists all snapshots.
+
+Options:
+  --all-tenants [<0|1>]
+                        Shows details for all tenants. Admin only.
+  --name <name>         Filters results by a name. Default=None. This option
+                        is deprecated and will be removed in newer release.
+                        Please use '--filters' option which is introduced
+                        since 3.33 instead.
+  --status <status>     Filters results by a status. Default=None. This option
+                        is deprecated and will be removed in newer release.
+                        Please use '--filters' option which is introduced
+                        since 3.33 instead.
+  --volume-id <volume-id>
+                        Filters results by a volume ID. Default=None. This
+                        option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead.
+  --marker <marker>     Begin returning snapshots that appear later in the
+                        snapshot list than that represented by this id.
+                        Default=None.
+  --limit <limit>       Maximum number of snapshots to return. Default=None.
+  --sort <key>[:<direction>]
+                        Comma-separated list of sort keys and directions in
+                        the form of <key>[:<asc|desc>]. Valid keys: id,
+                        status, size, availability_zone, name, bootable,
+                        created_at, reference. Default=None.
+  --tenant [<tenant>]   Display information from single tenant (Admin only).
+  --metadata [<key=value> ...]
+                        Filters results by a metadata key and value pair.
+                        Require volume api version >=3.22. Default=None. This
+                        option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead. (Supported by API
+                        version 3.22 and later)
+  --filters [<key=value> ...]
+                        Filter key and value pairs. Please use 'cinder list-
+                        filters' to check enabled filters from server. Use
+                        'key~=value' for inexact filtering if the key
+                        supports. Default=None. (Supported by API version 3.33
+                        and later)
+  --with-count [<True|False>]
+                        Show total number of snapshot entities. This is useful
+                        when pagination is applied in the request. (Supported
+                        by API version 3.45 and later)

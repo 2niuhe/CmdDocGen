@@ -1,0 +1,8 @@
+# Command: cinder help unmanage
+
+usage: cinder unmanage <volume>
+
+Stop managing a volume.
+
+Positional Arguments:
+  <volume>  Name or ID of the volume to unmanage.

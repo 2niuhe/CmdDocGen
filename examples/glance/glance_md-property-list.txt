@@ -1,0 +1,8 @@
+# Command: glance help md-property-list
+
+usage: glance md-property-list <NAMESPACE>
+
+List metadata definitions properties inside a specific namespace.
+
+Positional arguments:
+  <NAMESPACE>  Name of namespace.

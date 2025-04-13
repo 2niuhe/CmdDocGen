@@ -1,0 +1,12 @@
+# Command: glance help md-object-create
+
+usage: glance md-object-create --name <NAME> --schema <SCHEMA> <NAMESPACE>
+
+Create a new metadata definitions object inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>        Name of namespace the object will belong.
+
+Required arguments:
+  --name <NAME>      Internal name of an object.
+  --schema <SCHEMA>  Valid JSON schema of an object.

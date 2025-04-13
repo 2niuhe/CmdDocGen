@@ -1,0 +1,5 @@
+# Command: cinder help extra-specs-list
+
+usage: cinder extra-specs-list
+
+Lists current volume types and extra specs.

@@ -1,0 +1,11 @@
+# Command: glance help md-tag-create
+
+usage: glance md-tag-create --name <NAME> <NAMESPACE>
+
+Add a new metadata definitions tag inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>    Name of the namespace the tag will belong to.
+
+Required arguments:
+  --name <NAME>  The name of the new tag to add.

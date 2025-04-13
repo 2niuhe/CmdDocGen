@@ -1,0 +1,10 @@
+# Command: glance help image-delete
+
+usage: glance image-delete <IMAGE_ID> [<IMAGE_ID> ...]
+
+Delete specified image.
+
+Positional arguments:
+  <IMAGE_ID>  ID of image(s) to delete.
+
+Run `glance --os-image-api-version 1 help image-delete` for v1 help

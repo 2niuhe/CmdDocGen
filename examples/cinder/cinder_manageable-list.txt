@@ -1,0 +1,28 @@
+# Command: cinder help manageable-list
+
+usage: cinder manageable-list [--detailed <detailed>] [--marker <marker>]
+                              [--limit <limit>] [--offset <offset>]
+                              [--sort <key>[:<direction>]] [--cluster CLUSTER]
+                              [<host>]
+
+Lists all manageable volumes.
+
+Positional Arguments:
+  <host>                Cinder host on which to list manageable volumes; takes
+                        the form: host@backend-name#pool
+
+Options:
+  --detailed <detailed>
+                        Returned detailed information (default true).
+  --marker <marker>     Begin returning volumes that appear later in the
+                        volume list than that represented by this reference.
+                        This reference should be json like. Default=None.
+  --limit <limit>       Maximum number of volumes to return. Default=None.
+  --offset <offset>     Number of volumes to skip after marker. Default=None.
+  --sort <key>[:<direction>]
+                        Comma-separated list of sort keys and directions in
+                        the form of <key>[:<asc|desc>]. Valid keys: size,
+                        reference. Default=None.
+  --cluster CLUSTER     Cinder cluster on which to list manageable volumes;
+                        takes the form: cluster@backend-name#pool (Supported
+                        by API version 3.17 and later)

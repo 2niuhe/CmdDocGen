@@ -1,0 +1,8 @@
+# Command: glance help task-show
+
+usage: glance task-show <TASK_ID>
+
+Describe a specific task.
+
+Positional arguments:
+  <TASK_ID>  ID of task to describe.

@@ -1,0 +1,5 @@
+# Command: cinder help availability-zone-list
+
+usage: cinder availability-zone-list
+
+Lists all availability zones.

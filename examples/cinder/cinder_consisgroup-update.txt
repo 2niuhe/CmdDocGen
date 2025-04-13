@@ -1,0 +1,22 @@
+# Command: cinder help consisgroup-update
+
+usage: cinder consisgroup-update [--name <name>] [--description <description>]
+                                 [--add-volumes <uuid1,uuid2,......>]
+                                 [--remove-volumes <uuid3,uuid4,......>]
+                                 <consistencygroup>
+
+Updates a consistency group.
+
+Positional Arguments:
+  <consistencygroup>    Name or ID of a consistency group.
+
+Options:
+  --name <name>         New name for consistency group. Default=None.
+  --description <description>
+                        New description for consistency group. Default=None.
+  --add-volumes <uuid1,uuid2,......>
+                        UUID of one or more volumes to be added to the
+                        consistency group, separated by commas. Default=None.
+  --remove-volumes <uuid3,uuid4,......>
+                        UUID of one or more volumes to be removed from the
+                        consistency group, separated by commas. Default=None.

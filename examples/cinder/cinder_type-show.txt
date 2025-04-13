@@ -1,0 +1,8 @@
+# Command: cinder help type-show
+
+usage: cinder type-show <volume_type>
+
+Show volume type details.
+
+Positional Arguments:
+  <volume_type>  Name or ID of the volume type.

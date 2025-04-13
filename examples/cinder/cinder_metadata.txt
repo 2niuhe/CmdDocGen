@@ -1,0 +1,12 @@
+# Command: cinder help metadata
+
+usage: cinder metadata <volume> <action> <key=value> [<key=value> ...]
+
+Sets or deletes volume metadata.
+
+Positional Arguments:
+  <volume>     Name or ID of volume for which to update metadata.
+  <action>     The action. Valid values are "set" or "unset."
+  <key=value>  Metadata key and value pair to set or unset. For unset, specify
+               only the key(s): <key key> (Supported by API version 3.15 and
+               later)

@@ -1,0 +1,14 @@
+# Command: cinder help service-list
+
+usage: cinder service-list [--host <hostname>] [--binary <binary>]
+                           [--withreplication [<True|False>]]
+
+Lists all services. Filter by host and service binary.
+
+Options:
+  --host <hostname>     Host name. Default=None.
+  --binary <binary>     Service binary. Default=None.
+  --withreplication [<True|False>]
+                        Enables or disables display of Replication info for
+                        c-vol services. Default=False. (Supported by API
+                        version 3.7 and later)

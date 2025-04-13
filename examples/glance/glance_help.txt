@@ -1,0 +1,10 @@
+# Command: glance help help
+
+usage: glance help [<subcommand>]
+
+Display help about this program or one of its subcommands.
+
+Positional arguments:
+  <subcommand>  Display help for <subcommand>.
+
+Run `glance --os-image-api-version 1 help help` for v1 help

@@ -1,0 +1,28 @@
+# Command: glance help md-namespace-create
+
+usage: glance md-namespace-create
+                                  [--resource-type-associations <RESOURCE_TYPE_ASSOCIATIONS> [<RESOURCE_TYPE_ASSOCIATIONS> ...]]
+                                  [--owner <OWNER>] [--protected [True|False]]
+                                  [--visibility <VISIBILITY>]
+                                  [--description <DESCRIPTION>]
+                                  [--display-name <DISPLAY_NAME>]
+                                  <NAMESPACE>
+
+Create a new metadata definitions namespace.
+
+Positional arguments:
+  <NAMESPACE>           Name of the namespace.
+
+Options:
+  --resource-type-associations <RESOURCE_TYPE_ASSOCIATIONS> [<RESOURCE_TYPE_ASSOCIATIONS> ...]
+  --owner <OWNER>       Owner of the namespace.
+  --protected [True|False]
+                        If true, namespace will not be deletable.
+  --visibility <VISIBILITY>
+                        Scope of namespace accessibility. Valid values:
+                        public, private
+  --description <DESCRIPTION>
+                        Provides a user friendly description of the namespace.
+  --display-name <DISPLAY_NAME>
+                        The user friendly name for the namespace. Used by UI
+                        if available.

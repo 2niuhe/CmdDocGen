@@ -1,0 +1,9 @@
+# Command: cinder help extend
+
+usage: cinder extend <volume> <new_size>
+
+Attempts to extend size of an existing volume.
+
+Positional Arguments:
+  <volume>    Name or ID of volume to extend.
+  <new_size>  New size of volume, in GiBs.

@@ -1,0 +1,9 @@
+# Command: cinder help backup-import
+
+usage: cinder backup-import <backup_service> <backup_url>
+
+Import backup metadata record.
+
+Positional Arguments:
+  <backup_service>  Backup service to use for importing the backup.
+  <backup_url>      Backup URL for importing the backup metadata.

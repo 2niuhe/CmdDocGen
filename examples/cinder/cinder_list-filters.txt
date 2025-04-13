@@ -1,0 +1,11 @@
+# Command: cinder help list-filters
+
+usage: cinder list-filters [--resource <resource>]
+
+List enabled filters. Symbol '~' after filter key means it supports inexact
+filtering.
+
+Options:
+  --resource <resource>
+                        Show enabled filters for specified resource.
+                        Default=None.

@@ -1,0 +1,9 @@
+# Command: glance help md-object-delete
+
+usage: glance md-object-delete <NAMESPACE> <OBJECT>
+
+Delete a specific metadata definitions object inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>  Name of namespace the object belongs.
+  <OBJECT>     Name of an object.

@@ -1,0 +1,26 @@
+# Command: cinder help group-snapshot-list
+
+usage: cinder group-snapshot-list [--all-tenants [<0|1>]] [--status <status>]
+                                  [--group-id <group_id>]
+                                  [--filters [<key=value> ...]]
+
+Lists all group snapshots.
+
+Options:
+  --all-tenants [<0|1>]
+                        Shows details for all tenants. Admin only.
+  --status <status>     Filters results by a status. Default=None. This option
+                        is deprecated and will be removed in newer release.
+                        Please use '--filters' option which is introduced
+                        since 3.33 instead.
+  --group-id <group_id>
+                        Filters results by a group ID. Default=None. This
+                        option is deprecated and will be removed in newer
+                        release. Please use '--filters' option which is
+                        introduced since 3.33 instead.
+  --filters [<key=value> ...]
+                        Filter key and value pairs. Please use 'cinder list-
+                        filters' to check enabled filters from server. Use
+                        'key~=value' for inexact filtering if the key
+                        supports. Default=None. (Supported by API version 3.33
+                        and later)

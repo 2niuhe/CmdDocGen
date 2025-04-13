@@ -1,0 +1,8 @@
+# Command: cinder help show
+
+usage: cinder show <volume>
+
+Shows volume details.
+
+Positional Arguments:
+  <volume>  Name or ID of volume.

@@ -1,0 +1,17 @@
+# Command: cinder help consisgroup-create-from-src
+
+usage: cinder consisgroup-create-from-src [--cgsnapshot <cgsnapshot>]
+                                          [--source-cg <source-cg>]
+                                          [--name <name>]
+                                          [--description <description>]
+
+Creates a consistency group from a cgsnapshot or a source CG.
+
+Options:
+  --cgsnapshot <cgsnapshot>
+                        Name or ID of a cgsnapshot. Default=None.
+  --source-cg <source-cg>
+                        Name or ID of a source CG. Default=None.
+  --name <name>         Name of a consistency group. Default=None.
+  --description <description>
+                        Description of a consistency group. Default=None.

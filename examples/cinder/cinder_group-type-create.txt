@@ -1,0 +1,16 @@
+# Command: cinder help group-type-create
+
+usage: cinder group-type-create [--description <description>]
+                                [--is-public <is-public>]
+                                <name>
+
+Creates a group type.
+
+Positional Arguments:
+  <name>                Name of new group type.
+
+Options:
+  --description <description>
+                        Description of new group type.
+  --is-public <is-public>
+                        Make type accessible to the public (default true).

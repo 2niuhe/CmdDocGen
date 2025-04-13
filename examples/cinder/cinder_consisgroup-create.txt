@@ -1,0 +1,17 @@
+# Command: cinder help consisgroup-create
+
+usage: cinder consisgroup-create [--name <name>] [--description <description>]
+                                 [--availability-zone <availability-zone>]
+                                 <volume-types>
+
+Creates a consistency group.
+
+Positional Arguments:
+  <volume-types>        Volume types.
+
+Options:
+  --name <name>         Name of a consistency group.
+  --description <description>
+                        Description of a consistency group. Default=None.
+  --availability-zone <availability-zone>
+                        Availability zone for volume. Default=None.

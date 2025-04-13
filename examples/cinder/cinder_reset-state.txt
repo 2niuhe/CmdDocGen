@@ -1,0 +1,35 @@
+# Command: cinder help reset-state
+
+usage: cinder reset-state [--type <type>] [--state <state>]
+                          [--attach-status <attach-status>]
+                          [--reset-migration-status]
+                          <entity> [<entity> ...]
+
+Explicitly updates the entity state in the Cinder database. Being a database
+change only, this has no impact on the true state of the entity and may not
+match the actual state. This can render a entity unusable in the case of
+changing to the 'available' state.
+
+Positional Arguments:
+  <entity>              Name or ID of entity to update.
+
+Options:
+  --type <type>         Type of entity to update. Available resources are:
+                        'volume', 'snapshot', 'backup', 'group' (since 3.20)
+                        and 'group-snapshot' (since 3.19), Default=volume.
+  --state <state>       The state to assign to the entity. NOTE: This command
+                        simply changes the state of the entity in the database
+                        with no regard to actual status, exercise caution when
+                        using. Default=None, that means the state is
+                        unchanged.
+  --attach-status <attach-status>
+                        This is only used for a volume entity. The attach
+                        status to assign to the volume in the database, with
+                        no regard to the actual status. Valid values are
+                        "attached" and "detached". Default=None, that means
+                        the status is unchanged.
+  --reset-migration-status
+                        This is only used for a volume entity. Clears the
+                        migration status of the volume in the DataBase that
+                        indicates the volume is source or destination of
+                        volume migration, with no regard to the actual status.

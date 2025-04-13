@@ -1,0 +1,8 @@
+# Command: glance help cache-delete
+
+usage: glance cache-delete <IMAGE_ID> [<IMAGE_ID> ...]
+
+Delete image from cache/caching queue.
+
+Positional arguments:
+  <IMAGE_ID>  ID of image(s) to delete from cache/queue.

@@ -1,0 +1,11 @@
+# Command: cinder help group-list-replication-targets
+
+usage: cinder group-list-replication-targets <group>
+
+Lists replication targets for group. Example value for replication_targets: ..
+code-block: json { 'replication_targets': [{'backend_id': 'vendor-id-1',
+'unique_key': 'val1', ......}, {'backend_id': 'vendor-id-2', 'unique_key':
+'val2', ......}] }
+
+Positional Arguments:
+  <group>  Name or ID of the group.

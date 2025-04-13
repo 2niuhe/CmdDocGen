@@ -1,0 +1,8 @@
+# Command: cinder help attachment-delete
+
+usage: cinder attachment-delete <attachment> [<attachment> ...]
+
+Delete an attachment for a cinder volume.
+
+Positional Arguments:
+  <attachment>  ID of attachment or attachments to delete.

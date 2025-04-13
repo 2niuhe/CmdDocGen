@@ -1,0 +1,8 @@
+# Command: cinder help transfer-show
+
+usage: cinder transfer-show <transfer>
+
+Shows transfer details.
+
+Positional Arguments:
+  <transfer>  Name or ID of transfer to accept.

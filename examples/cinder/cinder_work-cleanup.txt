@@ -1,0 +1,31 @@
+# Command: cinder help work-cleanup
+
+usage: cinder work-cleanup [--cluster <cluster-name>] [--host <hostname>]
+                           [--binary <binary>]
+                           [--is-up <True|true|False|false>]
+                           [--disabled <True|true|False|false>]
+                           [--resource-id <resource-id>]
+                           [--resource-type <Volume|Snapshot>]
+                           [--service-id <service-id>]
+
+Request cleanup of services with optional filtering.
+
+Options:
+  --cluster <cluster-name>
+                        Cluster name. Default=None.
+  --host <hostname>     Service host name. Default=None.
+  --binary <binary>     Service binary. Default=None.
+  --is-up <True|true|False|false>
+                        Filter by up/down status, if set to true services need
+                        to be up, if set to false services need to be down.
+                        Default is None, which means up/down status is
+                        ignored.
+  --disabled <True|true|False|false>
+                        Filter by disabled status. Default=None.
+  --resource-id <resource-id>
+                        UUID of a resource to cleanup. Default=None.
+  --resource-type <Volume|Snapshot>
+                        Type of resource to cleanup.
+  --service-id <service-id>
+                        The service id field from the DB, not the uuid of the
+                        service. Default=None.

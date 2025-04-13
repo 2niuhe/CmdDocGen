@@ -1,0 +1,13 @@
+# Command: cinder help type-access-add
+
+usage: cinder type-access-add --volume-type <volume_type> --project-id
+                              <project_id>
+
+Adds volume type access for the given project.
+
+Options:
+  --volume-type <volume_type>
+                        Volume type name or ID to add access for the given
+                        project.
+  --project-id <project_id>
+                        Project ID to add volume type access for.

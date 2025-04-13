@@ -1,0 +1,69 @@
+# Command: glance help image-update
+
+usage: glance image-update [--architecture <ARCHITECTURE>]
+                           [--protected [True|False]] [--name <NAME>]
+                           [--instance-uuid <INSTANCE_UUID>]
+                           [--min-disk <MIN_DISK>] [--visibility <VISIBILITY>]
+                           [--kernel-id <KERNEL_ID>]
+                           [--os-version <OS_VERSION>]
+                           [--disk-format <DISK_FORMAT>]
+                           [--os-distro <OS_DISTRO>] [--owner <OWNER>]
+                           [--ramdisk-id <RAMDISK_ID>] [--min-ram <MIN_RAM>]
+                           [--container-format <CONTAINER_FORMAT>]
+                           [--hidden [True|False]] [--property <key=value>]
+                           [--remove-property key]
+                           <IMAGE_ID>
+
+Update an existing image.
+
+Positional arguments:
+  <IMAGE_ID>            ID of image to update.
+
+Options:
+  --architecture <ARCHITECTURE>
+                        Operating system architecture as specified in
+                        https://docs.openstack.org/python-
+                        glanceclient/latest/cli/property-keys.html
+  --protected [True|False]
+                        If true, image will not be deletable.
+  --name <NAME>         Descriptive name for the image
+  --instance-uuid <INSTANCE_UUID>
+                        Metadata which can be used to record which instance
+                        this image is associated with. (Informational only,
+                        does not create an instance snapshot.)
+  --min-disk <MIN_DISK>
+                        Amount of disk space (in GB) required to boot image.
+  --visibility <VISIBILITY>
+                        Scope of image accessibility Valid values: public,
+                        private, community, shared
+  --kernel-id <KERNEL_ID>
+                        ID of image stored in Glance that should be used as
+                        the kernel when booting an AMI-style image.
+  --os-version <OS_VERSION>
+                        Operating system version as specified by the
+                        distributor
+  --disk-format <DISK_FORMAT>
+                        Format of the disk Valid values: None, ami, ari, aki,
+                        vhd, vhdx, vmdk, raw, qcow2, vdi, iso, ploop
+  --os-distro <OS_DISTRO>
+                        Common name of operating system distribution as
+                        specified in https://docs.openstack.org/python-
+                        glanceclient/latest/cli/property-keys.html
+  --owner <OWNER>       Owner of the image
+  --ramdisk-id <RAMDISK_ID>
+                        ID of image stored in Glance that should be used as
+                        the ramdisk when booting an AMI-style image.
+  --min-ram <MIN_RAM>   Amount of ram (in MB) required to boot image.
+  --container-format <CONTAINER_FORMAT>
+                        Format of the container Valid values: None, ami, ari,
+                        aki, bare, ovf, ova, docker
+  --hidden [True|False]
+                        If true, image will not appear in default image list
+                        response.
+  --property <key=value>
+                        Arbitrary property to associate with image. May be
+                        used multiple times.
+  --remove-property key
+                        Name of arbitrary property to remove from the image.
+
+Run `glance --os-image-api-version 1 help image-update` for v1 help

@@ -1,0 +1,16 @@
+# Command: cinder help type-create
+
+usage: cinder type-create [--description <description>]
+                          [--is-public <is-public>]
+                          <name>
+
+Creates a volume type.
+
+Positional Arguments:
+  <name>                Name of new volume type.
+
+Options:
+  --description <description>
+                        Description of new volume type.
+  --is-public <is-public>
+                        Make type accessible to the public (default true).

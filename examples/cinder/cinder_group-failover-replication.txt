@@ -1,0 +1,17 @@
+# Command: cinder help group-failover-replication
+
+usage: cinder group-failover-replication [--allow-attached-volume]
+                                         [--secondary-backend-id <secondary_backend_id>]
+                                         <group>
+
+Fails over replication for group.
+
+Positional Arguments:
+  <group>               Name or ID of the group.
+
+Options:
+  --allow-attached-volume
+                        Allows or disallows group with attached volumes to be
+                        failed over.
+  --secondary-backend-id <secondary_backend_id>
+                        Secondary backend id. Default=None.

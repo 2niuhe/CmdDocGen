@@ -1,0 +1,11 @@
+# Command: cinder help type-key
+
+usage: cinder type-key <vtype> <action> <key=value> [<key=value> ...]
+
+Sets or unsets extra_spec for a volume type.
+
+Positional Arguments:
+  <vtype>      Name or ID of volume type.
+  <action>     The action. Valid values are "set" or "unset."
+  <key=value>  The extra specs key and value pair to set or unset. For unset,
+               specify only the key.

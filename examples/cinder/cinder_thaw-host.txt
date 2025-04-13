@@ -1,0 +1,8 @@
+# Command: cinder help thaw-host
+
+usage: cinder thaw-host <hostname>
+
+Thaw and enable the specified cinder-volume host.
+
+Positional Arguments:
+  <hostname>  Host name.

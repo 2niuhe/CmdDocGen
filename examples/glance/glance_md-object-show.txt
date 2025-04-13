@@ -1,0 +1,14 @@
+# Command: glance help md-object-show
+
+usage: glance md-object-show [--max-column-width <integer>]
+                             <NAMESPACE> <OBJECT>
+
+Describe a specific metadata definitions object inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>           Name of namespace the object belongs.
+  <OBJECT>              Name of an object.
+
+Options:
+  --max-column-width <integer>
+                        The max column width of the printed table.

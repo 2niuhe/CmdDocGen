@@ -1,0 +1,28 @@
+# Command: glance help md-namespace-update
+
+usage: glance md-namespace-update [--owner <OWNER>] [--protected [True|False]]
+                                  [--visibility <VISIBILITY>]
+                                  [--description <DESCRIPTION>]
+                                  [--display-name <DISPLAY_NAME>]
+                                  [--namespace <NAMESPACE>]
+                                  <NAMESPACE>
+
+Update an existing metadata definitions namespace.
+
+Positional arguments:
+  <NAMESPACE>           Name of namespace to update.
+
+Options:
+  --owner <OWNER>       Owner of the namespace.
+  --protected [True|False]
+                        If true, namespace will not be deletable.
+  --visibility <VISIBILITY>
+                        Scope of namespace accessibility. Valid values:
+                        public, private
+  --description <DESCRIPTION>
+                        Provides a user friendly description of the namespace.
+  --display-name <DISPLAY_NAME>
+                        The user friendly name for the namespace. Used by UI
+                        if available.
+  --namespace <NAMESPACE>
+                        The unique namespace text.

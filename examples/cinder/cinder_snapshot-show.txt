@@ -1,0 +1,8 @@
+# Command: cinder help snapshot-show
+
+usage: cinder snapshot-show <snapshot>
+
+Shows snapshot details.
+
+Positional Arguments:
+  <snapshot>  Name or ID of snapshot.

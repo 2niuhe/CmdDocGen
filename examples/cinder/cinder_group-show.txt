@@ -1,0 +1,13 @@
+# Command: cinder help group-show
+
+usage: cinder group-show [--list-volume [<False|True>]] <group>
+
+Shows details of a group.
+
+Positional Arguments:
+  <group>               Name or ID of a group.
+
+Options:
+  --list-volume [<False|True>]
+                        Shows volumes included in the group. (Supported by API
+                        version 3.25 and later)

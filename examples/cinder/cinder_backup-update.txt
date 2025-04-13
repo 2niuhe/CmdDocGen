@@ -1,0 +1,18 @@
+# Command: cinder help backup-update
+
+usage: cinder backup-update [--name [<name>]] [--description <description>]
+                            [--metadata [<key=value> ...]]
+                            <backup>
+
+Updates a backup.
+
+Positional Arguments:
+  <backup>              Name or ID of backup to rename.
+
+Options:
+  --name [<name>]       New name for backup.
+  --description <description>
+                        Backup description. Default=None.
+  --metadata [<key=value> ...]
+                        Metadata key and value pairs. Default=None. (Supported
+                        by API version 3.43 and later)

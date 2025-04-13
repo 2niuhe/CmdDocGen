@@ -1,0 +1,5 @@
+# Command: glance help cache-list
+
+usage: glance cache-list
+
+Get cache state.

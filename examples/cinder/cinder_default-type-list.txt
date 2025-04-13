@@ -1,0 +1,9 @@
+# Command: cinder help default-type-list
+
+usage: cinder default-type-list [--project-id <project_id>]
+
+Lists all default volume types.
+
+Options:
+  --project-id <project_id>
+                        ID of project for which to show the default type.

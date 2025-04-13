@@ -1,0 +1,33 @@
+# Command: cinder help manage
+
+usage: cinder manage [--cluster CLUSTER] [--id-type <id-type>] [--name <name>]
+                     [--description <description>]
+                     [--volume-type <volume-type>]
+                     [--availability-zone <availability-zone>]
+                     [--metadata [<key=value> ...]] [--bootable]
+                     <host> <identifier>
+
+Manage an existing volume.
+
+Positional Arguments:
+  <host>                Cinder host on which the existing volume resides;
+                        takes the form: host@backend-name#pool
+  <identifier>          Name or other Identifier for existing volume
+
+Options:
+  --cluster CLUSTER     Cinder cluster on which the existing volume resides;
+                        takes the form: cluster@backend-name#pool (Supported
+                        by API version 3.16 and later)
+  --id-type <id-type>   Type of backend device identifier provided, typically
+                        source-name or source-id (Default=source-name)
+  --name <name>         Volume name (Default=None)
+  --description <description>
+                        Volume description (Default=None)
+  --volume-type <volume-type>
+                        Volume type (Default=None)
+  --availability-zone <availability-zone>
+                        Availability zone for volume (Default=None)
+  --metadata [<key=value> ...]
+                        Metadata key=value pairs (Default=None)
+  --bootable            Specifies that the newly created volume should be
+                        marked as bootable

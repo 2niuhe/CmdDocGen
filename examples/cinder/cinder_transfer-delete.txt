@@ -1,0 +1,8 @@
+# Command: cinder help transfer-delete
+
+usage: cinder transfer-delete <transfer> [<transfer> ...]
+
+Undoes a transfer.
+
+Positional Arguments:
+  <transfer>  Name or ID of transfer to delete.

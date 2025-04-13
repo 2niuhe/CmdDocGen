@@ -1,0 +1,54 @@
+# Command: cinder help create
+
+usage: cinder create [--consisgroup-id <consistencygroup-id>]
+                     [--group-id <group-id>] [--snapshot-id <snapshot-id>]
+                     [--source-volid <source-volid>] [--image-id <image-id>]
+                     [--image <image>] [--backup-id <backup-id>]
+                     [--name <name>] [--description <description>]
+                     [--volume-type <volume-type>]
+                     [--availability-zone <availability-zone>]
+                     [--metadata [<key=value> ...]] [--hint <key=value>]
+                     [--poll]
+                     [<size>]
+
+Creates a volume.
+
+Positional Arguments:
+  <size>                Size of volume, in GiBs. (Required unless snapshot-
+                        id/source-volid/backup-id is specified).
+
+Options:
+  --consisgroup-id <consistencygroup-id>
+                        ID of a consistency group where the new volume belongs
+                        to. Default=None.
+  --group-id <group-id>
+                        ID of a group where the new volume belongs to.
+                        Default=None. (Supported by API version 3.13 and
+                        later)
+  --snapshot-id <snapshot-id>
+                        Creates volume from snapshot ID. Default=None.
+  --source-volid <source-volid>
+                        Creates volume from volume ID. Default=None.
+  --image-id <image-id>
+                        Creates volume from image ID. Default=None.
+  --image <image>       Creates a volume from image (ID or name).
+                        Default=None.
+  --backup-id <backup-id>
+                        Creates a volume from backup ID. Default=None.
+                        (Supported by API version 3.47 and later)
+  --name <name>         Volume name. Default=None.
+  --description <description>
+                        Volume description. Default=None.
+  --volume-type <volume-type>
+                        Volume type. Default=None, that is, use the default
+                        volume type configured for the Block Storage API. You
+                        can see what type this is by using the 'cinder type-
+                        default' command.
+  --availability-zone <availability-zone>
+                        Availability zone for volume. Default=None.
+  --metadata [<key=value> ...]
+                        Metadata key and value pairs. Default=None.
+  --hint <key=value>    Scheduler hint, similar to nova. Repeat option to set
+                        multiple hints. Values with the same key will be
+                        stored as a list.
+  --poll                Wait for volume creation until it completes.

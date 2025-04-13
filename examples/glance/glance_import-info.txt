@@ -1,0 +1,5 @@
+# Command: glance help import-info
+
+usage: glance import-info
+
+Print import methods available from Glance.

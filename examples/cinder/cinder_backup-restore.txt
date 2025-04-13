@@ -1,0 +1,30 @@
+# Command: cinder help backup-restore
+
+usage: cinder backup-restore [--volume <volume>] [--name <name>]
+                             [--volume-type <volume-type>]
+                             [--availability-zone <AZ>]
+                             <backup>
+
+Restores a backup.
+
+Positional Arguments:
+  <backup>              Name or ID of backup to restore.
+
+Options:
+  --volume <volume>     Name or ID of existing volume to which to restore.
+                        This is mutually exclusive with --name and takes
+                        priority. Default=None.
+  --name <name>         Use the name for new volume creation to restore. This
+                        is mutually exclusive with --volume and --volume takes
+                        priority. Default=None.
+  --volume-type <volume-type>
+                        Volume type for the new volume creation to restore.
+                        This option is not valid when used with the "volume"
+                        option. Default=None. (Supported by API version 3.47
+                        and later)
+  --availability-zone <AZ>
+                        AZ for the new volume creation to restore. By default
+                        it will be the same as backup AZ. This option is not
+                        valid when used with the "volume" option.
+                        Default=None. (Supported by API version 3.47 and
+                        later)

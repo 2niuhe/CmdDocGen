@@ -1,0 +1,123 @@
+# Command: glance help image-create-via-import
+
+usage: glance image-create-via-import [--architecture <ARCHITECTURE>]
+                                      [--protected [True|False]]
+                                      [--name <NAME>]
+                                      [--instance-uuid <INSTANCE_UUID>]
+                                      [--min-disk <MIN_DISK>]
+                                      [--visibility <VISIBILITY>]
+                                      [--kernel-id <KERNEL_ID>]
+                                      [--tags <TAGS> [<TAGS> ...]]
+                                      [--os-version <OS_VERSION>]
+                                      [--disk-format <DISK_FORMAT>]
+                                      [--os-distro <OS_DISTRO>] [--id <ID>]
+                                      [--owner <OWNER>]
+                                      [--ramdisk-id <RAMDISK_ID>]
+                                      [--min-ram <MIN_RAM>]
+                                      [--container-format <CONTAINER_FORMAT>]
+                                      [--hidden [True|False]]
+                                      [--property <key=value>] [--file <FILE>]
+                                      [--progress] [--import-method <METHOD>]
+                                      [--uri <IMAGE_URL>]
+                                      [--remote-region <GLANCE_REGION>]
+                                      [--remote-image-id <REMOTE_IMAGE_ID>]
+                                      [--remote-service-interface <REMOTE_SERVICE_INTERFACE>]
+                                      [--store <STORE>] [--stores <STORES>]
+                                      [--all-stores [True|False]]
+                                      [--allow-failure [True|False]]
+
+EXPERIMENTAL: Create a new image via image import. Use the interoperable image
+import workflow to create an image. This command is designed to be backward
+compatible with the current image-create command, so its behavior is as
+follows: * If an import-method is specified (either on the command line or
+through the OS_IMAGE_IMPORT_METHOD environment variable, then you must provide
+a data source appropriate to that method (for example, --file for glance-
+direct, or --uri for web-download). * If no import-method is specified AND you
+provide either a --file or data to stdin, the command will assume you are
+using the 'glance-direct' import-method and will act accordingly. * If no
+import-method is specified and no data is supplied via --file or stdin, the
+command will simply create an image record in 'queued' status.
+
+Options:
+  --architecture <ARCHITECTURE>
+                        Operating system architecture as specified in
+                        https://docs.openstack.org/python-
+                        glanceclient/latest/cli/property-keys.html
+  --protected [True|False]
+                        If true, image will not be deletable.
+  --name <NAME>         Descriptive name for the image
+  --instance-uuid <INSTANCE_UUID>
+                        Metadata which can be used to record which instance
+                        this image is associated with. (Informational only,
+                        does not create an instance snapshot.)
+  --min-disk <MIN_DISK>
+                        Amount of disk space (in GB) required to boot image.
+  --visibility <VISIBILITY>
+                        Scope of image accessibility Valid values: public,
+                        private, community, shared
+  --kernel-id <KERNEL_ID>
+                        ID of image stored in Glance that should be used as
+                        the kernel when booting an AMI-style image.
+  --tags <TAGS> [<TAGS> ...]
+                        List of strings related to the image
+  --os-version <OS_VERSION>
+                        Operating system version as specified by the
+                        distributor
+  --disk-format <DISK_FORMAT>
+                        Format of the disk Valid values: None, ami, ari, aki,
+                        vhd, vhdx, vmdk, raw, qcow2, vdi, iso, ploop
+  --os-distro <OS_DISTRO>
+                        Common name of operating system distribution as
+                        specified in https://docs.openstack.org/python-
+                        glanceclient/latest/cli/property-keys.html
+  --id <ID>             An identifier for the image
+  --owner <OWNER>       Owner of the image
+  --ramdisk-id <RAMDISK_ID>
+                        ID of image stored in Glance that should be used as
+                        the ramdisk when booting an AMI-style image.
+  --min-ram <MIN_RAM>   Amount of ram (in MB) required to boot image.
+  --container-format <CONTAINER_FORMAT>
+                        Format of the container Valid values: None, ami, ari,
+                        aki, bare, ovf, ova, docker
+  --hidden [True|False]
+                        If true, image will not appear in default image list
+                        response.
+  --property <key=value>
+                        Arbitrary property to associate with image. May be
+                        used multiple times.
+  --file <FILE>         Local file that contains disk image to be uploaded
+                        during creation. Alternatively, the image data can be
+                        passed to the client via stdin.
+  --progress            Show upload progress bar.
+  --import-method <METHOD>
+                        Import method used for Image Import workflow. Valid
+                        values can be retrieved with import-info command.
+                        Defaults to env[OS_IMAGE_IMPORT_METHOD] or if that is
+                        undefined uses 'glance-direct' if data is provided
+                        using --file or stdin. Otherwise, simply creates an
+                        image record if no import-method and no data is
+                        supplied
+  --uri <IMAGE_URL>     URI to download the external image.
+  --remote-region <GLANCE_REGION>
+                        REMOTE_GLANCE_REGION to download the image.
+  --remote-image-id <REMOTE_IMAGE_ID>
+                        The IMAGE ID of the image of remote glance, which
+                        needsto be imported with glance-download
+  --remote-service-interface <REMOTE_SERVICE_INTERFACE>
+                        The Remote Glance Service Interface for glance-
+                        download
+  --store <STORE>       Backend store to upload image to.
+  --stores <STORES>     Stores to upload image to if multi-stores import
+                        available. Comma separated list. Available stores can
+                        be listed with "stores-info" call.
+  --all-stores [True|False]
+                        "all-stores" can be ued instead of "stores"-list to
+                        indicate that image should be imported into all
+                        available stores.
+  --allow-failure [True|False]
+                        Indicator if all stores listed (or available) must
+                        succeed. "True" by default meaning that we allow some
+                        stores to fail and the status can be monitored from
+                        the image metadata. If this is set to "False" the
+                        import will be reverted should any of the uploads
+                        fail. Only usable with "stores" or "all-stores".

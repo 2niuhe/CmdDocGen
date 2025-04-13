@@ -1,0 +1,9 @@
+# Command: cinder help default-type-set
+
+usage: cinder default-type-set <volume_type> <project_id>
+
+Sets a default volume type for a project.
+
+Positional Arguments:
+  <volume_type>  Name or ID of the volume type.
+  <project_id>   ID of project for which to set default type.

@@ -1,0 +1,8 @@
+# Command: cinder help qos-disassociate-all
+
+usage: cinder qos-disassociate-all <qos_specs>
+
+Disassociates qos specs from all its associations.
+
+Positional Arguments:
+  <qos_specs>  ID of QoS specifications on which to operate.

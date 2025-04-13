@@ -1,0 +1,14 @@
+# Command: cinder help cgsnapshot-create
+
+usage: cinder cgsnapshot-create [--name <name>] [--description <description>]
+                                <consistencygroup>
+
+Creates a cgsnapshot.
+
+Positional Arguments:
+  <consistencygroup>    Name or ID of a consistency group.
+
+Options:
+  --name <name>         Cgsnapshot name. Default=None.
+  --description <description>
+                        Cgsnapshot description. Default=None.

@@ -1,0 +1,13 @@
+# Command: cinder help transfer-create
+
+usage: cinder transfer-create [--name <name>] [--no-snapshots] <volume>
+
+Creates a volume transfer.
+
+Positional Arguments:
+  <volume>        Name or ID of volume to transfer.
+
+Options:
+  --name <name>   Transfer name. Default=None.
+  --no-snapshots  Allows or disallows transfer volumes without snapshots.
+                  Default=False. (Supported by API version 3.55 and later)

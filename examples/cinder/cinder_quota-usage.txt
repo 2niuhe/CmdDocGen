@@ -1,0 +1,8 @@
+# Command: cinder help quota-usage
+
+usage: cinder quota-usage <tenant_id>
+
+Lists quota usage for a tenant.
+
+Positional Arguments:
+  <tenant_id>  ID of tenant for which to list quota usage.

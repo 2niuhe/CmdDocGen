@@ -1,0 +1,14 @@
+# Command: cinder help cgsnapshot-list
+
+usage: cinder cgsnapshot-list [--all-tenants [<0|1>]] [--status <status>]
+                              [--consistencygroup-id <consistencygroup_id>]
+
+Lists all cgsnapshots.
+
+Options:
+  --all-tenants [<0|1>]
+                        Shows details for all tenants. Admin only.
+  --status <status>     Filters results by a status. Default=None.
+  --consistencygroup-id <consistencygroup_id>
+                        Filters results by a consistency group ID.
+                        Default=None.

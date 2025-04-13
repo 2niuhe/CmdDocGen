@@ -1,0 +1,11 @@
+# Command: cinder help delete
+
+usage: cinder delete [--cascade] <volume> [<volume> ...]
+
+Removes one or more volumes.
+
+Positional Arguments:
+  <volume>   Name or ID of volume or volumes to delete.
+
+Options:
+  --cascade  Remove any snapshots along with volume. Default=False.

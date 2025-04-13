@@ -1,0 +1,29 @@
+# Command: cinder help quota-class-update
+
+usage: cinder quota-class-update [--volumes <volumes>]
+                                 [--snapshots <snapshots>]
+                                 [--gigabytes <gigabytes>]
+                                 [--backups <backups>]
+                                 [--backup-gigabytes <backup_gigabytes>]
+                                 [--volume-type <volume_type_name>]
+                                 [--per-volume-gigabytes <per_volume_gigabytes>]
+                                 <class_name>
+
+Updates quotas for a quota class.
+
+Positional Arguments:
+  <class_name>          Name of quota class for which to set quotas.
+
+Options:
+  --volumes <volumes>   The new "volumes" quota value. Default=None.
+  --snapshots <snapshots>
+                        The new "snapshots" quota value. Default=None.
+  --gigabytes <gigabytes>
+                        The new "gigabytes" quota value. Default=None.
+  --backups <backups>   The new "backups" quota value. Default=None.
+  --backup-gigabytes <backup_gigabytes>
+                        The new "backup_gigabytes" quota value. Default=None.
+  --volume-type <volume_type_name>
+                        Volume type. Default=None.
+  --per-volume-gigabytes <per_volume_gigabytes>
+                        Set max volume size limit. Default=None.

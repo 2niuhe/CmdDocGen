@@ -1,0 +1,8 @@
+# Command: glance help md-namespace-tags-delete
+
+usage: glance md-namespace-tags-delete <NAMESPACE>
+
+Delete all metadata definitions tags inside a specific namespace.
+
+Positional arguments:
+  <NAMESPACE>  Name of namespace.

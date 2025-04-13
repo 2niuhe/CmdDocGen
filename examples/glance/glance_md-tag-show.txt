@@ -1,0 +1,9 @@
+# Command: glance help md-tag-show
+
+usage: glance md-tag-show <NAMESPACE> <TAG>
+
+Describe a specific metadata definitions tag inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>  Name of the namespace to which the tag belongs.
+  <TAG>        Name of the tag.

@@ -1,0 +1,33 @@
+# Command: cinder help attachment-create
+
+usage: cinder attachment-create [--connect <connect>]
+                                [--initiator <initiator>] [--ip <ip>]
+                                [--host <host>] [--platform <platform>]
+                                [--ostype <ostype>] [--multipath <multipath>]
+                                [--mountpoint <mountpoint>] [--mode <mode>]
+                                <volume> [<server_id>]
+
+Create an attachment for a cinder volume.
+
+Positional Arguments:
+  <volume>              Name or ID of volume or volumes to attach.
+  <server_id>           ID of server attaching to.
+
+Options:
+  --connect <connect>   Make an active connection using provided connector
+                        info (True or False).
+  --initiator <initiator>
+                        iqn of the initiator attaching to. Default=None.
+  --ip <ip>             ip of the system attaching to. Default=None.
+  --host <host>         Name of the host attaching to. Default=None.
+  --platform <platform>
+                        Platform type. Default=x86_64.
+  --ostype <ostype>     OS type. Default=linux2.
+  --multipath <multipath>
+                        Use multipath. Default=False.
+  --mountpoint <mountpoint>
+                        Mountpoint volume will be attached at. Default=None.
+  --mode <mode>         Mode of attachment, rw, ro and null, where null
+                        indicates we want to honor any existing admin-metadata
+                        settings. Default=null. (Supported by API version 3.54
+                        and later)

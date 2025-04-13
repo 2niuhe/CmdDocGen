@@ -1,0 +1,5 @@
+# Command: glance help md-resource-type-list
+
+usage: glance md-resource-type-list
+
+List available resource type names.

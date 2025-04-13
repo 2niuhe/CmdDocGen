@@ -1,0 +1,8 @@
+# Command: cinder help consisgroup-show
+
+usage: cinder consisgroup-show <consistencygroup>
+
+Shows details of a consistency group.
+
+Positional Arguments:
+  <consistencygroup>  Name or ID of a consistency group.

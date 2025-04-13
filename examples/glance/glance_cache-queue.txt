@@ -1,0 +1,8 @@
+# Command: glance help cache-queue
+
+usage: glance cache-queue <IMAGE_ID> [<IMAGE_ID> ...]
+
+Queue image(s) for caching.
+
+Positional arguments:
+  <IMAGE_ID>  ID of image(s) to queue for caching.

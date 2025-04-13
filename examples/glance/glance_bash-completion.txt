@@ -1,0 +1,9 @@
+# Command: glance help bash-completion
+
+usage: glance bash-completion
+
+Prints arguments for bash_completion. Prints all of the commands and options
+to stdout so that the glance.bash_completion script doesn't have to hard code
+them.
+
+Run `glance --os-image-api-version 1 help bash-completion` for v1 help

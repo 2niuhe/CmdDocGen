@@ -1,0 +1,5 @@
+# Command: cinder help api-version
+
+usage: cinder api-version
+
+Display the server API version information.

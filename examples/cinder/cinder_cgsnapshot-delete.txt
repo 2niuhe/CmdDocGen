@@ -1,0 +1,8 @@
+# Command: cinder help cgsnapshot-delete
+
+usage: cinder cgsnapshot-delete <cgsnapshot> [<cgsnapshot> ...]
+
+Removes one or more cgsnapshots.
+
+Positional Arguments:
+  <cgsnapshot>  Name or ID of one or more cgsnapshots to be deleted.

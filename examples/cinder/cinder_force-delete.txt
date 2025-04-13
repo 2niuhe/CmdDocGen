@@ -1,0 +1,8 @@
+# Command: cinder help force-delete
+
+usage: cinder force-delete <volume> [<volume> ...]
+
+Attempts force-delete of volume, regardless of state.
+
+Positional Arguments:
+  <volume>  Name or ID of volume or volumes to delete.

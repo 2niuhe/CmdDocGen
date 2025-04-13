@@ -1,0 +1,9 @@
+# Command: cinder help get-capabilities
+
+usage: cinder get-capabilities <host>
+
+Show backend volume stats and properties. Admin only.
+
+Positional Arguments:
+  <host>  Cinder host to show backend volume stats and properties; takes the
+          form: host@backend-name

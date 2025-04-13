@@ -1,0 +1,17 @@
+# Command: cinder help snapshot-create
+
+usage: cinder snapshot-create [--name <name>] [--description <description>]
+                              [--metadata [<key=value> ...]]
+                              <volume>
+
+Creates a snapshot.
+
+Positional Arguments:
+  <volume>              Name or ID of volume to snapshot.
+
+Options:
+  --name <name>         Snapshot name. Default=None.
+  --description <description>
+                        Snapshot description. Default=None.
+  --metadata [<key=value> ...]
+                        Snapshot metadata key and value pairs. Default=None.

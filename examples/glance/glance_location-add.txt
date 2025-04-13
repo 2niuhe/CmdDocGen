@@ -1,0 +1,22 @@
+# Command: glance help location-add
+
+usage: glance location-add --url <URL> [--metadata <STRING>]
+                           [--checksum <STRING>] [--hash-algo <STRING>]
+                           [--hash-value <STRING>]
+                           <IMAGE_ID>
+
+Add a location (and related metadata) to an image.
+
+Positional arguments:
+  <IMAGE_ID>            ID of image to which the location is to be added.
+
+Options:
+  --metadata <STRING>   Metadata associated with the location. Must be a valid
+                        JSON object (default: {})
+  --checksum <STRING>   md5 checksum of image contents
+  --hash-algo <STRING>  Multihash algorithm
+  --hash-value <STRING>
+                        Multihash value
+
+Required arguments:
+  --url <URL>           URL of location to add.

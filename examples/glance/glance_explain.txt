@@ -1,0 +1,8 @@
+# Command: glance help explain
+
+usage: glance explain <MODEL>
+
+Describe a specific model.
+
+Positional arguments:
+  <MODEL>  Name of model to describe.

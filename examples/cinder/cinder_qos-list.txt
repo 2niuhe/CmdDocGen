@@ -1,0 +1,5 @@
+# Command: cinder help qos-list
+
+usage: cinder qos-list
+
+Lists qos specs.

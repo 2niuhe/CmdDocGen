@@ -1,0 +1,8 @@
+# Command: cinder help attachment-complete
+
+usage: cinder attachment-complete <attachment> [<attachment> ...]
+
+Complete an attachment for a cinder volume.
+
+Positional Arguments:
+  <attachment>  ID of attachment or attachments to delete.

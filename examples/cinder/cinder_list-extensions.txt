@@ -1,0 +1,5 @@
+# Command: cinder help list-extensions
+
+usage: cinder list-extensions
+
+Lists all available os-api extensions.

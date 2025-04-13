@@ -1,0 +1,8 @@
+# Command: cinder help quota-delete
+
+usage: cinder quota-delete <tenant_id>
+
+Delete the quotas for a tenant.
+
+Positional Arguments:
+  <tenant_id>  UUID of tenant to delete the quotas for.

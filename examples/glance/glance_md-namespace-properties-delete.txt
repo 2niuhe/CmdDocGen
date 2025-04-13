@@ -1,0 +1,8 @@
+# Command: glance help md-namespace-properties-delete
+
+usage: glance md-namespace-properties-delete <NAMESPACE>
+
+Delete all metadata definitions property inside a specific namespace.
+
+Positional arguments:
+  <NAMESPACE>  Name of namespace.

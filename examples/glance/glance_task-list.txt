@@ -1,0 +1,16 @@
+# Command: glance help task-list
+
+usage: glance task-list [--sort-key {id,type,status}] [--sort-dir {asc,desc}]
+                        [--page-size <SIZE>] [--type <TYPE>]
+                        [--status <STATUS>]
+
+List tasks you can access.
+
+Options:
+  --sort-key {id,type,status}
+                        Sort task list by specified field.
+  --sort-dir {asc,desc}
+                        Sort task list in specified direction.
+  --page-size <SIZE>    Number of tasks to request in each paginated request.
+  --type <TYPE>         Filter tasks to those that have this type.
+  --status <STATUS>     Filter tasks to those that have this status.

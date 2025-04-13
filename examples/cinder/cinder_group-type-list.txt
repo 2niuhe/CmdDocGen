@@ -1,0 +1,10 @@
+# Command: cinder help group-type-list
+
+usage: cinder group-type-list [--filters [<key=value> ...]]
+
+Lists available 'group types'. (Admin only will see private types)
+
+Options:
+  --filters [<key=value> ...]
+                        Filter key and value pairs. Admin only. (Supported by
+                        API version 3.52 and later)

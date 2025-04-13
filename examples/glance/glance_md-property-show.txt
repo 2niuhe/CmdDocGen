@@ -1,0 +1,14 @@
+# Command: glance help md-property-show
+
+usage: glance md-property-show [--max-column-width <integer>]
+                               <NAMESPACE> <PROPERTY>
+
+Describe a specific metadata definitions property inside a namespace.
+
+Positional arguments:
+  <NAMESPACE>           Name of namespace the property belongs.
+  <PROPERTY>            Name of a property.
+
+Options:
+  --max-column-width <integer>
+                        The max column width of the printed table.

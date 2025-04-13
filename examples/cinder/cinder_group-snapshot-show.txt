@@ -1,0 +1,8 @@
+# Command: cinder help group-snapshot-show
+
+usage: cinder group-snapshot-show <group_snapshot>
+
+Shows group snapshot details.
+
+Positional Arguments:
+  <group_snapshot>  Name or ID of group snapshot.

@@ -1,0 +1,14 @@
+# Command: cinder help snapshot-rename
+
+usage: cinder snapshot-rename [--description <description>]
+                              <snapshot> [<name>]
+
+Renames a snapshot.
+
+Positional Arguments:
+  <snapshot>            Name or ID of snapshot.
+  <name>                New name for snapshot.
+
+Options:
+  --description <description>
+                        Snapshot description. Default=None.

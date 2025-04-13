@@ -1,0 +1,27 @@
+# Command: glance help image-download
+
+usage: glance image-download [--allow-md5-fallback] [--file <FILE>]
+                             [--progress]
+                             <IMAGE_ID>
+
+Download a specific image.
+
+Positional arguments:
+  <IMAGE_ID>            ID of image to download.
+
+Options:
+  --allow-md5-fallback  If os_hash_algo and os_hash_value properties are
+                        available on the image, they will be used to validate
+                        the downloaded image data. If the indicated secure
+                        hash algorithm is not available on the client, the
+                        download will fail. Use this flag to indicate that in
+                        such a case the legacy MD5 image checksum should be
+                        used to validate the downloaded data. You can also set
+                        the environment variable OS_IMAGE_ALLOW_MD5_FALLBACK
+                        to any value to activate this option.
+  --file <FILE>         Local file to save downloaded image data to. If this
+                        is not specified and there is no redirection the image
+                        data will not be saved.
+  --progress            Show download progress bar.
+
+Run `glance --os-image-api-version 1 help image-download` for v1 help

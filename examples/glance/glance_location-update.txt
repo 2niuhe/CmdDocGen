@@ -1,0 +1,15 @@
+# Command: glance help location-update
+
+usage: glance location-update --url <URL> [--metadata <STRING>] <IMAGE_ID>
+
+Update metadata of an image's location.
+
+Positional arguments:
+  <IMAGE_ID>           ID of image whose location is to be updated.
+
+Options:
+  --metadata <STRING>  Metadata associated with the location. Must be a valid
+                       JSON object (default: {})
+
+Required arguments:
+  --url <URL>          URL of location to update.

@@ -1,0 +1,10 @@
+# Command: glance help md-namespace-import
+
+usage: glance md-namespace-import [--file <FILEPATH>]
+
+Import a metadata definitions namespace from file or standard input.
+
+Options:
+  --file <FILEPATH>  Path to file with namespace schema to import.
+                     Alternatively, namespaces schema can be passed to the
+                     client via stdin.

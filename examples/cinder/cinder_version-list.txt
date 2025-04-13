@@ -1,0 +1,5 @@
+# Command: cinder help version-list
+
+usage: cinder version-list
+
+List all API versions.

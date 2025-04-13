@@ -1,0 +1,34 @@
+# Command: cinder help quota-update
+
+usage: cinder quota-update [--volumes <volumes>] [--snapshots <snapshots>]
+                           [--gigabytes <gigabytes>] [--backups <backups>]
+                           [--backup-gigabytes <backup_gigabytes>]
+                           [--groups <groups>]
+                           [--volume-type <volume_type_name>]
+                           [--per-volume-gigabytes <per_volume_gigabytes>]
+                           [--skip-validation <skip_validation>]
+                           <tenant_id>
+
+Updates quotas for a tenant.
+
+Positional Arguments:
+  <tenant_id>           ID of tenant for which to set quotas.
+
+Options:
+  --volumes <volumes>   The new "volumes" quota value. Default=None.
+  --snapshots <snapshots>
+                        The new "snapshots" quota value. Default=None.
+  --gigabytes <gigabytes>
+                        The new "gigabytes" quota value. Default=None.
+  --backups <backups>   The new "backups" quota value. Default=None.
+  --backup-gigabytes <backup_gigabytes>
+                        The new "backup_gigabytes" quota value. Default=None.
+  --groups <groups>     The new "groups" quota value. Default=None. (Supported
+                        by API version 3.13 and later)
+  --volume-type <volume_type_name>
+                        Volume type. Default=None.
+  --per-volume-gigabytes <per_volume_gigabytes>
+                        Set max volume size limit. Default=None.
+  --skip-validation <skip_validation>
+                        Skip validate the existing resource quota.
+                        Default=False.

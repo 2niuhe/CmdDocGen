@@ -1,0 +1,7 @@
+# Command: cinder help bash-completion
+
+usage: cinder bash-completion
+
+Prints arguments for bash_completion. Prints all commands and options to
+stdout so that the cinder.bash_completion script does not have to hard code
+them.

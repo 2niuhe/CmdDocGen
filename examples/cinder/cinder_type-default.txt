@@ -1,0 +1,7 @@
+# Command: cinder help type-default
+
+usage: cinder type-default
+
+List the default volume type. The Block Storage service allows configuration
+of a default type for each project, as well as the system default, so use this
+command to determine what your effective default volume type is.

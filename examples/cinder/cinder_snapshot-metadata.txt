@@ -1,0 +1,12 @@
+# Command: cinder help snapshot-metadata
+
+usage: cinder snapshot-metadata <snapshot> <action> <key=value>
+                                [<key=value> ...]
+
+Sets or deletes snapshot metadata.
+
+Positional Arguments:
+  <snapshot>   ID of snapshot for which to update metadata.
+  <action>     The action. Valid values are "set" or "unset."
+  <key=value>  Metadata key and value pair to set or unset. For unset, specify
+               only the key.
