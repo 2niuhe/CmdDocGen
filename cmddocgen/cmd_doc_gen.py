@@ -25,11 +25,15 @@ logger = logging.getLogger("CmdDocGen.Extractor")
 class CommandNode:
     """Command tree node class for building n-ary tree structure"""
 
-    def __init__(self, name: str, description: str = "", parent: Optional["CommandNode"] = None) -> None:
+    def __init__(
+        self, name: str, description: str = "", parent: Optional["CommandNode"] = None
+    ) -> None:
         self.name = name  # Command name
         self.description = description  # Command description
         self.parent = parent  # Parent node
-        self.children: Dict[str, "CommandNode"] = {}  # Child command dictionary {command name: CommandNode}
+        self.children: Dict[
+            str, "CommandNode"
+        ] = {}  # Child command dictionary {command name: CommandNode}
         self.raw_help = ""  # Raw help text
         self.parsed_help: Dict[str, Any] = {}  # Parsed help information
 
@@ -280,7 +284,11 @@ class HelpExtractor:
         return result
 
     def _print_command_tree(
-        self, root_node: CommandNode, prefix: str = "", is_last: bool = True, depth: int = 0
+        self,
+        root_node: CommandNode,
+        prefix: str = "",
+        is_last: bool = True,
+        depth: int = 0,
     ) -> None:
         """Print command tree visualization"""
         if depth == 0:
@@ -304,7 +312,9 @@ class HelpExtractor:
         if depth == 0:
             print("=" * 50)
 
-    def _print_command_tree_dict(self, command_info: Dict[str, Any], level: int = 0) -> None:
+    def _print_command_tree_dict(
+        self, command_info: Dict[str, Any], level: int = 0
+    ) -> None:
         """Print command tree structure"""
         cmd_name = command_info["command"]
         prefix = "  " * level

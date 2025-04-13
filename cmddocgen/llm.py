@@ -37,7 +37,9 @@ class LLMParser:
 
         self.base_url = os.getenv("LLM_BASE_URL")
         self.api_key = os.getenv("LLM_API_KEY")
-        self.model: str = os.getenv("LLM_MODEL", "gpt-3.5-turbo")  # Default to gpt-3.5-turbo
+        self.model: str = os.getenv(
+            "LLM_MODEL", "gpt-3.5-turbo"
+        )  # Default to gpt-3.5-turbo
         self.temperature = float(os.getenv("LLM_TEMPERATURE", 0.2))
         self.max_tokens = int(os.getenv("LLM_MAX_TOKENS", 8192))
 

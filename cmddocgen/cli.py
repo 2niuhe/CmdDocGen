@@ -4,10 +4,6 @@ CmdDocGen CLI - Command line interface for the CmdDocGen tool
 A universal command line help information extraction tool powered by LLM for intelligent subcommand analysis
 """
 
-import sys
-import os
-import subprocess
-
 # Import the cmd_doc_gen module from the cmddocgen package
 from cmddocgen.cmd_doc_gen import main as cmd_doc_gen_main
 
