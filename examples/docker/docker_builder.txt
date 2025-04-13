@@ -1,0 +1,16 @@
+# Command: docker builder --help
+
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+
+Usage:  docker builder COMMAND
+
+Manage builds
+
+Commands:
+  build       Build an image from a Dockerfile
+  prune       Remove build cache
+
+Run 'docker builder COMMAND --help' for more information on a command.
