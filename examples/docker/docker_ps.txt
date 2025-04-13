@@ -16,8 +16,8 @@ Options:
                         'table TEMPLATE':   Print output in table format using the given Go template
                         'json':             Print in JSON format
                         'TEMPLATE':         Print output using the given Go template.
-                        Refer to https://docs.docker.com/go/formatting/ for more information about formatting
-                        output with templates
+                        Refer to https://docs.docker.com/go/formatting/ for more information about formatting output with
+                        templates
   -n, --last int        Show n last created containers (includes all states) (default -1)
   -l, --latest          Show the latest created container (includes all states)
       --no-trunc        Don't truncate output

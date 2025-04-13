@@ -1,0 +1,23 @@
+.TH BUILDER 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+builder \- Manage builds
+.SH SYNOPSIS
+.B docker builder
+.PP
+docker builder COMMAND
+.SH DESCRIPTION
+Manage builds
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B build
+Build an image from a Dockerfile
+.TP
+.B prune
+Remove build cache
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

@@ -1,0 +1,43 @@
+.TH START 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+start \- Start one or more stopped containers
+.SH SYNOPSIS
+.B docker start
+.PP
+docker start [OPTIONS] CONTAINER [CONTAINER...]
+.SH DESCRIPTION
+Start one or more stopped containers
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+One or more stopped containers to start
+.SH OPTIONS
+.TP
+.B --attach, -a
+Attach STDOUT/STDERR and forward signals
+Default: 
+.TP
+.B --checkpoint
+Restore from this checkpoint
+Default: 
+.TP
+.B --checkpoint-dir
+Use a custom checkpoint storage directory
+Default: 
+.TP
+.B --detach-keys
+Override the key sequence for detaching a container
+Default: 
+.TP
+.B --interactive, -i
+Attach container's STDIN
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container start
+
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

@@ -1,0 +1,29 @@
+.TH SYSTEM 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+system \- Manage Docker
+.SH SYNOPSIS
+.B docker system
+.PP
+docker system COMMAND
+.SH DESCRIPTION
+Manage Docker
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B df
+Show docker disk usage
+.TP
+.B events
+Get real time events from the server
+.TP
+.B info
+Display system-wide information
+.TP
+.B prune
+Remove unused data
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

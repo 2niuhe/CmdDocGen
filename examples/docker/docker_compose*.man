@@ -1,0 +1,232 @@
+.TH COMPOSE* 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+compose* \- Docker Compose
+.SH SYNOPSIS
+.B docker compose*
+.PP
+docker [OPTIONS] COMMAND
+.SH DESCRIPTION
+Docker Compose
+.SH ARGUMENTS
+.SH OPTIONS
+.TP
+.B --config string, -c
+Location of client config files
+Default: /home/nh/.docker
+.TP
+.B --context string, -c
+Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set with 'docker context use')
+Default: 
+.TP
+.B --debug, -D
+Enable debug mode
+Default: 
+.TP
+.B --host list, -H
+Daemon socket to connect to
+Default: 
+.TP
+.B --log-level string, -l
+Set the logging level ('debug', 'info', 'warn', 'error', 'fatal')
+Default: info
+.TP
+.B --tls
+Use TLS; implied by --tlsverify
+Default: 
+.TP
+.B --tlscacert string
+Trust certs signed only by this CA
+Default: /home/nh/.docker/ca.pem
+.TP
+.B --tlscert string
+Path to TLS certificate file
+Default: /home/nh/.docker/cert.pem
+.TP
+.B --tlskey string
+Path to TLS key file
+Default: /home/nh/.docker/key.pem
+.TP
+.B --tlsverify
+Use TLS and verify the remote
+Default: 
+.TP
+.B --version, -v
+Print version information and quit
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B run
+Create and run a new container from an image
+.TP
+.B exec
+Execute a command in a running container
+.TP
+.B ps
+List containers
+.TP
+.B build
+Build an image from a Dockerfile
+.TP
+.B pull
+Download an image from a registry
+.TP
+.B push
+Upload an image to a registry
+.TP
+.B images
+List images
+.TP
+.B login
+Log in to a registry
+.TP
+.B logout
+Log out from a registry
+.TP
+.B search
+Search Docker Hub for images
+.TP
+.B version
+Show the Docker version information
+.TP
+.B info
+Display system-wide information
+.TP
+.B builder
+Manage builds
+.TP
+.B checkpoint
+Manage checkpoints
+.TP
+.B container
+Manage containers
+.TP
+.B context
+Manage contexts
+.TP
+.B image
+Manage images
+.TP
+.B manifest
+Manage Docker image manifests and manifest lists
+.TP
+.B network
+Manage networks
+.TP
+.B plugin
+Manage plugins
+.TP
+.B system
+Manage Docker
+.TP
+.B trust
+Manage trust on Docker images
+.TP
+.B volume
+Manage volumes
+.TP
+.B config
+Manage Swarm configs
+.TP
+.B node
+Manage Swarm nodes
+.TP
+.B secret
+Manage Swarm secrets
+.TP
+.B service
+Manage Swarm services
+.TP
+.B stack
+Manage Swarm stacks
+.TP
+.B swarm
+Manage Swarm
+.TP
+.B attach
+Attach local standard input, output, and error streams to a running container
+.TP
+.B commit
+Create a new image from a container's changes
+.TP
+.B cp
+Copy files/folders between a container and the local filesystem
+.TP
+.B create
+Create a new container
+.TP
+.B diff
+Inspect changes to files or directories on a container's filesystem
+.TP
+.B events
+Get real time events from the server
+.TP
+.B export
+Export a container's filesystem as a tar archive
+.TP
+.B history
+Show the history of an image
+.TP
+.B import
+Import the contents from a tarball to create a filesystem image
+.TP
+.B inspect
+Return low-level information on Docker objects
+.TP
+.B kill
+Kill one or more running containers
+.TP
+.B load
+Load an image from a tar archive or STDIN
+.TP
+.B logs
+Fetch the logs of a container
+.TP
+.B pause
+Pause all processes within one or more containers
+.TP
+.B port
+List port mappings or a specific mapping for the container
+.TP
+.B rename
+Rename a container
+.TP
+.B restart
+Restart one or more containers
+.TP
+.B rm
+Remove one or more containers
+.TP
+.B rmi
+Remove one or more images
+.TP
+.B save
+Save one or more images to a tar archive (streamed to STDOUT by default)
+.TP
+.B start
+Start one or more stopped containers
+.TP
+.B stats
+Display a live stream of container(s) resource usage statistics
+.TP
+.B stop
+Stop one or more running containers
+.TP
+.B tag
+Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+.TP
+.B top
+Display the running processes of a container
+.TP
+.B unpause
+Unpause all processes within one or more containers
+.TP
+.B update
+Update configuration of one or more containers
+.TP
+.B wait
+Block until one or more containers stop, then print their exit codes
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

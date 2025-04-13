@@ -1,0 +1,23 @@
+.TH DIFF 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+diff \- Inspect changes to files or directories on a container's filesystem
+.SH SYNOPSIS
+.B docker diff
+.PP
+docker diff CONTAINER
+.SH DESCRIPTION
+Inspect changes to files or directories on a container's filesystem
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+The name or ID of the container to inspect
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container diff
+Inspect changes to files or directories on a container's filesystem
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

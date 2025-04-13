@@ -1,0 +1,38 @@
+.TH IMPORT 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+import \- Import the contents from a tarball to create a filesystem image
+.SH SYNOPSIS
+.B docker import
+.PP
+docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]]
+.SH DESCRIPTION
+Import the contents from a tarball to create a filesystem image
+.SH ARGUMENTS
+.TP
+.B file|URL|-
+The tarball file, URL, or '-' for standard input
+.TP
+.B REPOSITORY[:TAG]
+Optional repository and tag for the image
+.SH OPTIONS
+.TP
+.B --change, -c
+Apply Dockerfile instruction to the created image
+Default: 
+.TP
+.B --message, -m
+Set commit message for imported image
+Default: 
+.TP
+.B --platform
+Set platform if server is multi-platform capable
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B image import
+Alias for docker import
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

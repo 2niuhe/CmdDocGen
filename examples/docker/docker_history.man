@@ -1,0 +1,39 @@
+.TH HISTORY 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+history \- Show the history of an image
+.SH SYNOPSIS
+.B docker history
+.PP
+docker history [OPTIONS] IMAGE
+.SH DESCRIPTION
+Show the history of an image
+.SH ARGUMENTS
+.TP
+.B IMAGE
+The image to show the history for
+.SH OPTIONS
+.TP
+.B --format string
+Format output using a custom template: 'table': Print output in table format with column headers (default), 'table TEMPLATE': Print output in table format using the given Go template, 'json': Print in JSON format, 'TEMPLATE': Print output using the given Go template. Refer to https://docs.docker.com/go/formatting/ for more information about formatting output with templates
+Default: 
+.TP
+.B --human, -H
+Print sizes and dates in human readable format (default true)
+Default: true
+.TP
+.B --no-trunc
+Don't truncate output
+Default: 
+.TP
+.B --quiet, -q
+Only show image IDs
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B image history
+Show the history of an image
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

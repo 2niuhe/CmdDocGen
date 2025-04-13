@@ -1,0 +1,44 @@
+.TH SERVICE 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+service \- Manage Swarm services
+.SH SYNOPSIS
+.B docker service
+.PP
+docker service COMMAND
+.SH DESCRIPTION
+Manage Swarm services
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B create
+Create a new service
+.TP
+.B inspect
+Display detailed information on one or more services
+.TP
+.B logs
+Fetch the logs of a service or task
+.TP
+.B ls
+List services
+.TP
+.B ps
+List the tasks of one or more services
+.TP
+.B rm
+Remove one or more services
+.TP
+.B rollback
+Revert changes to a service's configuration
+.TP
+.B scale
+Scale one or multiple replicated services
+.TP
+.B update
+Update a service
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

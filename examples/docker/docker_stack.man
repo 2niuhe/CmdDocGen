@@ -1,0 +1,35 @@
+.TH STACK 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+stack \- Manage Swarm stacks
+.SH SYNOPSIS
+.B docker stack
+.PP
+docker stack COMMAND
+.SH DESCRIPTION
+Manage Swarm stacks
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B config
+Outputs the final config file, after doing merges and interpolations
+.TP
+.B deploy
+Deploy a new stack or update an existing stack
+.TP
+.B ls
+List stacks
+.TP
+.B ps
+List the tasks in the stack
+.TP
+.B rm
+Remove one or more stacks
+.TP
+.B services
+List the services in the stack
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

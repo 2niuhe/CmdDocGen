@@ -1,0 +1,23 @@
+.TH UNPAUSE 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+unpause \- Unpause all processes within one or more containers
+.SH SYNOPSIS
+.B docker unpause
+.PP
+docker unpause CONTAINER [CONTAINER...]
+.SH DESCRIPTION
+Unpause all processes within one or more containers
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+One or more container names or IDs
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container unpause
+Unpause all processes within one or more containers
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

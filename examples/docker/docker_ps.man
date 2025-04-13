@@ -1,0 +1,58 @@
+.TH PS 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+ps \- List containers
+.SH SYNOPSIS
+.B docker ps
+.PP
+docker ps [OPTIONS]
+.SH DESCRIPTION
+List containers
+.SH ARGUMENTS
+.SH OPTIONS
+.TP
+.B --all, -a
+Show all containers (default shows just running)
+Default: 
+.TP
+.B --filter, -f
+Filter output based on conditions provided
+Default: 
+.TP
+.B --format
+Format output using a custom template: 'table': Print output in table format with column headers (default) 'table TEMPLATE': Print output in table format using the given Go template 'json': Print in JSON format 'TEMPLATE': Print output using the given Go template. Refer to https://docs.docker.com/go/formatting/ for more information about formatting output with templates
+Default: 
+.TP
+.B --last, -n
+Show n last created containers (includes all states) (default -1)
+Default: -1
+.TP
+.B --latest, -l
+Show the latest created container (includes all states)
+Default: 
+.TP
+.B --no-trunc
+Don't truncate output
+Default: 
+.TP
+.B --quiet, -q
+Only display container IDs
+Default: 
+.TP
+.B --size, -s
+Display total file sizes
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container ls
+
+.TP
+.B container list
+
+.TP
+.B container ps
+
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

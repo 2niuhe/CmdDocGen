@@ -1,0 +1,27 @@
+.TH KILL 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+kill \- Kill one or more running containers
+.SH SYNOPSIS
+.B docker kill
+.PP
+docker kill [OPTIONS] CONTAINER [CONTAINER...]
+.SH DESCRIPTION
+Kill one or more running containers
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+One or more containers to kill
+.SH OPTIONS
+.TP
+.B --signal, -s
+Signal to send to the container
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container kill
+
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

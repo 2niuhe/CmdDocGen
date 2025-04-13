@@ -1,0 +1,28 @@
+.TH LOAD 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+load \- Load an image from a tar archive or STDIN
+.SH SYNOPSIS
+.B docker load
+.PP
+docker load [OPTIONS]
+.SH DESCRIPTION
+Load an image from a tar archive or STDIN
+.SH ARGUMENTS
+.SH OPTIONS
+.TP
+.B --input, -i
+Read from tar archive file, instead of STDIN
+Default: 
+.TP
+.B --quiet, -q
+Suppress the load output
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B image load
+
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

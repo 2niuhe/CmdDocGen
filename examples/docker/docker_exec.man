@@ -1,0 +1,65 @@
+.TH EXEC 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+exec \- Execute a command in a running container
+.SH SYNOPSIS
+.B docker exec
+.PP
+docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+.SH DESCRIPTION
+Execute a command in a running container
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+The name or ID of the container
+.TP
+.B COMMAND
+The command to execute
+.TP
+.B ARG...
+Arguments for the command
+.SH OPTIONS
+.TP
+.B --detach, -d
+Detached mode: run command in the background
+Default: 
+.TP
+.B --detach-keys
+Override the key sequence for detaching a container
+Default: 
+.TP
+.B --env
+Set environment variables
+Default: 
+.TP
+.B --env-file
+Read in a file of environment variables
+Default: 
+.TP
+.B --interactive, -i
+Keep STDIN open even if not attached
+Default: 
+.TP
+.B --privileged
+Give extended privileges to the command
+Default: 
+.TP
+.B --tty, -t
+Allocate a pseudo-TTY
+Default: 
+.TP
+.B --user, -u
+Username or UID (format: "<name|uid>[:<group|gid>"]
+Default: 
+.TP
+.B --workdir, -w
+Working directory inside the container
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B docker container exec
+Execute a command in a running container
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

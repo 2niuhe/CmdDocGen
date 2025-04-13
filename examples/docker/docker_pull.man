@@ -1,0 +1,39 @@
+.TH PULL 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+pull \- Download an image from a registry
+.SH SYNOPSIS
+.B docker pull
+.PP
+docker pull [OPTIONS] NAME[:TAG|@DIGEST]
+.SH DESCRIPTION
+Download an image from a registry
+.SH ARGUMENTS
+.TP
+.B NAME[:TAG|@DIGEST]
+The name of the image to download, optionally specifying a tag or digest.
+.SH OPTIONS
+.TP
+.B --all-tags, -a
+Download all tagged images in the repository
+Default: 
+.TP
+.B --disable-content-trust
+Skip image verification
+Default: true
+.TP
+.B --platform
+Set platform if server is multi-platform capable
+Default: 
+.TP
+.B --quiet, -q
+Suppress verbose output
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B image pull
+Download an image from a registry
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

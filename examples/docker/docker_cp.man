@@ -1,0 +1,44 @@
+.TH CP 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+cp \- Copy files/folders between a container and the local filesystem
+.SH SYNOPSIS
+.B docker cp
+.PP
+docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|- docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
+.SH DESCRIPTION
+Copy files/folders between a container and the local filesystem
+.SH ARGUMENTS
+.TP
+.B CONTAINER:SRC_PATH
+Source path in the container
+.TP
+.B DEST_PATH|-
+Destination path on the local filesystem or '-' to read a tar archive from stdin
+.TP
+.B SRC_PATH|-
+Source path on the local filesystem or '-' to stream a tar archive to stdout
+.TP
+.B CONTAINER:DEST_PATH
+Destination path in the container
+.SH OPTIONS
+.TP
+.B --archive, -a
+Archive mode (copy all uid/gid information)
+Default: 
+.TP
+.B --follow-link, -L
+Always follow symbol link in SRC_PATH
+Default: 
+.TP
+.B --quiet, -q
+Suppress progress output during copy. Progress output is automatically suppressed if no terminal is attached
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container cp
+Copy files/folders between a container and the local filesystem
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

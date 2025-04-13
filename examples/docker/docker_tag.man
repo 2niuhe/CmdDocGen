@@ -1,0 +1,26 @@
+.TH TAG 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+tag \- Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+.SH SYNOPSIS
+.B docker tag
+.PP
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+.SH DESCRIPTION
+Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+.SH ARGUMENTS
+.TP
+.B SOURCE_IMAGE[:TAG]
+The source image to tag
+.TP
+.B TARGET_IMAGE[:TAG]
+The target image name for the tag
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B image tag
+Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

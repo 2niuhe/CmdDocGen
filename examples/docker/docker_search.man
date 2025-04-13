@@ -1,0 +1,36 @@
+.TH SEARCH 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+search \- Search Docker Hub for images
+.SH SYNOPSIS
+.B docker search
+.PP
+docker search [OPTIONS] TERM
+.SH DESCRIPTION
+Search Docker Hub for images
+.SH ARGUMENTS
+.TP
+.B TERM
+Search term to look for images
+.SH OPTIONS
+.TP
+.B --filter, -f
+Filter output based on conditions provided
+Default: 
+.TP
+.B --format
+Pretty-print search using a Go template
+Default: string
+.TP
+.B --limit
+Max number of search results
+Default: int
+.TP
+.B --no-trunc
+Don't truncate output
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

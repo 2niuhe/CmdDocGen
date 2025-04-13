@@ -1,0 +1,29 @@
+.TH CONFIG 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+config \- Manage Swarm configs
+.SH SYNOPSIS
+.B docker config
+.PP
+docker config COMMAND
+.SH DESCRIPTION
+Manage Swarm configs
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B create
+Create a config from a file or STDIN
+.TP
+.B inspect
+Display detailed information on one or more configs
+.TP
+.B ls
+List configs
+.TP
+.B rm
+Remove one or more configs
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

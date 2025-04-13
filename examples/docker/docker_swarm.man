@@ -1,0 +1,41 @@
+.TH SWARM 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+swarm \- Manage Swarm
+.SH SYNOPSIS
+.B docker swarm
+.PP
+docker swarm COMMAND
+.SH DESCRIPTION
+Manage Swarm
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B ca
+Display and rotate the root CA
+.TP
+.B init
+Initialize a swarm
+.TP
+.B join
+Join a swarm as a node and/or manager
+.TP
+.B join-token
+Manage join tokens
+.TP
+.B leave
+Leave the swarm
+.TP
+.B unlock
+Unlock swarm
+.TP
+.B unlock-key
+Manage the unlock key
+.TP
+.B update
+Update the swarm
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

@@ -1,0 +1,32 @@
+.TH MANIFEST 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+manifest \- The docker manifest command has subcommands for managing image manifests and manifest lists. A manifest list allows you to use one name to refer to the same image built for multiple architectures.
+.SH SYNOPSIS
+.B docker manifest
+.PP
+docker manifest COMMAND
+.SH DESCRIPTION
+The docker manifest command has subcommands for managing image manifests and manifest lists. A manifest list allows you to use one name to refer to the same image built for multiple architectures.
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B annotate
+Add additional information to a local image manifest
+.TP
+.B create
+Create a local manifest list for annotating and pushing to a registry
+.TP
+.B inspect
+Display an image manifest, or manifest list
+.TP
+.B push
+Push a manifest list to a repository
+.TP
+.B rm
+Delete one or more manifest lists from local storage
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

@@ -1,0 +1,20 @@
+.TH LOGOUT 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+logout \- Log out from a registry.
+.SH SYNOPSIS
+.B docker logout
+.PP
+docker logout [SERVER]
+.SH DESCRIPTION
+Log out from a registry.
+.SH ARGUMENTS
+.TP
+.B SERVER
+The registry server to log out from. If not specified, the default is defined by the daemon.
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

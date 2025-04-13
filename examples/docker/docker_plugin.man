@@ -1,0 +1,47 @@
+.TH PLUGIN 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+plugin \- Manage plugins
+.SH SYNOPSIS
+.B docker plugin
+.PP
+docker plugin COMMAND
+.SH DESCRIPTION
+Manage plugins
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B create
+Create a plugin from a rootfs and configuration. Plugin data directory must contain config.json and rootfs directory.
+.TP
+.B disable
+Disable a plugin
+.TP
+.B enable
+Enable a plugin
+.TP
+.B inspect
+Display detailed information on one or more plugins
+.TP
+.B install
+Install a plugin
+.TP
+.B ls
+List plugins
+.TP
+.B push
+Push a plugin to a registry
+.TP
+.B rm
+Remove one or more plugins
+.TP
+.B set
+Change settings for a plugin
+.TP
+.B upgrade
+Upgrade an existing plugin
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

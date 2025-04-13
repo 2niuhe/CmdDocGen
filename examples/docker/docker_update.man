@@ -1,0 +1,79 @@
+.TH UPDATE 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+update \- Update configuration of one or more containers
+.SH SYNOPSIS
+.B docker update
+.PP
+docker update [OPTIONS] CONTAINER [CONTAINER...]
+.SH DESCRIPTION
+Update configuration of one or more containers
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+One or more containers to update
+.SH OPTIONS
+.TP
+.B --blkio-weight, -
+Block IO (relative weight), between 10 and 1000, or 0 to disable (default 0)
+Default: 0
+.TP
+.B --cpu-period, -
+Limit CPU CFS (Completely Fair Scheduler) period
+Default: 
+.TP
+.B --cpu-quota, -
+Limit CPU CFS (Completely Fair Scheduler) quota
+Default: 
+.TP
+.B --cpu-rt-period, -
+Limit the CPU real-time period in microseconds
+Default: 
+.TP
+.B --cpu-rt-runtime, -
+Limit the CPU real-time runtime in microseconds
+Default: 
+.TP
+.B --cpu-shares, -c
+CPU shares (relative weight)
+Default: 
+.TP
+.B --cpus, -
+Number of CPUs
+Default: 
+.TP
+.B --cpuset-cpus, -
+CPUs in which to allow execution (0-3, 0,1)
+Default: 
+.TP
+.B --cpuset-mems, -
+MEMs in which to allow execution (0-3, 0,1)
+Default: 
+.TP
+.B --memory, -m
+Memory limit
+Default: 
+.TP
+.B --memory-reservation, -
+Memory soft limit
+Default: 
+.TP
+.B --memory-swap, -
+Swap limit equal to memory plus swap: -1 to enable unlimited swap
+Default: 
+.TP
+.B --pids-limit, -
+Tune container pids limit (set -1 for unlimited)
+Default: 
+.TP
+.B --restart, -
+Restart policy to apply when a container exits
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container update
+Update configuration of one or more containers
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

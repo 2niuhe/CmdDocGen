@@ -1,0 +1,53 @@
+.TH IMAGE 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+image \- Manage images
+.SH SYNOPSIS
+.B docker image
+.PP
+docker image COMMAND
+.SH DESCRIPTION
+Manage images
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B build
+Build an image from a Dockerfile
+.TP
+.B history
+Show the history of an image
+.TP
+.B import
+Import the contents from a tarball to create a filesystem image
+.TP
+.B inspect
+Display detailed information on one or more images
+.TP
+.B load
+Load an image from a tar archive or STDIN
+.TP
+.B ls
+List images
+.TP
+.B prune
+Remove unused images
+.TP
+.B pull
+Download an image from a registry
+.TP
+.B push
+Upload an image to a registry
+.TP
+.B rm
+Remove one or more images
+.TP
+.B save
+Save one or more images to a tar archive (streamed to STDOUT by default)
+.TP
+.B tag
+Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

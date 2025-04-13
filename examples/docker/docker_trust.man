@@ -1,0 +1,32 @@
+.TH TRUST 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+trust \- Manage trust on Docker images
+.SH SYNOPSIS
+.B docker trust
+.PP
+docker trust COMMAND
+.SH DESCRIPTION
+Manage trust on Docker images
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B key
+Manage keys for signing Docker images
+.TP
+.B signer
+Manage entities who can sign Docker images
+.TP
+.B inspect
+Return low-level information about keys and signatures
+.TP
+.B revoke
+Remove trust for an image
+.TP
+.B sign
+Sign an image
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

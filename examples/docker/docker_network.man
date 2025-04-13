@@ -1,0 +1,38 @@
+.TH NETWORK 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+network \- Manage networks
+.SH SYNOPSIS
+.B docker network
+.PP
+docker network COMMAND
+.SH DESCRIPTION
+Manage networks
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B connect
+Connect a container to a network
+.TP
+.B create
+Create a network
+.TP
+.B disconnect
+Disconnect a container from a network
+.TP
+.B inspect
+Display detailed information on one or more networks
+.TP
+.B ls
+List networks
+.TP
+.B prune
+Remove all unused networks
+.TP
+.B rm
+Remove one or more networks
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

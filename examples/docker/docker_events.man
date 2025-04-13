@@ -1,0 +1,36 @@
+.TH EVENTS 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+events \- Get real time events from the server
+.SH SYNOPSIS
+.B docker events
+.PP
+docker events [OPTIONS]
+.SH DESCRIPTION
+Get real time events from the server
+.SH ARGUMENTS
+.SH OPTIONS
+.TP
+.B --filter, -f
+Filter output based on conditions provided
+Default: 
+.TP
+.B --format
+Format output using a custom template: 'json': Print in JSON format 'TEMPLATE': Print output using the given Go template. Refer to https://docs.docker.com/go/formatting/ for more information about formatting output with templates
+Default: 
+.TP
+.B --since
+Show all events created since timestamp
+Default: 
+.TP
+.B --until
+Stream events until this timestamp
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B system events
+
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

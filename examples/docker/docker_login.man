@@ -1,0 +1,32 @@
+.TH LOGIN 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+login \- Log in to a registry.
+.SH SYNOPSIS
+.B docker login
+.PP
+docker login [OPTIONS] [SERVER]
+.SH DESCRIPTION
+Log in to a registry.
+.SH ARGUMENTS
+.TP
+.B SERVER
+The server to log in to. If no server is specified, the default is defined by the daemon.
+.SH OPTIONS
+.TP
+.B --password, -p
+Password
+Default: 
+.TP
+.B --password-stdin
+Take the password from stdin
+Default: 
+.TP
+.B --username, -u
+Username
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

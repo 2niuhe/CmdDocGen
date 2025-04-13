@@ -1,0 +1,23 @@
+.TH WAIT 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+wait \- Block until one or more containers stop, then print their exit codes
+.SH SYNOPSIS
+.B docker wait
+.PP
+docker wait CONTAINER [CONTAINER...]
+.SH DESCRIPTION
+Block until one or more containers stop, then print their exit codes
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+One or more container names or IDs
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container wait
+Block until one or more containers stop, then print their exit codes
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

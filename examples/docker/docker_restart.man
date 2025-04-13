@@ -1,0 +1,31 @@
+.TH RESTART 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+restart \- Restart one or more containers
+.SH SYNOPSIS
+.B docker restart
+.PP
+docker restart [OPTIONS] CONTAINER [CONTAINER...]
+.SH DESCRIPTION
+Restart one or more containers
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+One or more containers to restart
+.SH OPTIONS
+.TP
+.B --signal, -s
+Signal to send to the container
+Default: 
+.TP
+.B --time, -t
+Seconds to wait before killing the container
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container restart
+
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

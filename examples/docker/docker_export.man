@@ -1,0 +1,27 @@
+.TH EXPORT 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+export \- Export a container's filesystem as a tar archive
+.SH SYNOPSIS
+.B docker export
+.PP
+docker export [OPTIONS] CONTAINER
+.SH DESCRIPTION
+Export a container's filesystem as a tar archive
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+
+.SH OPTIONS
+.TP
+.B --output, -o
+Write to a file, instead of STDOUT
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container export
+
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

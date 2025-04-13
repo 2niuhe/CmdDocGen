@@ -1,0 +1,32 @@
+.TH INSPECT 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+inspect \- Return low-level information on Docker objects
+.SH SYNOPSIS
+.B docker inspect
+.PP
+docker inspect [OPTIONS] NAME|ID [NAME|ID...]
+.SH DESCRIPTION
+Return low-level information on Docker objects
+.SH ARGUMENTS
+.TP
+.B NAME|ID
+The name or ID of the Docker object to inspect
+.SH OPTIONS
+.TP
+.B --format, -f
+Format output using a custom template: 'json': Print in JSON format; 'TEMPLATE': Print output using the given Go template. Refer to https://docs.docker.com/go/formatting/ for more information about formatting output with templates
+Default: 
+.TP
+.B --size, -s
+Display total file sizes if the type is container
+Default: 
+.TP
+.B --type
+Return JSON for specified type
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

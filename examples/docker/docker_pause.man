@@ -1,0 +1,23 @@
+.TH PAUSE 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+pause \- Pause all processes within one or more containers
+.SH SYNOPSIS
+.B docker pause
+.PP
+docker pause CONTAINER [CONTAINER...]
+.SH DESCRIPTION
+Pause all processes within one or more containers
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+One or more container names or IDs to pause
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container pause
+Pause all processes within one or more containers
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

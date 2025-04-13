@@ -1,0 +1,149 @@
+.TH BUILD 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+build \- Build an image from a Dockerfile
+.SH SYNOPSIS
+.B docker build
+.PP
+docker build [OPTIONS] PATH | URL | -
+.SH DESCRIPTION
+Build an image from a Dockerfile
+.SH ARGUMENTS
+.TP
+.B PATH | URL | -
+The path to the Dockerfile or a URL to a Git repository.
+.SH OPTIONS
+.TP
+.B --add-host
+Add a custom host-to-IP mapping ("host:ip")
+Default: 
+.TP
+.B --build-arg
+Set build-time variables
+Default: 
+.TP
+.B --cache-from
+Images to consider as cache sources
+Default: 
+.TP
+.B --cgroup-parent
+Set the parent cgroup for the "RUN" instructions during build
+Default: 
+.TP
+.B --compress
+Compress the build context using gzip
+Default: 
+.TP
+.B --cpu-period
+Limit the CPU CFS (Completely Fair Scheduler) period
+Default: 
+.TP
+.B --cpu-quota
+Limit the CPU CFS (Completely Fair Scheduler) quota
+Default: 
+.TP
+.B --cpu-shares, -c
+CPU shares (relative weight)
+Default: 
+.TP
+.B --cpuset-cpus
+CPUs in which to allow execution (0-3, 0,1)
+Default: 
+.TP
+.B --cpuset-mems
+MEMs in which to allow execution (0-3, 0,1)
+Default: 
+.TP
+.B --disable-content-trust
+Skip image verification (default true)
+Default: true
+.TP
+.B --file, -f
+Name of the Dockerfile (Default is "PATH/Dockerfile")
+Default: PATH/Dockerfile
+.TP
+.B --force-rm
+Always remove intermediate containers
+Default: 
+.TP
+.B --iidfile
+Write the image ID to the file
+Default: 
+.TP
+.B --isolation
+Container isolation technology
+Default: 
+.TP
+.B --label
+Set metadata for an image
+Default: 
+.TP
+.B --memory, -m
+Memory limit
+Default: 
+.TP
+.B --memory-swap
+Swap limit equal to memory plus swap: -1 to enable unlimited swap
+Default: 
+.TP
+.B --network
+Set the networking mode for the RUN instructions during build (default "default")
+Default: default
+.TP
+.B --no-cache
+Do not use cache when building the image
+Default: 
+.TP
+.B --platform
+Set platform if server is multi-platform capable
+Default: 
+.TP
+.B --pull
+Always attempt to pull a newer version of the image
+Default: 
+.TP
+.B --quiet, -q
+Suppress the build output and print image ID on success
+Default: 
+.TP
+.B --rm
+Remove intermediate containers after a successful build (default true)
+Default: true
+.TP
+.B --security-opt
+Security options
+Default: 
+.TP
+.B --shm-size
+Size of "/dev/shm"
+Default: 
+.TP
+.B --squash
+Squash newly built layers into a single new layer
+Default: 
+.TP
+.B --tag, -t
+Name and optionally a tag in the "name:tag" format
+Default: 
+.TP
+.B --target
+Set the target build stage to build.
+Default: 
+.TP
+.B --ulimit
+Ulimit options (default [])
+Default: []
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B docker image build
+
+.TP
+.B docker buildx build
+
+.TP
+.B docker builder build
+
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

@@ -1,0 +1,50 @@
+.TH IMAGES 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+images \- List images
+.SH SYNOPSIS
+.B docker images
+.PP
+docker images [OPTIONS] [REPOSITORY[:TAG]]
+.SH DESCRIPTION
+List images
+.SH ARGUMENTS
+.TP
+.B REPOSITORY[:TAG]
+Optional repository and tag to filter images
+.SH OPTIONS
+.TP
+.B --all, -a
+Show all images (default hides intermediate images)
+Default: 
+.TP
+.B --digests
+Show digests
+Default: 
+.TP
+.B --filter filter, -f filter
+Filter output based on conditions provided
+Default: 
+.TP
+.B --format string
+Format output using a custom template: 'table': Print output in table format with column headers (default), 'table TEMPLATE': Print output in table format using the given Go template, 'json': Print in JSON format, 'TEMPLATE': Print output using the given Go template. Refer to https://docs.docker.com/go/formatting/ for more information about formatting output with templates
+Default: table
+.TP
+.B --no-trunc
+Don't truncate output
+Default: 
+.TP
+.B --quiet, -q
+Only show image IDs
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B image ls
+List images
+.TP
+.B image list
+List images
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

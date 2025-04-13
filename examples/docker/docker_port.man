@@ -1,0 +1,26 @@
+.TH PORT 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+port \- List port mappings or a specific mapping for the container
+.SH SYNOPSIS
+.B docker port
+.PP
+docker port CONTAINER [PRIVATE_PORT[/PROTO]]
+.SH DESCRIPTION
+List port mappings or a specific mapping for the container
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+The name or ID of the container
+.TP
+.B PRIVATE_PORT[/PROTO]
+The private port and optional protocol
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container port
+List port mappings or a specific mapping for the container
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

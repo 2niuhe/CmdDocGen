@@ -1,0 +1,92 @@
+.TH CONTAINER 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+container \- Manage containers
+.SH SYNOPSIS
+.B docker container
+.PP
+docker container COMMAND
+.SH DESCRIPTION
+Manage containers
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B attach
+Attach local standard input, output, and error streams to a running container
+.TP
+.B commit
+Create a new image from a container's changes
+.TP
+.B cp
+Copy files/folders between a container and the local filesystem
+.TP
+.B create
+Create a new container
+.TP
+.B diff
+Inspect changes to files or directories on a container's filesystem
+.TP
+.B exec
+Execute a command in a running container
+.TP
+.B export
+Export a container's filesystem as a tar archive
+.TP
+.B inspect
+Display detailed information on one or more containers
+.TP
+.B kill
+Kill one or more running containers
+.TP
+.B logs
+Fetch the logs of a container
+.TP
+.B ls
+List containers
+.TP
+.B pause
+Pause all processes within one or more containers
+.TP
+.B port
+List port mappings or a specific mapping for the container
+.TP
+.B prune
+Remove all stopped containers
+.TP
+.B rename
+Rename a container
+.TP
+.B restart
+Restart one or more containers
+.TP
+.B rm
+Remove one or more containers
+.TP
+.B run
+Create and run a new container from an image
+.TP
+.B start
+Start one or more stopped containers
+.TP
+.B stats
+Display a live stream of container(s) resource usage statistics
+.TP
+.B stop
+Stop one or more running containers
+.TP
+.B top
+Display the running processes of a container
+.TP
+.B unpause
+Unpause all processes within one or more containers
+.TP
+.B update
+Update configuration of one or more containers
+.TP
+.B wait
+Block until one or more containers stop, then print their exit codes
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

@@ -1,0 +1,42 @@
+.TH COMMIT 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+commit \- Create a new image from a container's changes
+.SH SYNOPSIS
+.B docker commit
+.PP
+docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]
+.SH DESCRIPTION
+Create a new image from a container's changes
+.SH ARGUMENTS
+.TP
+.B CONTAINER
+The container to commit changes from
+.TP
+.B REPOSITORY[:TAG]
+Optional repository and tag for the new image
+.SH OPTIONS
+.TP
+.B --author, -a
+Author (e.g., "John Hannibal Smith <hannibal@a-team.com>")
+Default: 
+.TP
+.B --change, -c
+Apply Dockerfile instruction to the created image
+Default: 
+.TP
+.B --message, -m
+Commit message
+Default: 
+.TP
+.B --pause, -p
+Pause container during commit
+Default: true
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B container commit
+
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

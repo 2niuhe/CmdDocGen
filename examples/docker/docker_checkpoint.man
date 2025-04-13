@@ -1,0 +1,26 @@
+.TH CHECKPOINT 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+checkpoint \- Manage checkpoints
+.SH SYNOPSIS
+.B docker checkpoint
+.PP
+docker checkpoint COMMAND
+.SH DESCRIPTION
+Manage checkpoints
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B create
+Create a checkpoint from a running container
+.TP
+.B ls
+List checkpoints for a container
+.TP
+.B rm
+Remove a checkpoint
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

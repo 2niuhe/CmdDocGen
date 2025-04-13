@@ -1,0 +1,27 @@
+.TH SAVE 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+save \- Save one or more images to a tar archive (streamed to STDOUT by default)
+.SH SYNOPSIS
+.B docker save
+.PP
+docker save [OPTIONS] IMAGE [IMAGE...]
+.SH DESCRIPTION
+Save one or more images to a tar archive (streamed to STDOUT by default)
+.SH ARGUMENTS
+.TP
+.B IMAGE
+One or more images to save
+.SH OPTIONS
+.TP
+.B --output, -o
+Write to a file, instead of STDOUT
+Default: 
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B image save
+Save one or more images to a tar archive
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel

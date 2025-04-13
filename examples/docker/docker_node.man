@@ -1,0 +1,38 @@
+.TH NODE 1 "April 2025" "CmdDocGen" "User Commands"
+.SH NAME
+node \- Manage Swarm nodes
+.SH SYNOPSIS
+.B docker node
+.PP
+docker node COMMAND
+.SH DESCRIPTION
+Manage Swarm nodes
+.SH ARGUMENTS
+.SH OPTIONS
+.SH EXAMPLES
+.SH SUBCOMMANDS
+.TP
+.B demote
+Demote one or more nodes from manager in the swarm
+.TP
+.B inspect
+Display detailed information on one or more nodes
+.TP
+.B ls
+List nodes in the swarm
+.TP
+.B promote
+Promote one or more nodes to manager in the swarm
+.TP
+.B ps
+List tasks running on one or more nodes, defaults to current node
+.TP
+.B rm
+Remove one or more nodes from the swarm
+.TP
+.B update
+Update a node
+.SH AUTHOR
+Automatically generated man page
+.SH REPORTING BUGS
+Please report bugs to the appropriate channel
