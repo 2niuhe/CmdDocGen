@@ -1,0 +1,15 @@
+usage: openstack firewall group policy remove rule [-h]
+                                                   <firewall-policy>
+                                                   <firewall-rule>
+
+Remove a rule from a given firewall policy
+
+positional arguments:
+  <firewall-policy>  Firewall policy to remove rule (name or ID)
+  <firewall-rule>    Firewall rule to remove from policy (name or ID)
+
+options:
+  -h, --help         show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

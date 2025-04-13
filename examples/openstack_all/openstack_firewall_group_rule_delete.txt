@@ -1,0 +1,14 @@
+usage: openstack firewall group rule delete [-h]
+                                            <firewall-rule>
+                                            [<firewall-rule> ...]
+
+Delete firewall rule(s)
+
+positional arguments:
+  <firewall-rule>  Firewall rule(s) to delete (name or ID)
+
+options:
+  -h, --help       show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

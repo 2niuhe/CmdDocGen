@@ -1,0 +1,10 @@
+usage: openstack server suspend [-h] <server> [<server> ...]
+
+Suspend server(s)
+
+positional arguments:
+  <server>    Server(s) to suspend (name or ID)
+
+options:
+  -h, --help  show this help message and exit
+Could not clean up: 'ClientManager' object has no attribute 'session'

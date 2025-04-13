@@ -1,0 +1,34 @@
+usage: openstack bgpvpn port association unset [-h]
+                                               [--advertise-fixed-ips | --no-advertise-fixed-ips]
+                                               [--prefix-route <cidr>]
+                                               [--bgpvpn-route <BGP VPN ID or name>]
+                                               [--all-prefix-routes]
+                                               [--all-bgpvpn-routes]
+                                               <port association ID> <bgpvpn>
+
+Unset BGP VPN port association properties
+
+positional arguments:
+  <port association ID>
+                        Port association ID to update
+  <bgpvpn>              BGP VPN the port association belongs to (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --advertise-fixed-ips
+                        Fixed IPs of the port will not be advertised to the
+                        BGP VPN
+  --no-advertise-fixed-ips
+                        Fixed IPs of the port will be advertised to the BGP
+                        VPN
+  --prefix-route <cidr>
+                        Remove prefix route in CIDR notation (repeat option
+                        for multiple prefix routes)
+  --bgpvpn-route <BGP VPN ID or name>
+                        Remove BGP VPN route (repeat option for multiple BGP
+                        VPN routes)
+  --all-prefix-routes   Empty prefix route list
+  --all-bgpvpn-routes   Empty BGP VPN route list
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

@@ -1,0 +1,22 @@
+usage: openstack firewall group policy unset [-h]
+                                             [--firewall-rule <firewall-rule> | --all-firewall-rule]
+                                             [--audited] [--share]
+                                             <firewall-policy>
+
+Unset firewall policy properties
+
+positional arguments:
+  <firewall-policy>     Firewall policy to unset (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --firewall-rule <firewall-rule>
+                        Remove firewall rule(s) from the firewall policy (name
+                        or ID)
+  --all-firewall-rule   Remove all firewall rules from the firewall policy
+  --audited             Disable auditing for the policy
+  --share               Restrict use of the firewall policy to the current
+                        project
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

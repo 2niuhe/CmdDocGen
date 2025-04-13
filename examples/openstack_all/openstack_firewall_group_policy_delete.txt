@@ -1,0 +1,14 @@
+usage: openstack firewall group policy delete [-h]
+                                              <firewall-policy>
+                                              [<firewall-policy> ...]
+
+Delete firewall policy(s)
+
+positional arguments:
+  <firewall-policy>  Firewall policy(s) to delete (name or ID)
+
+options:
+  -h, --help         show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

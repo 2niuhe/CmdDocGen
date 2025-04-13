@@ -1,0 +1,12 @@
+usage: openstack server migration abort [-h] <server> <migration>
+
+Cancel an ongoing live migration. This command requires ``--os-compute-api-
+version`` 2.24 or greater.
+
+positional arguments:
+  <server>     Server (name or ID)
+  <migration>  Migration (ID)
+
+options:
+  -h, --help   show this help message and exit
+Could not clean up: 'ClientManager' object has no attribute 'session'

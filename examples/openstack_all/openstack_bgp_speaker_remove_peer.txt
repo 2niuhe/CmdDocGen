@@ -1,0 +1,13 @@
+usage: openstack bgp speaker remove peer [-h] <bgp-speaker> <bgp-peer>
+
+Remove a peer from a BGP speaker
+
+positional arguments:
+  <bgp-speaker>  BGP speaker (name or ID)
+  <bgp-peer>     BGP Peer to remove (name or ID)
+
+options:
+  -h, --help     show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

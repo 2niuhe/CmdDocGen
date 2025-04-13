@@ -1,0 +1,23 @@
+usage: openstack sfc port chain unset [-h]
+                                      [--flow-classifier <flow-classifier> | --all-flow-classifier]
+                                      [--port-pair-group <port-pair-group>]
+                                      <port-chain>
+
+Unset port chain properties
+
+positional arguments:
+  <port-chain>          Port chain to unset (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --flow-classifier <flow-classifier>
+                        Remove flow classifier(s) from the port chain (name or
+                        ID). This option can be repeated.
+  --all-flow-classifier
+                        Remove all flow classifiers from the port chain
+  --port-pair-group <port-pair-group>
+                        Remove port pair group(s) from the port chain (name or
+                        ID). This option can be repeated.
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

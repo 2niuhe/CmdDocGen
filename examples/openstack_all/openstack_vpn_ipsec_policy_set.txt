@@ -1,0 +1,37 @@
+usage: openstack vpn ipsec policy set [-h] [--description <description>]
+                                      [--auth-algorithm {sha1,sha256,sha384,sha512}]
+                                      [--encapsulation-mode {tunnel,transport}]
+                                      [--encryption-algorithm {3des,aes-128,aes-192,aes-256}]
+                                      [--lifetime units=UNITS,value=VALUE]
+                                      [--pfs {group2,group5,group14}]
+                                      [--transform-protocol {esp,ah,ah-esp}]
+                                      [--name <name>]
+                                      <ipsec-policy>
+
+Set IPsec policy properties
+
+positional arguments:
+  <ipsec-policy>        IPsec policy to set (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --description <description>
+                        Description of the IPsec policy
+  --auth-algorithm {sha1,sha256,sha384,sha512}
+                        Authentication algorithm for IPsec policy
+  --encapsulation-mode {tunnel,transport}
+                        Encapsulation mode for IPsec policy
+  --encryption-algorithm {3des,aes-128,aes-192,aes-256}
+                        Encryption algorithm for IPsec policy
+  --lifetime units=UNITS,value=VALUE
+                        IPsec lifetime attributes. 'units'-seconds,
+                        default:seconds. 'value'-non negative integer,
+                        default:3600.
+  --pfs {group2,group5,group14}
+                        Perfect Forward Secrecy for IPsec policy
+  --transform-protocol {esp,ah,ah-esp}
+                        Transform protocol for IPsec policy
+  --name <name>         Name of the IPsec policy
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

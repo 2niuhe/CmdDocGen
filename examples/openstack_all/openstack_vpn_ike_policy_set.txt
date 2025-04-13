@@ -1,0 +1,37 @@
+usage: openstack vpn ike policy set [-h] [--description <description>]
+                                    [--auth-algorithm {sha1,sha256,sha384,sha512}]
+                                    [--encryption-algorithm {aes-128,3des,aes-192,aes-256}]
+                                    [--phase1-negotiation-mode {main,aggressive}]
+                                    [--ike-version {v1,v2}]
+                                    [--pfs {group5,group2,group14}]
+                                    [--lifetime units=UNITS,value=VALUE]
+                                    [--name <name>]
+                                    <ike-policy>
+
+Set IKE policy properties
+
+positional arguments:
+  <ike-policy>          IKE policy to set (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --description <description>
+                        Description of the IKE policy
+  --auth-algorithm {sha1,sha256,sha384,sha512}
+                        Authentication algorithm
+  --encryption-algorithm {aes-128,3des,aes-192,aes-256}
+                        Encryption algorithm
+  --phase1-negotiation-mode {main,aggressive}
+                        IKE Phase1 negotiation mode
+  --ike-version {v1,v2}
+                        IKE version for the policy
+  --pfs {group5,group2,group14}
+                        Perfect Forward Secrecy
+  --lifetime units=UNITS,value=VALUE
+                        IKE lifetime attributes. 'units'-seconds,
+                        default:seconds. 'value'-non negative integer,
+                        default:3600.
+  --name <name>         Name of the IKE policy
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

@@ -1,0 +1,12 @@
+usage: openstack vpn service delete [-h] <vpn-service> [<vpn-service> ...]
+
+Delete VPN service(s)
+
+positional arguments:
+  <vpn-service>  VPN service to delete (name or ID)
+
+options:
+  -h, --help     show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

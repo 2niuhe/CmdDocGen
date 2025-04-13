@@ -1,0 +1,14 @@
+usage: openstack sfc flow classifier delete [-h]
+                                            <flow-classifier>
+                                            [<flow-classifier> ...]
+
+Delete a given flow classifier
+
+positional arguments:
+  <flow-classifier>  Flow classifier(s) to delete (name or ID)
+
+options:
+  -h, --help         show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

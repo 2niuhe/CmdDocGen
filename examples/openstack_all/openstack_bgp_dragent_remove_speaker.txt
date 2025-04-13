@@ -1,0 +1,13 @@
+usage: openstack bgp dragent remove speaker [-h] <agent-id> <bgp-speaker>
+
+Removes a BGP speaker from a dynamic routing agent
+
+positional arguments:
+  <agent-id>     ID of the dynamic routing agent
+  <bgp-speaker>  ID or name of the BGP speaker
+
+options:
+  -h, --help     show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

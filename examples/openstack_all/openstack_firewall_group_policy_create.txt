@@ -1,0 +1,68 @@
+usage: openstack firewall group policy create [-h]
+                                              [-f {json,shell,table,value,yaml}]
+                                              [-c COLUMN] [--noindent]
+                                              [--prefix PREFIX]
+                                              [--max-width <integer>]
+                                              [--fit-width] [--print-empty]
+                                              [--description DESCRIPTION]
+                                              [--audited | --no-audited]
+                                              [--share | --no-share]
+                                              [--project <project>]
+                                              [--project-domain <project-domain>]
+                                              [--firewall-rule <firewall-rule> | --no-firewall-rule]
+                                              <name>
+
+Create a new firewall policy
+
+positional arguments:
+  <name>                Name for the firewall policy
+
+options:
+  -h, --help            show this help message and exit
+  --description DESCRIPTION
+                        Description of the firewall policy
+  --audited             Enable auditing for the policy
+  --no-audited          Disable auditing for the policy
+  --share               Share the firewall policy to be used in all projects
+                        (by default, it is restricted to be used by the
+                        current project).
+  --no-share            Restrict use of the firewall policy to the current
+                        project
+  --project <project>   Owner's project (name or ID)
+  --project-domain <project-domain>
+                        Domain the project belongs to (name or ID). This can
+                        be used in case collisions between project names
+                        exist.
+  --firewall-rule <firewall-rule>
+                        Firewall rule(s) to apply (name or ID)
+  --no-firewall-rule    Unset all firewall rules from firewall policy
+
+output formatters:
+  output formatter options
+
+  -f {json,shell,table,value,yaml}, --format {json,shell,table,value,yaml}
+                        the output format, defaults to table
+  -c COLUMN, --column COLUMN
+                        specify the column(s) to include, can be repeated to
+                        show multiple columns
+
+json formatter:
+  --noindent            whether to disable indenting the JSON
+
+shell formatter:
+  a format a UNIX shell can parse (variable="value")
+
+  --prefix PREFIX       add a prefix to all variable names
+
+table formatter:
+  --max-width <integer>
+                        Maximum display width, <1 to disable. You can also use
+                        the CLIFF_MAX_TERM_WIDTH environment variable, but the
+                        parameter takes precedence.
+  --fit-width           Fit the table to the display width. Implied if --max-
+                        width greater than 0. Set the environment variable
+                        CLIFF_FIT_WIDTH=1 to always enable
+  --print-empty         Print empty table if there is no data to show.
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

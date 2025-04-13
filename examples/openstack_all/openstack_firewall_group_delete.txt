@@ -1,0 +1,13 @@
+usage: openstack firewall group delete [-h]
+                                       <firewall-group> [<firewall-group> ...]
+
+Delete firewall group(s)
+
+positional arguments:
+  <firewall-group>  Firewall group(s) to delete (name or ID)
+
+options:
+  -h, --help        show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

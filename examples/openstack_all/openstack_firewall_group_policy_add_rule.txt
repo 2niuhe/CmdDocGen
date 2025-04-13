@@ -1,0 +1,23 @@
+usage: openstack firewall group policy add rule [-h]
+                                                [--insert-before <firewall-rule>]
+                                                [--insert-after <firewall-rule>]
+                                                <firewall-policy>
+                                                <firewall-rule>
+
+Insert a rule into a given firewall policy
+
+positional arguments:
+  <firewall-policy>     Firewall policy to insert rule (name or ID)
+  <firewall-rule>       Firewall rule to be inserted (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --insert-before <firewall-rule>
+                        Insert the new rule before this existing rule (name or
+                        ID)
+  --insert-after <firewall-rule>
+                        Insert the new rule after this existing rule (name or
+                        ID)
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

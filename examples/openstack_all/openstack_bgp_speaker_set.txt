@@ -1,0 +1,30 @@
+usage: openstack bgp speaker set [-h] [--name NAME]
+                                 [--advertise-floating-ip-host-routes]
+                                 [--no-advertise-floating-ip-host-routes]
+                                 [--advertise-tenant-networks]
+                                 [--no-advertise-tenant-networks]
+                                 <bgp-speaker>
+
+Set BGP speaker properties
+
+positional arguments:
+  <bgp-speaker>         BGP speaker to update (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --name NAME           New name for the BGP speaker
+  --advertise-floating-ip-host-routes
+                        Enable the advertisement of floating IP host routes by
+                        the BGP speaker. (default)
+  --no-advertise-floating-ip-host-routes
+                        Disable the advertisement of floating IP host routes
+                        by the BGP speaker.
+  --advertise-tenant-networks
+                        Enable the advertisement of tenant network routes by
+                        the BGP speaker. (default)
+  --no-advertise-tenant-networks
+                        Disable the advertisement of tenant network routes by
+                        the BGP speaker.
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

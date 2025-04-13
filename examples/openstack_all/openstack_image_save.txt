@@ -1,0 +1,11 @@
+usage: openstack image save [-h] [--file <filename>] <image>
+
+Save an image locally
+
+positional arguments:
+  <image>            Image to save (name or ID)
+
+options:
+  -h, --help         show this help message and exit
+  --file <filename>  Downloaded image save filename (default: stdout)
+Could not clean up: 'ClientManager' object has no attribute 'session'

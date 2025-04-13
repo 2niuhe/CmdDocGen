@@ -1,0 +1,18 @@
+usage: openstack sfc port pair group unset [-h]
+                                           [--port-pair <port-pair> | --all-port-pair]
+                                           <port-pair-group>
+
+Unset port pairs from port pair group
+
+positional arguments:
+  <port-pair-group>     Port pair group to unset (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --port-pair <port-pair>
+                        Remove port pair(s) from the port pair group (name or
+                        ID). This option can be repeated.
+  --all-port-pair       Remove all port pairs from the port pair group
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

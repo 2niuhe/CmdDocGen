@@ -1,0 +1,10 @@
+usage: openstack server migrate confirm [-h] <server>
+
+DEPRECATED: Use 'server migration confirm' instead.
+
+positional arguments:
+  <server>    Server (name or ID)
+
+options:
+  -h, --help  show this help message and exit
+Could not clean up: 'ClientManager' object has no attribute 'session'

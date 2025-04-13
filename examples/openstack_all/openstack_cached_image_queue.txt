@@ -1,0 +1,10 @@
+usage: openstack cached image queue [-h] <image> [<image> ...]
+
+Queue image(s) for caching.
+
+positional arguments:
+  <image>     Image to display (name or ID)
+
+options:
+  -h, --help  show this help message and exit
+Could not clean up: 'ClientManager' object has no attribute 'session'

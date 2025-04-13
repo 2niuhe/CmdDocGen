@@ -1,0 +1,12 @@
+usage: openstack project delete [-h] [--domain <domain>]
+                                <project> [<project> ...]
+
+Delete project(s)
+
+positional arguments:
+  <project>          Project(s) to delete (name or ID)
+
+options:
+  -h, --help         show this help message and exit
+  --domain <domain>  Domain owning <project> (name or ID)
+Could not clean up: 'ClientManager' object has no attribute 'session'

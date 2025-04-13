@@ -1,0 +1,16 @@
+usage: openstack bgp peer set [-h] [--name NAME] [--password <auth-password>]
+                              <bgp-peer>
+
+Update a BGP peer
+
+positional arguments:
+  <bgp-peer>            BGP peer to update (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --name NAME           Updated name of the BGP peer
+  --password <auth-password>
+                        Updated authentication password
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

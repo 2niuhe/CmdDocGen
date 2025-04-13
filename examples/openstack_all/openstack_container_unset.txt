@@ -1,0 +1,12 @@
+usage: openstack container unset [-h] --property <key> <container>
+
+Unset container properties
+
+positional arguments:
+  <container>       Container to modify
+
+options:
+  -h, --help        show this help message and exit
+  --property <key>  Property to remove from container (repeat option to remove
+                    multiple properties)
+Could not clean up: 'ClientManager' object has no attribute 'session'

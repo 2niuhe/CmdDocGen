@@ -1,0 +1,10 @@
+usage: openstack server unpause [-h] <server> [<server> ...]
+
+Unpause server(s)
+
+positional arguments:
+  <server>    Server(s) to unpause (name or ID)
+
+options:
+  -h, --help  show this help message and exit
+Could not clean up: 'ClientManager' object has no attribute 'session'

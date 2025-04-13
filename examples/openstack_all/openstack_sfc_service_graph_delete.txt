@@ -1,0 +1,14 @@
+usage: openstack sfc service graph delete [-h]
+                                          <service-graph>
+                                          [<service-graph> ...]
+
+Delete a given service graph.
+
+positional arguments:
+  <service-graph>  ID or name of the service graph(s) to delete.
+
+options:
+  -h, --help       show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

@@ -1,0 +1,13 @@
+usage: openstack vpn ipsec policy delete [-h]
+                                         <ipsec-policy> [<ipsec-policy> ...]
+
+Delete IPsec policy(policies)
+
+positional arguments:
+  <ipsec-policy>  ipsec policy to delete (name or ID)
+
+options:
+  -h, --help      show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

@@ -1,0 +1,22 @@
+usage: openstack vpn service set [-h] [--description <description>]
+                                 [--subnet <subnet>] [--flavor <flavor>]
+                                 [--enable | --disable] [--name <name>]
+                                 <vpn-service>
+
+Set VPN service properties
+
+positional arguments:
+  <vpn-service>         VPN service to modify (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --description <description>
+                        Description for the VPN service
+  --subnet <subnet>     Local private subnet (name or ID)
+  --flavor <flavor>     Flavor for the VPN service (name or ID)
+  --enable              Enable VPN service
+  --disable             Disable VPN service
+  --name <name>         Name for the VPN service
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

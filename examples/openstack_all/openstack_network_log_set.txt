@@ -1,0 +1,19 @@
+usage: openstack network log set [-h] [--description <description>]
+                                 [--enable | --disable] [--name <name>]
+                                 <network-log>
+
+Set network log properties
+
+positional arguments:
+  <network-log>         Network log to set (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --description <description>
+                        Description of the network log
+  --enable              Enable this log
+  --disable             Disable this log (default is enabled)
+  --name <name>         Name of the network log
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

@@ -1,0 +1,17 @@
+usage: openstack bgpvpn port association delete [-h]
+                                                <port association ID>
+                                                [<port association ID> ...]
+                                                <bgpvpn>
+
+Delete a BGP VPN port association(s) for a given BGP VPN
+
+positional arguments:
+  <port association ID>
+                        Port association ID(s) to remove
+  <bgpvpn>              BGP VPN the port association belongs to (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

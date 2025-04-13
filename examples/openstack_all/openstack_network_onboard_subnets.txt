@@ -1,0 +1,13 @@
+usage: openstack network onboard subnets [-h] <network> <subnetpool>
+
+Onboard network subnets into a subnet pool
+
+positional arguments:
+  <network>     Onboard all subnets associated with this network
+  <subnetpool>  Target subnet pool for onboarding subnets
+
+options:
+  -h, --help    show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

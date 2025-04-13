@@ -1,0 +1,61 @@
+usage: openstack sfc port pair group create [-h]
+                                            [-f {json,shell,table,value,yaml}]
+                                            [-c COLUMN] [--noindent]
+                                            [--prefix PREFIX]
+                                            [--max-width <integer>]
+                                            [--fit-width] [--print-empty]
+                                            [--description <description>]
+                                            [--port-pair <port-pair>]
+                                            [--enable-tap | --disable-tap]
+                                            [--port-pair-group-parameters lb-fields=<lb-fields>]
+                                            <name>
+
+Create a port pair group
+
+positional arguments:
+  <name>                Name of the port pair group
+
+options:
+  -h, --help            show this help message and exit
+  --description <description>
+                        Description for the port pair group
+  --port-pair <port-pair>
+                        Port pair (name or ID). This option can be repeated.
+  --enable-tap          Port pairs of this port pair group are deployed as
+                        passive tap service function
+  --disable-tap         Port pairs of this port pair group are deployed as l3
+                        service function (default)
+  --port-pair-group-parameters lb-fields=<lb-fields>
+                        Dictionary of port pair group parameters. Currently
+                        only one parameter lb-fields is supported. <lb-fields>
+                        is a & separated list of load-balancing fields.
+
+output formatters:
+  output formatter options
+
+  -f {json,shell,table,value,yaml}, --format {json,shell,table,value,yaml}
+                        the output format, defaults to table
+  -c COLUMN, --column COLUMN
+                        specify the column(s) to include, can be repeated to
+                        show multiple columns
+
+json formatter:
+  --noindent            whether to disable indenting the JSON
+
+shell formatter:
+  a format a UNIX shell can parse (variable="value")
+
+  --prefix PREFIX       add a prefix to all variable names
+
+table formatter:
+  --max-width <integer>
+                        Maximum display width, <1 to disable. You can also use
+                        the CLIFF_MAX_TERM_WIDTH environment variable, but the
+                        parameter takes precedence.
+  --fit-width           Fit the table to the display width. Implied if --max-
+                        width greater than 0. Set the environment variable
+                        CLIFF_FIT_WIDTH=1 to always enable
+  --print-empty         Print empty table if there is no data to show.
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

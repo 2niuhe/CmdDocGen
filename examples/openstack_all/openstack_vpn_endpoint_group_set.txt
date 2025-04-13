@@ -1,0 +1,17 @@
+usage: openstack vpn endpoint group set [-h] [--description <description>]
+                                        [--name <name>]
+                                        <endpoint-group>
+
+Set endpoint group properties
+
+positional arguments:
+  <endpoint-group>      Endpoint group to set (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --description <description>
+                        Description for the endpoint group
+  --name <name>         Set a name for the endpoint group
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

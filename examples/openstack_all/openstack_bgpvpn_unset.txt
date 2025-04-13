@@ -1,0 +1,45 @@
+usage: openstack bgpvpn unset [-h] [--route-target <route-target>]
+                              [--all-route-target]
+                              [--import-target <import-target>]
+                              [--all-import-target]
+                              [--export-target <export-target>]
+                              [--all-export-target]
+                              [--route-distinguisher <route-distinguisher>]
+                              [--all-route-distinguisher] [--vni VNI]
+                              [--local-pref LOCAL_PREF]
+                              <bgpvpn>
+
+Unset BGP VPN properties
+
+positional arguments:
+  <bgpvpn>              BGP VPN to update (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --route-target <route-target>
+                        Remove Route Target from import/export list (repeat
+                        option for multiple Route Targets)
+  --all-route-target    Empty route target list
+  --import-target <import-target>
+                        Remove Route Target from import list (repeat option
+                        for multiple Route Targets)
+  --all-import-target   Empty import route target list
+  --export-target <export-target>
+                        Remove Route Target from export list (repeat option
+                        for multiple Route Targets)
+  --all-export-target   Empty export route target list
+  --route-distinguisher <route-distinguisher>
+                        Remove Route Distinguisher from the list of Route
+                        Distinguishers from which a Route Distinguishers will
+                        be picked from to advertise a VPN route (repeat option
+                        for multiple Route Distinguishers)
+  --all-route-distinguisher
+                        Empty route distinguisher list
+  --vni VNI             VXLAN Network Identifier to be used for this BGPVPN
+                        when a VXLAN encapsulation is used
+  --local-pref LOCAL_PREF
+                        Default BGP LOCAL_PREF to use in route
+                        advertisementstowards this BGPVPN.
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

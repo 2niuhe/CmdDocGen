@@ -1,0 +1,10 @@
+usage: openstack region delete [-h] <region-id> [<region-id> ...]
+
+Delete region(s)
+
+positional arguments:
+  <region-id>  Region ID(s) to delete
+
+options:
+  -h, --help   show this help message and exit
+Could not clean up: 'ClientManager' object has no attribute 'session'

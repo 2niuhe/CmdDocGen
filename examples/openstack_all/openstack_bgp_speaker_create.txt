@@ -1,0 +1,71 @@
+usage: openstack bgp speaker create [-h] [-f {json,shell,table,value,yaml}]
+                                    [-c COLUMN] [--noindent] [--prefix PREFIX]
+                                    [--max-width <integer>] [--fit-width]
+                                    [--print-empty] --local-as <local-as>
+                                    [--ip-version {4,6}]
+                                    [--advertise-floating-ip-host-routes]
+                                    [--no-advertise-floating-ip-host-routes]
+                                    [--advertise-tenant-networks]
+                                    [--no-advertise-tenant-networks]
+                                    [--project <project>]
+                                    [--project-domain <project-domain>]
+                                    <name>
+
+Create a BGP speaker
+
+positional arguments:
+  <name>                Name of the BGP speaker to create
+
+options:
+  -h, --help            show this help message and exit
+  --local-as <local-as>
+                        Local AS number. (Integer in [1, 4294967295] is
+                        allowed.)
+  --ip-version {4,6}    IP version for the BGP speaker (default is 4)
+  --advertise-floating-ip-host-routes
+                        Enable the advertisement of floating IP host routes by
+                        the BGP speaker. (default)
+  --no-advertise-floating-ip-host-routes
+                        Disable the advertisement of floating IP host routes
+                        by the BGP speaker.
+  --advertise-tenant-networks
+                        Enable the advertisement of tenant network routes by
+                        the BGP speaker. (default)
+  --no-advertise-tenant-networks
+                        Disable the advertisement of tenant network routes by
+                        the BGP speaker.
+  --project <project>   Owner's project (name or ID)
+  --project-domain <project-domain>
+                        Domain the project belongs to (name or ID). This can
+                        be used in case collisions between project names
+                        exist.
+
+output formatters:
+  output formatter options
+
+  -f {json,shell,table,value,yaml}, --format {json,shell,table,value,yaml}
+                        the output format, defaults to table
+  -c COLUMN, --column COLUMN
+                        specify the column(s) to include, can be repeated to
+                        show multiple columns
+
+json formatter:
+  --noindent            whether to disable indenting the JSON
+
+shell formatter:
+  a format a UNIX shell can parse (variable="value")
+
+  --prefix PREFIX       add a prefix to all variable names
+
+table formatter:
+  --max-width <integer>
+                        Maximum display width, <1 to disable. You can also use
+                        the CLIFF_MAX_TERM_WIDTH environment variable, but the
+                        parameter takes precedence.
+  --fit-width           Fit the table to the display width. Implied if --max-
+                        width greater than 0. Set the environment variable
+                        CLIFF_FIT_WIDTH=1 to always enable
+  --print-empty         Print empty table if there is no data to show.
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

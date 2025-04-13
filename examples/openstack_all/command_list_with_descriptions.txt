@@ -1,0 +1,666 @@
+access rule delete - Delete access rule(s)
+access rule list - List access rules
+access rule show - Display access rule details
+access token create - Create an access token
+address group create - Create a new Address Group
+address group delete - Delete address group(s)
+address group list - List address groups
+address group set - Set address group properties
+address group show - Display address group details
+address group unset - Unset address group properties
+address scope create - Create a new Address Scope
+address scope delete - Delete address scope(s)
+address scope list - List address scopes
+address scope set - Set address scope properties
+address scope show - Display address scope details
+aggregate add host - Add host to aggregate
+aggregate cache image - Request image caching for aggregate
+aggregate create - Create a new aggregate
+aggregate delete - Delete existing aggregate(s)
+aggregate list - List all aggregates
+aggregate remove host - Remove host from aggregate
+aggregate set - Set aggregate properties
+aggregate show - Display aggregate details
+aggregate unset - Unset aggregate properties
+application credential create - Create new application credential
+application credential delete - Delete application credentials(s)
+application credential list - List application credentials
+application credential show - Display application credential details
+availability zone list - List availability zones and their status
+bgp dragent add speaker - Add a BGP speaker to a dynamic routing agent (python-neutronclient)
+bgp dragent list - List dynamic routing agents (python-neutronclient)
+bgp dragent remove speaker - Removes a BGP speaker from a dynamic routing agent (python-neutronclient)
+bgp peer create - Create a BGP peer (python-neutronclient)
+bgp peer delete - Delete a BGP peer (python-neutronclient)
+bgp peer list - List BGP peers (python-neutronclient)
+bgp peer set - Update a BGP peer (python-neutronclient)
+bgp peer show - Show information for a BGP peer (python-neutronclient)
+bgp speaker add network - Add a network to a BGP speaker (python-neutronclient)
+bgp speaker add peer - Add a peer to a BGP speaker (python-neutronclient)
+bgp speaker create - Create a BGP speaker (python-neutronclient)
+bgp speaker delete - Delete a BGP speaker (python-neutronclient)
+bgp speaker list - List BGP speakers (python-neutronclient)
+bgp speaker list advertised routes - List routes advertised (python-neutronclient)
+bgp speaker remove network - Remove a network from a BGP speaker (python-neutronclient)
+bgp speaker remove peer - Remove a peer from a BGP speaker (python-neutronclient)
+bgp speaker set - Set BGP speaker properties (python-neutronclient)
+bgp speaker show - Show a BGP speaker (python-neutronclient)
+bgpvpn create - Create BGP VPN resource (python-neutronclient)
+bgpvpn delete - Delete BGP VPN resource(s) (python-neutronclient)
+bgpvpn list - List BGP VPN resources (python-neutronclient)
+bgpvpn network association create - Create a BGP VPN network association (python-neutronclient)
+bgpvpn network association delete - Delete a BGP VPN network association(s) for a given BGP VPN (python-neutronclient)
+bgpvpn network association list - List BGP VPN network associations for a given BGP VPN (python-neutronclient)
+bgpvpn network association show - Show information of a given BGP VPN network association (python-neutronclient)
+bgpvpn port association create - Create a BGP VPN port association (python-neutronclient)
+bgpvpn port association delete - Delete a BGP VPN port association(s) for a given BGP VPN (python-neutronclient)
+bgpvpn port association list - List BGP VPN port associations for a given BGP VPN (python-neutronclient)
+bgpvpn port association set - Set BGP VPN port association properties (python-neutronclient)
+bgpvpn port association show - Show information of a given BGP VPN port association (python-neutronclient)
+bgpvpn port association unset - Unset BGP VPN port association properties (python-neutronclient)
+bgpvpn router association create - Create a BGP VPN router association (python-neutronclient)
+bgpvpn router association delete - Delete a BGP VPN router association(s) for a given BGP VPN (python-neutronclient)
+bgpvpn router association list - List BGP VPN router associations for a given BGP VPN (python-neutronclient)
+bgpvpn router association set - Set BGP VPN router association properties (python-neutronclient)
+bgpvpn router association show - Show information of a given BGP VPN router association (python-neutronclient)
+bgpvpn router association unset - Unset BGP VPN router association properties (python-neutronclient)
+bgpvpn set - Set BGP VPN properties (python-neutronclient)
+bgpvpn show - Show information of a given BGP VPN (python-neutronclient)
+bgpvpn unset - Unset BGP VPN properties (python-neutronclient)
+block storage cleanup - Do block storage cleanup
+block storage cluster list - List block storage clusters
+block storage cluster set - Set block storage cluster properties
+block storage cluster show - Show detailed information for a block storage cluster
+block storage log level list - List log levels of block storage service
+block storage log level set - Set log level of block storage service
+block storage resource filter list - List block storage resource filters
+block storage resource filter show - Show filters for a block storage resource type
+block storage snapshot manageable list - List manageable snapshots
+block storage volume manageable list - List manageable volumes
+cached image clear - Clear all images from cache, queue or both
+cached image delete - Delete image(s) from cache
+cached image list - Get Cache State
+cached image queue - Queue image(s) for caching
+catalog list - List services in the service catalog
+catalog show - Display service catalog details
+command list - List recognized commands by group
+compute agent create - Create compute agent
+compute agent delete - Delete compute agent(s)
+compute agent list - List compute agents
+compute agent set - Set compute agent properties
+compute service delete - Delete compute service(s)
+compute service list - List compute services
+compute service set - Set compute service properties
+configuration show - Display configuration details
+consistency group add volume - Add volume(s) to consistency group
+consistency group create - Create new consistency group
+consistency group delete - Delete consistency group(s)
+consistency group list - List consistency groups
+consistency group remove volume - Remove volume(s) from consistency group
+consistency group set - Set consistency group properties
+consistency group show - Display consistency group details
+consistency group snapshot create - Create new consistency group snapshot
+consistency group snapshot delete - Delete consistency group snapshot(s)
+consistency group snapshot list - List consistency group snapshots
+consistency group snapshot show - Display consistency group snapshot details
+console log show - Show server's console output
+console url show - Show server's remote console URL
+consumer create - Create new consumer
+consumer delete - Delete consumer(s)
+consumer list - List consumers
+consumer set - Set consumer properties
+consumer show - Display consumer details
+container create - Create new container
+container delete - Delete container
+container list - List containers
+container save - Save container contents locally
+container set - Set container properties
+container show - Display container details
+container unset - Unset container properties
+credential create - Create new credential
+credential delete - Delete credential(s)
+credential list - List credentials
+credential set - Set credential properties
+credential show - Display credential details
+default security group rule create - Add a new security group rule to the default security group template
+default security group rule delete - Remove security group rule(s) from the default security group template
+default security group rule list - List security group rules used for new default security groups
+default security group rule show - Show a security group rule used for new default security groups
+domain create - Create new domain
+domain delete - Delete domain(s)
+domain list - List domains
+domain set - Set domain properties
+domain show - Display domain details
+ec2 credentials create - Create EC2 credentials
+ec2 credentials delete - Delete EC2 credentials
+ec2 credentials list - List EC2 credentials
+ec2 credentials show - Display EC2 credentials details
+endpoint add project - Associate a project to an endpoint
+endpoint create - Create new endpoint
+endpoint delete - Delete endpoint(s)
+endpoint group add project - Add a project to an endpoint group
+endpoint group create - Create new endpoint group
+endpoint group delete - Delete endpoint group(s)
+endpoint group list - List endpoint groups
+endpoint group remove project - Remove project from endpoint group
+endpoint group set - Set endpoint group properties
+endpoint group show - Display endpoint group details
+endpoint list - List endpoints
+endpoint remove project - Dissociate a project from an endpoint
+endpoint set - Set endpoint properties
+endpoint show - Display endpoint details
+extension list - List API extensions
+extension show - Show API extension
+federation domain list - List accessible domains
+federation project list - List accessible projects
+federation protocol create - Create new federation protocol
+federation protocol delete - Delete federation protocol(s)
+federation protocol list - List federation protocols
+federation protocol set - Set federation protocol properties
+federation protocol show - Display federation protocol details
+firewall group create - Create a new firewall group (python-neutronclient)
+firewall group delete - Delete firewall group(s) (python-neutronclient)
+firewall group list - List firewall groups (python-neutronclient)
+firewall group policy add rule - Insert a rule into a given firewall policy (python-neutronclient)
+firewall group policy create - Create a new firewall policy (python-neutronclient)
+firewall group policy delete - Delete firewall policy(s) (python-neutronclient)
+firewall group policy list - List firewall policies (python-neutronclient)
+firewall group policy remove rule - Remove a rule from a given firewall policy (python-neutronclient)
+firewall group policy set - Set firewall policy properties (python-neutronclient)
+firewall group policy show - Display firewall policy details (python-neutronclient)
+firewall group policy unset - Unset firewall policy properties (python-neutronclient)
+firewall group rule create - Create a new firewall rule (python-neutronclient)
+firewall group rule delete - Delete firewall rule(s) (python-neutronclient)
+firewall group rule list - List firewall rules that belong to a given tenant (python-neutronclient)
+firewall group rule set - Set firewall rule properties (python-neutronclient)
+firewall group rule show - Display firewall rule details (python-neutronclient)
+firewall group rule unset - Unset firewall rule properties (python-neutronclient)
+firewall group set - Set firewall group properties (python-neutronclient)
+firewall group show - Display firewall group details (python-neutronclient)
+firewall group unset - Unset firewall group properties (python-neutronclient)
+flavor create - Create new flavor
+flavor delete - Delete flavor(s)
+flavor list - List flavors
+flavor set - Set flavor properties
+flavor show - Display flavor details
+flavor unset - Unset flavor properties
+floating ip create - Create floating IP
+floating ip delete - Delete floating IP(s)
+floating ip list - List floating IP(s)
+floating ip pool list - List pools of floating IP addresses
+floating ip port forwarding create - Create floating IP port forwarding
+floating ip port forwarding delete - Delete floating IP port forwarding
+floating ip port forwarding list - List floating IP port forwarding
+floating ip port forwarding set - Set floating IP Port Forwarding Properties
+floating ip port forwarding show - Display floating IP Port Forwarding details
+floating ip set - Set floating IP Properties
+floating ip show - Display floating IP details
+floating ip unset - Unset floating IP Properties
+group add user - Add user to group
+group contains user - Check user membership in group
+group create - Create new group
+group delete - Delete group(s)
+group list - List groups
+group remove user - Remove user from group
+group set - Set group properties
+group show - Display group details
+host list - DEPRECATED: List hosts
+host set - DEPRECATED: Set host properties
+host show - DEPRECATED: Display host details
+hypervisor list - List hypervisors
+hypervisor show - Display hypervisor details
+hypervisor stats show - Display hypervisor stats details
+identity provider create - Create new identity provider
+identity provider delete - Delete identity provider(s)
+identity provider list - List identity providers
+identity provider set - Set identity provider properties
+identity provider show - Display identity provider details
+image add project - Associate project with image
+image create - Create/upload an image
+image delete - Delete image(s)
+image import - Initiate the image import process
+image import info - Show available import methods
+image list - List available images
+image member get - Show a particular project associated with image
+image member list - List projects associated with image
+image metadef namespace create - Create a metadef namespace
+image metadef namespace delete - Delete metadef namespace
+image metadef namespace list - List metadef namespaces
+image metadef namespace set - Set metadef namespace properties
+image metadef namespace show - Show a metadef namespace
+image metadef object create - Create a metadef object
+image metadef object delete - Delete metadata definitions object(s)
+image metadef object list - List metadef objects inside a specific namespace
+image metadef object property show - Describe a specific metadata definitions property inside an object
+image metadef object show - Show a particular metadef object
+image metadef object update - Update a metadef object
+image metadef property create - Create a metadef property
+image metadef property delete - Delete metadef propert(ies)
+image metadef property list - List metadef properties
+image metadef property set - Update metadef namespace property
+image metadef property show - Show a particular metadef property
+image metadef resource type association create - Create metadef resource type association
+image metadef resource type association delete - Delete metadef resource type association
+image metadef resource type association list - List metadef resource type associations
+image metadef resource type list - List metadef resource types
+image remove project - Disassociate project with image
+image save - Save an image locally
+image set - Set image properties
+image show - Display image details
+image stage - Upload data for a specific image to staging
+image stores list - Get available backends (only valid with Multi-Backend support)
+image task list - List tasks
+image task show - Display task details
+image unset - Unset image tags and properties
+implied role create - Creates an association between prior and implied roles
+implied role delete - Deletes an association between prior and implied roles
+implied role list - List implied roles
+ip availability list - List IP availability for network
+ip availability show - Show network IP availability details
+keypair create - Create new public or private key for server ssh access
+keypair delete - Delete public or private key(s)
+keypair list - List key fingerprints
+keypair show - Display key details
+limit create - Create a limit
+limit delete - Delete a limit
+limit list - List limits
+limit set - Update information about a limit
+limit show - Display limit details
+limits show - Show compute and block storage limits
+local ip association create - Create Local IP Association
+local ip association delete - Delete Local IP association(s)
+local ip association list - List Local IP Associations
+local ip create - Create Local IP
+local ip delete - Delete Local IP(s)
+local ip list - List Local IPs
+local ip set - Set Local IP properties
+local ip show - Display Local IP details
+mapping create - Create new mapping
+mapping delete - Delete mapping(s)
+mapping list - List mappings
+mapping set - Set mapping properties
+mapping show - Display mapping details
+module list - List module versions
+network agent add network - Add network to an agent
+network agent add router - Add router to an agent
+network agent delete - Delete network agent(s)
+network agent list - List network agents
+network agent remove network - Remove network from an agent
+network agent remove router - Remove router from an agent
+network agent set - Set network agent properties
+network agent show - Display network agent details
+network auto allocated topology create - Create the  auto allocated topology for project
+network auto allocated topology delete - Delete auto allocated topology for project
+network create - Create new network
+network delete - Delete network(s)
+network flavor add profile - Add a service profile to a network flavor
+network flavor create - Create new network flavor
+network flavor delete - Delete network flavors
+network flavor list - List network flavors
+network flavor profile create - Create new network flavor profile
+network flavor profile delete - Delete network flavor profile
+network flavor profile list - List network flavor profile(s)
+network flavor profile set - Set network flavor profile properties
+network flavor profile show - Display network flavor profile details
+network flavor remove profile - Remove service profile from network flavor
+network flavor set - Set network flavor properties
+network flavor show - Display network flavor details
+network l3 conntrack helper create - Create a new L3 conntrack helper
+network l3 conntrack helper delete - Delete L3 conntrack helper
+network l3 conntrack helper list - List L3 conntrack helpers
+network l3 conntrack helper set - Set L3 conntrack helper properties
+network l3 conntrack helper show - Display L3 conntrack helper details
+network list - List networks
+network log create - Create a new network log (python-neutronclient)
+network log delete - Delete network log(s) (python-neutronclient)
+network log list - List network logs (python-neutronclient)
+network log set - Set network log properties (python-neutronclient)
+network log show - Display network log details (python-neutronclient)
+network loggable resources list - List supported loggable resources (python-neutronclient)
+network meter create - Create network meter
+network meter delete - Delete network meter
+network meter list - List network meters
+network meter rule create - Create a new meter rule
+network meter rule delete - Delete meter rule(s)
+network meter rule list - List meter rules
+network meter rule show - Display meter rules details
+network meter show - Show network meter
+network onboard subnets - Onboard network subnets into a subnet pool (python-neutronclient)
+network qos policy create - Create a QoS policy
+network qos policy delete - Delete Qos Policy(s)
+network qos policy list - List QoS policies
+network qos policy set - Set QoS policy properties
+network qos policy show - Display QoS policy details
+network qos rule create - Create new Network QoS rule
+network qos rule delete - Delete Network QoS rule
+network qos rule list - List Network QoS rules
+network qos rule set - Set Network QoS rule properties
+network qos rule show - Display Network QoS rule details
+network qos rule type list - List QoS rule types
+network qos rule type show - Show details about supported QoS rule type
+network rbac create - Create network RBAC policy
+network rbac delete - Delete network RBAC policy(s)
+network rbac list - List network RBAC policies
+network rbac set - Set network RBAC policy properties
+network rbac show - Display network RBAC policy details
+network segment create - Create new network segment
+network segment delete - Delete network segment(s)
+network segment list - List network segments
+network segment range create - Create new network segment range
+network segment range delete - Delete network segment range(s)
+network segment range list - List network segment ranges
+network segment range set - Set network segment range properties
+network segment range show - Display network segment range details
+network segment set - Set network segment properties
+network segment show - Display network segment details
+network service provider list - List Service Providers
+network set - Set network properties
+network show - Show network details
+network subport list - List all subports for a given network trunk
+network trunk create - Create a network trunk for a given project
+network trunk delete - Delete a given network trunk
+network trunk list - List all network trunks
+network trunk set - Set network trunk properties
+network trunk show - Show information of a given network trunk
+network trunk unset - Unset subports from a given network trunk
+network unset - Unset network properties
+object create - Upload object to container
+object delete - Delete object from container
+object list - List objects
+object save - Save object locally
+object set - Set object properties
+object show - Display object details
+object store account set - Set account properties
+object store account show - Display account details
+object store account unset - Unset account properties
+object unset - Unset object properties
+policy create - Create new policy
+policy delete - Delete policy(s)
+policy list - List policies
+policy set - Set policy properties
+policy show - Display policy details
+port create - Create a new port
+port delete - Delete port(s)
+port list - List ports
+port set - Set port properties
+port show - Display port details
+port unset - Unset port properties
+project cleanup - Clean resources associated with a project
+project create - Create new project
+project delete - Delete project(s)
+project list - List projects
+project set - Set project properties
+project show - Display project details
+quota delete - Delete configured quota for a project and revert to defaults
+quota list - List quotas for all projects with non-default quota values
+quota set - Set quotas for project or class
+quota show - Show quotas for project or class
+region create - Create new region
+region delete - Delete region(s)
+region list - List regions
+region set - Set region properties
+region show - Display region details
+registered limit create - Create a registered limit
+registered limit delete - Delete a registered limit
+registered limit list - List registered limits
+registered limit set - Update information about a registered limit
+registered limit show - Display registered limit details
+request token authorize - Authorize a request token
+request token create - Create a request token
+role add - Adds a role assignment to a user or group on the system, a domain, or a project
+role assignment list - List role assignments
+role create - Create new role
+role delete - Delete role(s)
+role list - List roles
+role remove - Removes a role assignment from system/domain/project : user/group
+role set - Set role properties
+role show - Display role details
+router add gateway - Add router gateway
+router add port - Add a port to a router
+router add route - Add extra static routes to a router's routing table
+router add subnet - Add a subnet to a router
+router create - Create a new router
+router delete - Delete router(s)
+router list - List routers
+router ndp proxy create - Create NDP proxy
+router ndp proxy delete - Delete NDP proxy
+router ndp proxy list - List NDP proxies
+router ndp proxy set - Set NDP proxy properties
+router ndp proxy show - Display NDP proxy details
+router remove gateway - Remove router gateway
+router remove port - Remove a port from a router
+router remove route - Remove extra static routes from a router's routing table
+router remove subnet - Remove a subnet from a router
+router set - Set router properties
+router show - Display router details
+router unset - Unset router properties
+security group create - Create a new security group
+security group delete - Delete security group(s)
+security group list - List security groups
+security group rule create - Create a new security group rule
+security group rule delete - Delete security group rule(s)
+security group rule list - List security group rules
+security group rule show - Display security group rule details
+security group set - Set security group properties
+security group show - Display security group details
+security group unset - Unset security group properties
+server add fixed ip - Add fixed IP address to server
+server add floating ip - Add floating IP address to server
+server add network - Add network to server
+server add port - Add port to server
+server add security group - Add security group(s) to server
+server add volume - Add volume to server
+server backup create - Create a server backup image
+server create - Create a new server
+server delete - Delete server(s)
+server dump create - Create a dump file in server(s)
+server evacuate - Evacuate a server to a different host
+server event list - List recent events of a server
+server event show - Show server event details
+server group create - Create a new server group
+server group delete - Delete existing server group(s)
+server group list - List all server groups
+server group show - Display server group details
+server image create - Create a new server disk image from an existing server
+server list - List servers
+server lock - Lock server(s)
+server migrate - Migrate server to different host
+server migrate confirm - DEPRECATED: Use 'server migration confirm' instead
+server migrate revert - DEPRECATED: Use 'server migration revert' instead
+server migration abort - Cancel an ongoing live migration
+server migration confirm - Confirm server migration
+server migration force complete - Force an ongoing live migration to complete
+server migration list - List server migrations
+server migration revert - Revert server migration
+server migration show - Show an in-progress live migration for a given server
+server pause - Pause server(s)
+server reboot - Perform a hard or soft server reboot
+server rebuild - Rebuild server
+server remove fixed ip - Remove fixed IP address from server
+server remove floating ip - Remove floating IP address from server
+server remove network - Remove all ports of a network from server
+server remove port - Remove port from server
+server remove security group - Remove security group from server
+server remove volume - Remove volume from server
+server rescue - Put server in rescue mode
+server resize - Scale server to a new flavor
+server resize confirm - Confirm server resize
+server resize revert - Revert server resize
+server restore - Restore server(s)
+server resume - Resume server(s)
+server set - Set server properties
+server shelve - Shelve and optionally offload server(s)
+server show - Show server details
+server ssh - SSH to server
+server start - Start server(s)
+server stop - Stop server(s)
+server suspend - Suspend server(s)
+server unlock - Unlock server(s)
+server unpause - Unpause server(s)
+server unrescue - Restore server from rescue mode
+server unset - Unset server properties and tags
+server unshelve - Unshelve server(s)
+server volume list - List all the volumes attached to a server
+server volume set - Update a volume attachment on the server
+server volume update - DEPRECATED: Use 'server volume set' instead
+service create - Create new service
+service delete - Delete service(s)
+service list - List services
+service provider create - Create new service provider
+service provider delete - Delete service provider(s)
+service provider list - List service providers
+service provider set - Set service provider properties
+service provider show - Display service provider details
+service set - Set service properties
+service show - Display service details
+sfc flow classifier create - Create a flow classifier (python-neutronclient)
+sfc flow classifier delete - Delete a given flow classifier (python-neutronclient)
+sfc flow classifier list - List flow classifiers (python-neutronclient)
+sfc flow classifier set - Set flow classifier properties (python-neutronclient)
+sfc flow classifier show - Display flow classifier details (python-neutronclient)
+sfc port chain create - Create a port chain (python-neutronclient)
+sfc port chain delete - Delete a given port chain (python-neutronclient)
+sfc port chain list - List port chains (python-neutronclient)
+sfc port chain set - Set port chain properties (python-neutronclient)
+sfc port chain show - Display port chain details (python-neutronclient)
+sfc port chain unset - Unset port chain properties (python-neutronclient)
+sfc port pair create - Create a port pair (python-neutronclient)
+sfc port pair delete - Delete a given port pair (python-neutronclient)
+sfc port pair group create - Create a port pair group (python-neutronclient)
+sfc port pair group delete - Delete a given port pair group (python-neutronclient)
+sfc port pair group list - List port pair group (python-neutronclient)
+sfc port pair group set - Set port pair group properties (python-neutronclient)
+sfc port pair group show - Display port pair group details (python-neutronclient)
+sfc port pair group unset - Unset port pairs from port pair group (python-neutronclient)
+sfc port pair list - List port pairs (python-neutronclient)
+sfc port pair set - Set port pair properties (python-neutronclient)
+sfc port pair show - Display port pair details (python-neutronclient)
+sfc service graph create - Create a service graph (python-neutronclient)
+sfc service graph delete - Delete a given service graph (python-neutronclient)
+sfc service graph list - List service graphs (python-neutronclient)
+sfc service graph set - Set service graph properties (python-neutronclient)
+sfc service graph show - Show information of a given service graph (python-neutronclient)
+subnet create - Create a subnet
+subnet delete - Delete subnet(s)
+subnet list - List subnets
+subnet pool create - Create subnet pool
+subnet pool delete - Delete subnet pool(s)
+subnet pool list - List subnet pools
+subnet pool set - Set subnet pool properties
+subnet pool show - Display subnet pool details
+subnet pool unset - Unset subnet pool properties
+subnet set - Set subnet properties
+subnet show - Display subnet details
+subnet unset - Unset subnet properties
+token issue - Issue new token
+token revoke - Revoke existing token
+trust create - Create new trust
+trust delete - Delete trust(s)
+trust list - List trusts
+trust show - Display trust details
+usage list - List resource usage per project
+usage show - Show resource usage for a single project
+user create - Create new user
+user delete - Delete user(s)
+user list - List users
+user password set - Change current user password
+user set - Set user properties
+user show - Display user details
+versions show - Show available versions of services
+volume attachment complete - Complete an attachment for a volume
+volume attachment create - Create an attachment for a volume
+volume attachment delete - Delete an attachment for a volume
+volume attachment list - Lists all volume attachments
+volume attachment set - Update an attachment for a volume
+volume attachment show - Show detailed information for a volume attachment
+volume backend capability show - Show capability command
+volume backend pool list - List pool command
+volume backup create - Create new volume backup
+volume backup delete - Delete volume backup(s)
+volume backup list - List volume backups
+volume backup record export - Export volume backup details
+volume backup record import - Import volume backup details
+volume backup restore - Restore volume backup
+volume backup set - Set volume backup properties
+volume backup show - Display volume backup details
+volume backup unset - Unset volume backup properties
+volume create - Create new volume
+volume delete - Delete volume(s)
+volume group create - Create a volume group
+volume group delete - Delete a volume group
+volume group failover - Failover replication for a volume group
+volume group list - Lists all volume groups
+volume group set - Update a volume group
+volume group show - Show detailed information for a volume group
+volume group snapshot create - Create a volume group snapshot
+volume group snapshot delete - Delete a volume group snapshot
+volume group snapshot list - Lists all volume group snapshot
+volume group snapshot show - Show detailed information for a volume group snapshot
+volume group type create - Create a volume group type
+volume group type delete - Delete a volume group type
+volume group type list - Lists all volume group types
+volume group type set - Update a volume group type
+volume group type show - Show detailed information for a volume group type
+volume host set - Set volume host properties
+volume list - List volumes
+volume message delete - Delete a volume failure message
+volume message list - List volume failure messages
+volume message show - Show a volume failure message
+volume migrate - Migrate volume to a new host
+volume qos associate - Associate a QoS specification to a volume type
+volume qos create - Create new QoS specification
+volume qos delete - Delete QoS specification
+volume qos disassociate - Disassociate a QoS specification from a volume type
+volume qos list - List QoS specifications
+volume qos set - Set QoS specification properties
+volume qos show - Display QoS specification details
+volume qos unset - Unset QoS specification properties
+volume revert - Revert a volume to a snapshot
+volume service list - List service command
+volume service set - Set volume service properties
+volume set - Set volume properties
+volume show - Display volume details
+volume snapshot create - Create new volume snapshot
+volume snapshot delete - Delete volume snapshot(s)
+volume snapshot list - List volume snapshots
+volume snapshot set - Set volume snapshot properties
+volume snapshot show - Display volume snapshot details
+volume snapshot unset - Unset volume snapshot properties
+volume summary - Show a summary of all volumes in this deployment
+volume transfer request accept - Accept volume transfer request
+volume transfer request create - Create volume transfer request
+volume transfer request delete - Delete volume transfer request(s)
+volume transfer request list - Lists all volume transfer requests
+volume transfer request show - Show volume transfer request details
+volume type create - Create new volume type
+volume type delete - Delete volume type(s)
+volume type list - List volume types
+volume type set - Set volume type properties
+volume type show - Display volume type details
+volume type unset - Unset volume type properties
+volume unset - Unset volume properties
+vpn endpoint group create - Create an endpoint group (python-neutronclient)
+vpn endpoint group delete - Delete endpoint group(s) (python-neutronclient)
+vpn endpoint group list - List endpoint groups that belong to a given project (python-neutronclient)
+vpn endpoint group set - Set endpoint group properties (python-neutronclient)
+vpn endpoint group show - Display endpoint group details (python-neutronclient)
+vpn ike policy create - Create an IKE policy (python-neutronclient)
+vpn ike policy delete - Delete IKE policy (policies) (python-neutronclient)
+vpn ike policy list - List IKE policies that belong to a given project (python-neutronclient)
+vpn ike policy set - Set IKE policy properties (python-neutronclient)
+vpn ike policy show - Display IKE policy details (python-neutronclient)
+vpn ipsec policy create - Create an IPsec policy (python-neutronclient)
+vpn ipsec policy delete - Delete IPsec policy(policies) (python-neutronclient)
+vpn ipsec policy list - List IPsec policies that belong to a given project (python-neutronclient)
+vpn ipsec policy set - Set IPsec policy properties (python-neutronclient)
+vpn ipsec policy show - Display IPsec policy details (python-neutronclient)
+vpn ipsec site connection create - Create an IPsec site connection (python-neutronclient)
+vpn ipsec site connection delete - Delete IPsec site connection(s) (python-neutronclient)
+vpn ipsec site connection list - List IPsec site connections that belong to a given project (python-neutronclient)
+vpn ipsec site connection set - Set IPsec site connection properties (python-neutronclient)
+vpn ipsec site connection show - Show information of a given IPsec site connection (python-neutronclient)
+vpn service create - Create an VPN service (python-neutronclient)
+vpn service delete - Delete VPN service(s) (python-neutronclient)
+vpn service list - List VPN services that belong to a given project (python-neutronclient)
+vpn service set - Set VPN service properties (python-neutronclient)
+vpn service show - Display VPN service details (python-neutronclient)

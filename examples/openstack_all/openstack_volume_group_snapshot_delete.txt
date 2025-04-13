@@ -1,0 +1,11 @@
+usage: openstack volume group snapshot delete [-h] <snapshot>
+
+Delete a volume group snapshot. This command requires ``--os-volume-api-
+version`` 3.14 or greater.
+
+positional arguments:
+  <snapshot>  Name or ID of volume group snapshot to delete
+
+options:
+  -h, --help  show this help message and exit
+Could not clean up: 'ClientManager' object has no attribute 'session'

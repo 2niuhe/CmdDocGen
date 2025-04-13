@@ -1,0 +1,22 @@
+usage: openstack sfc port pair group set [-h] [--name <name>]
+                                         [--description <description>]
+                                         [--port-pair <port-pair>]
+                                         [--no-port-pair]
+                                         <port-pair-group>
+
+Set port pair group properties
+
+positional arguments:
+  <port-pair-group>     Port pair group to modify (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --name <name>         Name of the port pair group
+  --description <description>
+                        Description for the port pair group
+  --port-pair <port-pair>
+                        Port pair (name or ID). This option can be repeated.
+  --no-port-pair        Remove all port pair from port pair group
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

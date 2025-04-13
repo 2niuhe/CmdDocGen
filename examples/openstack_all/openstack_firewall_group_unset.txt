@@ -1,0 +1,26 @@
+usage: openstack firewall group unset [-h] [--port <port> | --all-port]
+                                      [--ingress-firewall-policy]
+                                      [--egress-firewall-policy] [--share]
+                                      [--enable]
+                                      <firewall-group>
+
+Unset firewall group properties
+
+positional arguments:
+  <firewall-group>      Firewall group to unset (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --port <port>         Port(s) (name or ID) to apply firewall group. This
+                        option can be repeated
+  --all-port            Remove all ports for this firewall group
+  --ingress-firewall-policy
+                        Ingress firewall policy (name or ID) to delete
+  --egress-firewall-policy
+                        Egress firewall policy (name or ID) to delete
+  --share               Restrict use of the firewall group to the current
+                        project
+  --enable              Disable firewall group
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

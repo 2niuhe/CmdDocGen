@@ -1,0 +1,22 @@
+usage: openstack bgpvpn router association set [-h]
+                                               [--advertise_extra_routes | --no-advertise_extra_routes]
+                                               <router association ID>
+                                               <bgpvpn>
+
+Set BGP VPN router association properties
+
+positional arguments:
+  <router association ID>
+                        Router association ID to update
+  <bgpvpn>              BGP VPN the router association belongs to (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --advertise_extra_routes
+                        Routes will be advertised to the BGP VPN
+  --no-advertise_extra_routes
+                        Routes from the router will not be advertised to the
+                        BGP VPN
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

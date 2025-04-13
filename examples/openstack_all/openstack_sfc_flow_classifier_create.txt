@@ -1,0 +1,81 @@
+usage: openstack sfc flow classifier create [-h]
+                                            [-f {json,shell,table,value,yaml}]
+                                            [-c COLUMN] [--noindent]
+                                            [--prefix PREFIX]
+                                            [--max-width <integer>]
+                                            [--fit-width] [--print-empty]
+                                            [--description <description>]
+                                            [--protocol <protocol>]
+                                            [--ethertype {IPv4,IPv6}]
+                                            [--source-port <min-port>:<max-port>]
+                                            [--destination-port <min-port>:<max-port>]
+                                            [--source-ip-prefix <source-ip-prefix>]
+                                            [--destination-ip-prefix <destination-ip-prefix>]
+                                            [--logical-source-port <logical-source-port>]
+                                            [--logical-destination-port <logical-destination-port>]
+                                            [--l7-parameters L7_PARAMETERS]
+                                            <name>
+
+Create a flow classifier
+
+positional arguments:
+  <name>                Name of the flow classifier
+
+options:
+  -h, --help            show this help message and exit
+  --description <description>
+                        Description for the flow classifier
+  --protocol <protocol>
+                        IP protocol name. Protocol name should be as per IANA
+                        standard.
+  --ethertype {IPv4,IPv6}
+                        L2 ethertype, default is IPv4
+  --source-port <min-port>:<max-port>
+                        Source protocol port (allowed range [1,65535]. Must be
+                        specified as a:b, where a=min-port and b=max-port) in
+                        the allowed range.
+  --destination-port <min-port>:<max-port>
+                        Destination protocol port (allowed range [1,65535].
+                        Must be specified as a:b, where a=min-port and b=max-
+                        port) in the allowed range.
+  --source-ip-prefix <source-ip-prefix>
+                        Source IP address in CIDR notation
+  --destination-ip-prefix <destination-ip-prefix>
+                        Destination IP address in CIDR notation
+  --logical-source-port <logical-source-port>
+                        Neutron source port (name or ID)
+  --logical-destination-port <logical-destination-port>
+                        Neutron destination port (name or ID)
+  --l7-parameters L7_PARAMETERS
+                        Dictionary of L7 parameters. Currently, no value is
+                        supported for this option.
+
+output formatters:
+  output formatter options
+
+  -f {json,shell,table,value,yaml}, --format {json,shell,table,value,yaml}
+                        the output format, defaults to table
+  -c COLUMN, --column COLUMN
+                        specify the column(s) to include, can be repeated to
+                        show multiple columns
+
+json formatter:
+  --noindent            whether to disable indenting the JSON
+
+shell formatter:
+  a format a UNIX shell can parse (variable="value")
+
+  --prefix PREFIX       add a prefix to all variable names
+
+table formatter:
+  --max-width <integer>
+                        Maximum display width, <1 to disable. You can also use
+                        the CLIFF_MAX_TERM_WIDTH environment variable, but the
+                        parameter takes precedence.
+  --fit-width           Fit the table to the display width. Implied if --max-
+                        width greater than 0. Set the environment variable
+                        CLIFF_FIT_WIDTH=1 to always enable
+  --print-empty         Print empty table if there is no data to show.
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

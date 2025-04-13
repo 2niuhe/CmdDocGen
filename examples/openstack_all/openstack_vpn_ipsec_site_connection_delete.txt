@@ -1,0 +1,15 @@
+usage: openstack vpn ipsec site connection delete [-h]
+                                                  <ipsec-site-connection>
+                                                  [<ipsec-site-connection> ...]
+
+Delete IPsec site connection(s)
+
+positional arguments:
+  <ipsec-site-connection>
+                        IPsec site connection to delete (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

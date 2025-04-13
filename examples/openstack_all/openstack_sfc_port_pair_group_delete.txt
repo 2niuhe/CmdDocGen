@@ -1,0 +1,14 @@
+usage: openstack sfc port pair group delete [-h]
+                                            <port-pair-group>
+                                            [<port-pair-group> ...]
+
+Delete a given port pair group
+
+positional arguments:
+  <port-pair-group>  Port pair group(s) to delete (name or ID)
+
+options:
+  -h, --help         show this help message and exit
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

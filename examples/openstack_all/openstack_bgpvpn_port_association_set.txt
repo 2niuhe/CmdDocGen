@@ -1,0 +1,38 @@
+usage: openstack bgpvpn port association set [-h]
+                                             [--advertise-fixed-ips | --no-advertise-fixed-ips]
+                                             [--prefix-route prefix=<cidr>[,local_pref=<integer>]]
+                                             [--bgpvpn-route bgpvpn=<BGP VPN ID or name>[,local_pref=<integer>]]
+                                             [--no-prefix-route]
+                                             [--no-bgpvpn-route]
+                                             <port association ID> <bgpvpn>
+
+Set BGP VPN port association properties
+
+positional arguments:
+  <port association ID>
+                        Port association ID to update
+  <bgpvpn>              BGP VPN the port association belongs to (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --advertise-fixed-ips
+                        Fixed IPs of the port will be advertised to the BGP
+                        VPN
+  --no-advertise-fixed-ips
+                        Fixed IPs of the port will not be advertised to the
+                        BGP VPN
+  --prefix-route prefix=<cidr>[,local_pref=<integer>]
+                        Add prefix route in CIDR notation. Optionally, can
+                        control the value of the BGP LOCAL_PREF of the routes
+                        that will be advertised (repeat option for multiple
+                        prefix routes)
+  --bgpvpn-route bgpvpn=<BGP VPN ID or name>[,local_pref=<integer>]
+                        Add BGP VPN route for route leaking. Optionally, can
+                        control the value of the BGP LOCAL_PREF of the routes
+                        that will be advertised (repeat option for multiple
+                        BGP VPN routes)
+  --no-prefix-route     Empty prefix route list
+  --no-bgpvpn-route     Empty BGP VPN route list
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

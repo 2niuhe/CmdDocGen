@@ -1,0 +1,13 @@
+usage: openstack registered limit delete [-h]
+                                         <registered-limit-id>
+                                         [<registered-limit-id> ...]
+
+Delete a registered limit
+
+positional arguments:
+  <registered-limit-id>
+                        Registered limit to delete (ID)
+
+options:
+  -h, --help            show this help message and exit
+Could not clean up: 'ClientManager' object has no attribute 'session'

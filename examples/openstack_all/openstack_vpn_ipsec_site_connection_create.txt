@@ -1,0 +1,107 @@
+usage: openstack vpn ipsec site connection create [-h]
+                                                  [-f {json,shell,table,value,yaml}]
+                                                  [-c COLUMN] [--noindent]
+                                                  [--prefix PREFIX]
+                                                  [--max-width <integer>]
+                                                  [--fit-width]
+                                                  [--print-empty]
+                                                  [--description <description>]
+                                                  [--dpd action=ACTION,interval=INTERVAL,timeout=TIMEOUT]
+                                                  [--mtu MTU]
+                                                  [--initiator {bi-directional,response-only}]
+                                                  [--peer-cidr PEER_CIDRS | --local-endpoint-group LOCAL_ENDPOINT_GROUP]
+                                                  [--peer-endpoint-group PEER_ENDPOINT_GROUP]
+                                                  [--enable | --disable]
+                                                  [--local-id LOCAL_ID]
+                                                  --peer-id PEER_ID
+                                                  --peer-address PEER_ADDRESS
+                                                  --psk PSK --vpnservice
+                                                  VPNSERVICE --ikepolicy
+                                                  IKEPOLICY --ipsecpolicy
+                                                  IPSECPOLICY
+                                                  [--project <project>]
+                                                  [--project-domain <project-domain>]
+                                                  <name>
+
+Create an IPsec site connection
+
+positional arguments:
+  <name>                Set friendly name for the connection
+
+options:
+  -h, --help            show this help message and exit
+  --description <description>
+                        Description for the connection
+  --dpd action=ACTION,interval=INTERVAL,timeout=TIMEOUT
+                        Ipsec connection Dead Peer Detection attributes.
+                        'action'-hold,clear,disabled,restart,restart-by-peer.
+                        'interval' and 'timeout' are non negative integers.
+                        'interval' should be less than 'timeout' value.
+                        'action', default:hold 'interval', default:30,
+                        'timeout', default:120.
+  --mtu MTU             MTU size for the connection
+  --initiator {bi-directional,response-only}
+                        Initiator state
+  --peer-cidr PEER_CIDRS
+                        Remote subnet(s) in CIDR format. Cannot be specified
+                        when using endpoint groups. Only applicable, if subnet
+                        provided for VPN service.
+  --local-endpoint-group LOCAL_ENDPOINT_GROUP
+                        Local endpoint group (name or ID) with subnet(s) for
+                        IPsec connection
+  --peer-endpoint-group PEER_ENDPOINT_GROUP
+                        Peer endpoint group (name or ID) with CIDR(s) for
+                        IPSec connection
+  --enable              Enable IPSec site connection
+  --disable             Disable IPSec site connection
+  --local-id LOCAL_ID   An ID to be used instead of the external IP address
+                        for a virtual router
+  --peer-id PEER_ID     Peer router identity for authentication. Can be
+                        IPv4/IPv6 address, e-mail address, key id, or FQDN
+  --peer-address PEER_ADDRESS
+                        Peer gateway public IPv4/IPv6 address or FQDN
+  --psk PSK             Pre-shared key string.
+  --vpnservice VPNSERVICE
+                        VPN service instance associated with this connection
+                        (name or ID)
+  --ikepolicy IKEPOLICY
+                        IKE policy associated with this connection (name or
+                        ID)
+  --ipsecpolicy IPSECPOLICY
+                        IPsec policy associated with this connection (name or
+                        ID)
+  --project <project>   Owner's project (name or ID)
+  --project-domain <project-domain>
+                        Domain the project belongs to (name or ID). This can
+                        be used in case collisions between project names
+                        exist.
+
+output formatters:
+  output formatter options
+
+  -f {json,shell,table,value,yaml}, --format {json,shell,table,value,yaml}
+                        the output format, defaults to table
+  -c COLUMN, --column COLUMN
+                        specify the column(s) to include, can be repeated to
+                        show multiple columns
+
+json formatter:
+  --noindent            whether to disable indenting the JSON
+
+shell formatter:
+  a format a UNIX shell can parse (variable="value")
+
+  --prefix PREFIX       add a prefix to all variable names
+
+table formatter:
+  --max-width <integer>
+                        Maximum display width, <1 to disable. You can also use
+                        the CLIFF_MAX_TERM_WIDTH environment variable, but the
+                        parameter takes precedence.
+  --fit-width           Fit the table to the display width. Implied if --max-
+                        width greater than 0. Set the environment variable
+                        CLIFF_FIT_WIDTH=1 to always enable
+  --print-empty         Print empty table if there is no data to show.
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

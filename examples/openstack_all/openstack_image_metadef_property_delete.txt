@@ -1,0 +1,13 @@
+usage: openstack image metadef property delete [-h]
+                                               <namespace> <property>
+                                               [<property> ...]
+
+Delete metadef propert(ies)
+
+positional arguments:
+  <namespace>  Metadef namespace of the property (name)
+  <property>   Metadef propert(ies) to delete (name)
+
+options:
+  -h, --help   show this help message and exit
+Could not clean up: 'ClientManager' object has no attribute 'session'

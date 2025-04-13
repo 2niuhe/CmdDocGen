@@ -1,0 +1,33 @@
+usage: openstack firewall group rule unset [-h] [--source-ip-address]
+                                           [--destination-ip-address]
+                                           [--source-port]
+                                           [--destination-port] [--share]
+                                           [--enable-rule]
+                                           [--source-firewall-group]
+                                           [--destination-firewall-group]
+                                           <firewall-rule>
+
+Unset firewall rule properties
+
+positional arguments:
+  <firewall-rule>       Firewall rule to unset (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --source-ip-address   Source IP address or subnet
+  --destination-ip-address
+                        Destination IP address or subnet
+  --source-port         Source port number or range(integer in [1, 65535] or
+                        range like 123:456)
+  --destination-port    Destination port number or range(integer in [1, 65535]
+                        or range like 123:456)
+  --share               Restrict use of the firewall rule to the current
+                        project
+  --enable-rule         Disable this rule
+  --source-firewall-group
+                        Source firewall group (name or ID)
+  --destination-firewall-group
+                        Destination firewall group (name or ID)
+
+This command is provided by the python-neutronclient plugin.
+Could not clean up: 'ClientManager' object has no attribute 'session'

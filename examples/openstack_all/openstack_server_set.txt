@@ -1,0 +1,39 @@
+usage: openstack server set [-h] [--name <new-name>]
+                            [--password PASSWORD | --no-password]
+                            [--property <key=value>] [--state <state>]
+                            [--description <description>] [--tag <tag>]
+                            [--hostname <hostname>]
+                            <server>
+
+Set server properties
+
+positional arguments:
+  <server>              Server (name or ID)
+
+options:
+  -h, --help            show this help message and exit
+  --name <new-name>     New server name
+  --password PASSWORD   Set the server password. This option requires cloud
+                        support.
+  --no-password         Clear the admin password for the server from the
+                        metadata service; note that this action does not
+                        actually change the server password
+  --property <key=value>
+                        Property to add/change for this server (repeat option
+                        to set multiple properties)
+  --state <state>       New server state **WARNING** This can result in
+                        instances that are no longer usable and should be used
+                        with caution (admin only)
+  --description <description>
+                        New server description (supported by --os-compute-api-
+                        version 2.19 or above)
+  --tag <tag>           Tag for the server. Specify multiple times to add
+                        multiple tags. (supported by --os-compute-api-version
+                        2.26 or above)
+  --hostname <hostname>
+                        Hostname configured for the server in the metadata
+                        service. A separate utility running in the guest is
+                        required to propagate changes to this value to the
+                        guest OS itself. (supported by --os-compute-api-
+                        version 2.90 or above)
+Could not clean up: 'ClientManager' object has no attribute 'session'

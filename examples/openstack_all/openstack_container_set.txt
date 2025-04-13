@@ -1,0 +1,13 @@
+usage: openstack container set [-h] --property <key=value> <container>
+
+Set container properties
+
+positional arguments:
+  <container>           Container to modify
+
+options:
+  -h, --help            show this help message and exit
+  --property <key=value>
+                        Set a property on this container (repeat option to set
+                        multiple properties)
+Could not clean up: 'ClientManager' object has no attribute 'session'
