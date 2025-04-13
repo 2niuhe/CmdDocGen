@@ -68,3 +68,8 @@ pipedit:
 pypitest: piptar
 	@echo "Uploading to testpypi"
 	@python -m twine upload --repository testpypi dist/*
+
+## pypiupload: Upload package to pypi
+pypiupload:
+	@echo "Uploading to pypi"
+	@python -m twine upload --repository pypi dist/*

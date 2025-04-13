@@ -11,7 +11,7 @@ import os
 import subprocess
 import logging
 from collections import deque
-from typing import Dict, List, Any, Tuple
+from typing import Dict, List, Any, Tuple, Optional
 from datetime import datetime
 
 # Import new LLM module
@@ -25,27 +25,27 @@ logger = logging.getLogger("CmdDocGen.Extractor")
 class CommandNode:
     """Command tree node class for building n-ary tree structure"""
 
-    def __init__(self, name, description="", parent=None):
+    def __init__(self, name: str, description: str = "", parent: Optional["CommandNode"] = None) -> None:
         self.name = name  # Command name
         self.description = description  # Command description
         self.parent = parent  # Parent node
-        self.children = {}  # Child command dictionary {command name: CommandNode}
+        self.children: Dict[str, "CommandNode"] = {}  # Child command dictionary {command name: CommandNode}
         self.raw_help = ""  # Raw help text
-        self.parsed_help = {}  # Parsed help information
+        self.parsed_help: Dict[str, Any] = {}  # Parsed help information
 
-    def add_child(self, name, description=""):
+    def add_child(self, name: str, description: str = "") -> "CommandNode":
         """Add child command"""
         if name not in self.children:
             self.children[name] = CommandNode(name, description, self)
         return self.children[name]
 
-    def get_full_command(self):
+    def get_full_command(self) -> str:
         """Get full command path from root node to current node"""
         if not self.parent:
             return self.name
         return f"{self.parent.get_full_command()} {self.name}"
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.name} ({len(self.children)} subcommands)"
 
 
@@ -54,12 +54,12 @@ class HelpExtractor:
 
     def __init__(
         self,
-        command: str = None,
+        command: Optional[str] = None,
         output_dir: str = "man_pages",
         max_depth: int = 2,
         max_subcommands_per_level: int = 150,
         help_format: str = "default",
-    ):
+    ) -> None:
         """Initialize help extractor"""
         self.command = command
         self.output_dir = output_dir
@@ -264,7 +264,7 @@ class HelpExtractor:
 
     def _command_tree_to_dict(self, node: CommandNode) -> Dict[str, Any]:
         """Convert command tree to dictionary structure"""
-        result = {
+        result: Dict[str, Any] = {
             "command": node.name,
             "description": node.description,
             "raw_help": node.raw_help,
@@ -280,8 +280,8 @@ class HelpExtractor:
         return result
 
     def _print_command_tree(
-        self, root_node: CommandNode, prefix="", is_last=True, depth=0
-    ):
+        self, root_node: CommandNode, prefix: str = "", is_last: bool = True, depth: int = 0
+    ) -> None:
         """Print command tree visualization"""
         if depth == 0:
             print("\nCurrent command tree:")
@@ -303,6 +303,19 @@ class HelpExtractor:
 
         if depth == 0:
             print("=" * 50)
+
+    def _print_command_tree_dict(self, command_info: Dict[str, Any], level: int = 0) -> None:
+        """Print command tree structure"""
+        cmd_name = command_info["command"]
+        prefix = "  " * level
+
+        # Print current command
+        exists_mark = "✓" if command_info["exists"] else "✗"
+        print(f"{prefix}{exists_mark} {cmd_name}")
+
+        # Print subcommands
+        for subcmd_name, subcmd_info in command_info.get("subcommands", {}).items():
+            self._print_command_tree_dict(subcmd_info, level + 1)
 
     def run_command(self, cmd: List[str]) -> Tuple[str, bool]:
         """Execute command and get output, return (output content, success)"""
@@ -463,19 +476,6 @@ class HelpExtractor:
         print("\nSubcommand tree:")
         self._print_command_tree_dict(command_info)
 
-    def _print_command_tree_dict(self, command_info: Dict[str, Any], level: int = 0):
-        """Print command tree structure"""
-        cmd_name = command_info["command"]
-        prefix = "  " * level
-
-        # Print current command
-        exists_mark = "✓" if command_info["exists"] else "✗"
-        print(f"{prefix}{exists_mark} {cmd_name}")
-
-        # Print subcommands
-        for subcmd_name, subcmd_info in command_info.get("subcommands", {}).items():
-            self._print_command_tree_dict(subcmd_info, level + 1)
-
     def _get_date(self) -> str:
         """Get current date for man page"""
         return datetime.now().strftime("%B %Y")
@@ -512,7 +512,7 @@ class HelpExtractor:
         logger.info(f"Saved man page for command '{command}': {man_path}")
 
 
-def main():
+def main() -> None:
     """Main function"""
     parser = argparse.ArgumentParser(
         description="Universal command line help information extraction tool"

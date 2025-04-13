@@ -12,7 +12,7 @@ import subprocess
 from cmddocgen.cmd_doc_gen import main as cmd_doc_gen_main
 
 
-def main():
+def main() -> None:
     """Entry point for the cmddocgen command"""
     # Execute the main function directly
     cmd_doc_gen_main()

@@ -31,13 +31,13 @@ load_dotenv()
 class LLMParser:
     """Class for parsing command-line help text using LLM"""
 
-    def __init__(self):
+    def __init__(self) -> None:
         # Prefer to get configuration from environment variables, then from .env file
         logger.info("Initializing LLMParser...")
 
         self.base_url = os.getenv("LLM_BASE_URL")
         self.api_key = os.getenv("LLM_API_KEY")
-        self.model = os.getenv("LLM_MODEL")
+        self.model: str = os.getenv("LLM_MODEL", "gpt-3.5-turbo")  # Default to gpt-3.5-turbo
         self.temperature = float(os.getenv("LLM_TEMPERATURE", 0.2))
         self.max_tokens = int(os.getenv("LLM_MAX_TOKENS", 8192))
 
@@ -80,9 +80,7 @@ class LLMParser:
         logger.info("LLMParser initialization complete")
 
         # Create cache directory
-        self.cache_dir = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)), "cache"
-        )
+        self.cache_dir = os.path.join(os.getcwd(), "cache")
         os.makedirs(self.cache_dir, exist_ok=True)
         logger.info(f"Cache directory: {self.cache_dir}")
 
@@ -127,6 +125,8 @@ class LLMParser:
 
         # Get raw response
         raw_response = response.choices[0].message.content
+        if raw_response is None:
+            raw_response = ""  # Ensure raw_response is always a string
 
         logger.info("Receive LLM response, start extracting JSON...")
         result = self._extract_json(raw_response)
@@ -434,7 +434,7 @@ Please ensure the JSON format is correct and can be parsed. For very large comma
             logger.warning(f"Failed to save cache file: {e}")
 
 
-def test_parser(command: str = "ls", help_option: str = "--help"):
+def test_parser(command: str = "ls", help_option: str = "--help") -> Dict[str, Any]:
     """Test LLMParser functionality"""
     import subprocess
 
