@@ -43,9 +43,9 @@ class LLMParser:
         self.temperature = float(os.getenv("LLM_TEMPERATURE", 0.2))
         self.max_tokens = int(os.getenv("LLM_MAX_TOKENS", 8192))
 
-        logger.info(f"使用模型: {self.model}")
-        logger.info(f"温度设置: {self.temperature}")
-        logger.info(f"最大令牌数: {self.max_tokens}")
+        logger.info(f"Using model: {self.model}")
+        logger.info(f"Temperature setting: {self.temperature}")
+        logger.info(f"Maximum tokens: {self.max_tokens}")
 
         if not self.api_key:
             print("\nError: Missing Required Configuration")

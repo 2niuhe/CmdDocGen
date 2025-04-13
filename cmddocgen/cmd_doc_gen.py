@@ -110,8 +110,6 @@ class HelpExtractor:
 
     def _get_help_command(self, command: str) -> List[str]:
         """Determine which help format to use based on command"""
-        # Get root command
-        root_command = command.split()[0]
 
         # Find corresponding format
         format_func = self.help_command_formats[self.help_format]
@@ -378,8 +376,9 @@ class HelpExtractor:
         """Verify subcommand existence by trying to execute"""
         logger.info(f"Verifying subcommand existence: {full_command}")
 
-        # Try to execute subcommand's help option
-        _, success = self.run_command([*full_command.split(), "--help"])
+        # Get help command
+        help_command = self._get_help_command(full_command)
+        _, success = self.run_command(help_command)
 
         if success:
             logger.info(f"Subcommand verification successful: {full_command}")
